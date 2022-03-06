@@ -75,20 +75,6 @@ export default function Navigation() {
                 Türkiye
               </MenuItem>
             </Select>
-
-            {/* <select className="lang-sel" onChange={(e)=>handleChange(e)} >
-              <option data-image="./img/flags/english.svg" value="en" >English</option>
-              <option data-image="./img/flags/germany.svg" value="ge" >Deutsch</option>
-              <option data-image="./img/flags/france.svg" value="fr" >Française</option>
-              <option data-image="./img/flags/turkey.svg" value="tu" >Türkiye</option>
-            </select> */}
-
-            {/* <select className="tech" name="tech" is="ms-dropdown" onChange={(e)=>handleChange(e)} >
-              <option data-image="./img/flags/english.svg" value="en" >English</option>
-              <option data-image="./img/flags/germany.svg" value="ge" >Deutsch</option>
-              <option data-image="./img/flags/france.svg" value="fr" >Française</option>
-              <option data-image="./img/flags/turkey.svg" value="tu" >Türkiye</option>
-            </select> */}
           </div>
           <div className='navbar-logo'>
             <img width="150" height="68" src="img/logo.png" alt="logo"/>

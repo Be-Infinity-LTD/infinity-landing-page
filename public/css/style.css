@@ -100,8 +100,10 @@ hr {
   color: #333;
   text-transform: uppercase;
 }
-#menu.navbar-default .navbar-nav > li > a {
+#menu .navbar-right {
   font-family: "Montserrat", Sans-serif;
+}
+#menu.navbar-default .navbar-nav > li > a {
   color: #555;
   font-size: 15px;
   font-weight: 600;
@@ -109,7 +111,6 @@ hr {
   border-radius: 0;
   margin-left: 10px;
   margin-right: 10px;
-  letter-spacing: 1px;
   text-transform: capitalize;
 }
 #menu.navbar-default .navbar-nav > li > a:after {
@@ -321,7 +322,8 @@ header .intro-text {
   font-weight: 600;
   white-space: nowrap;
   padding: 25px 15px;
-  font-size: 18px;
+  font-size: 16px;
+  font-family: "Spartan", sans-serif;
 }
 #philosophy .philosophy-options-btn-grid-active {
   transform: translatex(0%) translatey(-20px);
@@ -335,7 +337,8 @@ header .intro-text {
   margin-top: -2px;
 }
 #philosophy .philosophy-options-btn-item-active {
-  font-size: 18px;
+  font-size: 16px;
+  font-family: "Spartan", sans-serif;
   overflow:auto;
   font-weight: 600;
   color: #5a8cdd;
@@ -361,19 +364,18 @@ header .intro-text {
   border-style: solid;
   border-width: 0px 0px 0px 0px;
   background-color: #FFFFFF;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 16px;
+  font-family: "Spartan", sans-serif;
+  font-weight: 500;
   text-align: left;
   color: black;
 }
 
 /* Charity Section */
-#charity img {
-  width: 520px;
-  margin-top: 10px;
-  background: #fff;
-  border-right: 0;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
+#charity {
+  background: url(../img/landing/charity.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 /* Community Section */
 #community {
@@ -603,10 +605,4 @@ label {
 }
 #footer a:hover {
   border-bottom: 2px solid #608dfd;
-}
-
-@media (max-width: 768px) {
-  #charity img {
-    margin: 50px 0;
-  }
 }
