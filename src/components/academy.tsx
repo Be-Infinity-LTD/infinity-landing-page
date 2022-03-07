@@ -28,7 +28,7 @@ export default function Academy() {
           </Grid>
           <div className={classes.mainContent}>
             {academyTitles.map((item, i) => (
-              <Grid className={classes.academyContentGrid}>
+              <Grid className={classes.academyContentGrid} key={i}>
                 <div className={classes.academyContentItem}>
                   <div className={classes.contentItemImg}>
                     <a href="#">

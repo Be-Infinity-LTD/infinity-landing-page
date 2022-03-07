@@ -6,6 +6,9 @@ import { zoomIn } from 'react-animations'
 import styled, { keyframes } from 'styled-components'
 
 const zoomInAnimation = keyframes`${zoomIn}`
+const ZoomInDiv = styled.div`
+  animation: 1.5s ${zoomInAnimation};
+`
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -79,11 +82,7 @@ export default function Charity() {
   const charityContent = ['CHARITYCONTENT1', 'CHARITYCONTENT2']
   const [curCharityTitle, setCurCharityTitle] = useState(charityTitle[0])
   const [curCharityContent, setCurCharityContent] = useState(charityContent[0])
-  var curIndex = 0
-
-  const ZoomInDiv = styled.div`
-    animation: 1.5s ${zoomInAnimation};
-  `
+  let curIndex = 0
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -99,9 +98,10 @@ export default function Charity() {
     setCurCharityTitle(charityTitle[curIndex])
     setCurCharityContent(charityContent[curIndex])
   }
+
   return (
-    <div className={classes.mainContainer}>
-      <div id="charity">
+    <div id="charity" className={classes.mainContainer}>
+      <div>
         <Grid className={classes.colorBack}></Grid>
       </div>
       <Grid className={classes.charityContent}>
@@ -111,12 +111,10 @@ export default function Charity() {
         <Grid item xs={6} className={classes.rightContent}>
           <div>
             {curCharityTitle.length > 0 ? (
-              <ZoomInDiv className={classes.charityContent1}>{t(curCharityTitle)}</ZoomInDiv>
-            ) : (
-              <></>
-            )}
-            {curCharityContent.length > 0 ? (
-              <ZoomInDiv className={classes.charityContent2}>{t(curCharityContent)}</ZoomInDiv>
+              <>
+                <ZoomInDiv className={classes.charityContent1}>{t(curCharityTitle)}</ZoomInDiv>
+                <ZoomInDiv className={classes.charityContent2}>{t(curCharityContent)}</ZoomInDiv>
+              </>
             ) : (
               <></>
             )}
