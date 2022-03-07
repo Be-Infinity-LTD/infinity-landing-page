@@ -2,19 +2,15 @@ import { makeStyles, Theme, createStyles } from '@material-ui/core/styles'
 
 export const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    svgMainUp: {
-      backgroundColor: '#292a2e',
-    },
-    pathStyleUp: {
-      stroke: '#eef1f6',
-      fill: '#eef1f6',
-    },
     svgMainDown: {
       backgroundColor: '#151515',
     },
     pathStyleDown: {
       stroke: '#2d3036',
       fill: '#2d3036',
+    },
+    academyImage: {
+      width: '100%',
     },
     main: {
       backgroundColor: 'transparent',

@@ -18,20 +18,9 @@ export default function Academy() {
   return (
     <div id="academy">
       <Grid>
-        <svg
-          viewBox="0 0 1000 20"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-          className={classes.svgMainUp}
-        >
-          <path
-            className={classes.pathStyleUp}
-            d="M 500 20
-                L 0 6.1
-                V 0 h 1000 v 6.1
-                L 500 20 Z"
-          />
-        </svg>
+        <div>
+          <img src="./img/landing/beach.jpg" alt="academy-image" className={classes.academyImage} />
+        </div>
         <Grid className={classes.main}>
           <Grid className={classes.academyTitleGrid}>
             <Typography className={classes.academyTitle}>{t('INFINITYTITLE')}</Typography>
