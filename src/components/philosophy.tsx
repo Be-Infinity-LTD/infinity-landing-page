@@ -62,9 +62,6 @@ export default function Philosophy() {
 
   return (
     <div id='philosophy' className='text-center'>
-      <div className='col-md-offset-1 section-title'>
-        <h2>Philosophy and Team</h2>
-      </div>
       <Grid className="main-content">
         <Grid item xs={6} className="content-left">
           <div className="content-img"></div>

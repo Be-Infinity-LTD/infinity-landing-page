@@ -1,6 +1,6 @@
 body,
 html {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   color: #777;
@@ -11,7 +11,7 @@ html {
 h2,
 h3,
 h4 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 h2 {
   text-transform: uppercase;
@@ -94,14 +94,14 @@ hr {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 #menu a.navbar-brand {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 24px;
   font-weight: 700;
   color: #333;
   text-transform: uppercase;
 }
 #menu .navbar-right {
-  font-family: "Montserrat", Sans-serif;
+  font-family: 'Montserrat', Sans-serif;
 }
 #menu.navbar-default .navbar-nav > li > a {
   color: #555;
@@ -121,7 +121,7 @@ hr {
   width: 0;
   height: 2px;
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
-  content: "";
+  content: '';
   transition: width 0.2s;
 }
 #menu.navbar-default .navbar-nav > li > a:hover:after {
@@ -142,7 +142,7 @@ hr {
   width: 100% !important;
   height: 2px !important;
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%) !important;
-  content: "" !important;
+  content: '' !important;
   transition: width 0.2s !important;
 }
 .navbar-toggle {
@@ -167,7 +167,7 @@ hr {
 }
 .section-title h2::after {
   position: absolute;
-  content: "";
+  content: '';
   background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
   height: 4px;
   width: 60px;
@@ -179,7 +179,7 @@ hr {
   font-size: 18px;
 }
 .btn-custom {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   color: #fff;
   background-color: #5ca9fb;
@@ -235,7 +235,7 @@ a:focus,
   background: rgba(0, 0, 0, 0.2);
 }
 .intro h1 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #fff;
   font-size: 82px;
   font-weight: 700;
@@ -267,7 +267,7 @@ header .intro-text {
 }
 #philosophy .main-content {
   background-color: transparent;
-  background-image: linear-gradient(90deg, #3F3F3F 0%, #000000 53%);
+  background-image: linear-gradient(200deg, #292a2e 50%, #2d3036 60%);
   display: flex;
   justify-content: center;
 }
@@ -287,8 +287,8 @@ header .intro-text {
   margin-right: 20px;
 }
 #philosophy .content-text-title {
-  color: #FFFFFF;
-  font-family: "Spartan", Sans-serif;
+  color: #ffffff;
+  font-family: 'Spartan', Sans-serif;
   font-size: 50px;
   text-align: left;
   font-weight: 600;
@@ -302,9 +302,9 @@ header .intro-text {
   margin-bottom: 20px;
 }
 #philosophy .content-text-context2 {
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: left;
-  font-family: "ZCOOL XiaoWei", Sans-serif;
+  font-family: 'ZCOOL XiaoWei', Sans-serif;
   font-size: 30px;
   font-weight: 400;
   margin-bottom: 20px;
@@ -323,7 +323,7 @@ header .intro-text {
   white-space: nowrap;
   padding: 25px 15px;
   font-size: 16px;
-  font-family: "Spartan", sans-serif;
+  font-family: 'Spartan', sans-serif;
 }
 #philosophy .philosophy-options-btn-grid-active {
   transform: translatex(0%) translatey(-20px);
@@ -338,8 +338,8 @@ header .intro-text {
 }
 #philosophy .philosophy-options-btn-item-active {
   font-size: 16px;
-  font-family: "Spartan", sans-serif;
-  overflow:auto;
+  font-family: 'Spartan', sans-serif;
+  overflow: auto;
   font-weight: 600;
   color: #5a8cdd;
   height: calc(80% - 2px);
@@ -363,9 +363,9 @@ header .intro-text {
   box-shadow: 0px 0px 35px 0px rgb(149 174 215 / 46%);
   border-style: solid;
   border-width: 0px 0px 0px 0px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   font-size: 16px;
-  font-family: "Spartan", sans-serif;
+  font-family: 'Spartan', sans-serif;
   font-weight: 500;
   text-align: left;
   color: black;
@@ -380,15 +380,15 @@ header .intro-text {
 /* Community Section */
 #community {
   padding: 100px 0;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
-  color: #fff;
+  background: #eef1f6;
+  color: rgb(83, 5, 64);
 }
 #community h2 {
-  color: #fff;
+  color: rgb(26, 9, 53);
 }
 #community .section-title h2::after {
   position: absolute;
-  content: "";
+  content: '';
   background: rgba(255, 255, 255, 0.3);
   height: 4px;
   width: 60px;
@@ -397,12 +397,9 @@ header .intro-text {
   left: 50%;
 }
 #community p {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(56, 1, 1, 0.75);
 }
 /* Academy Section */
-#academy {
-  padding: 100px 0;
-}
 .academy-item {
   margin: 1px -15px 0 -14px;
   padding: 0;
@@ -417,11 +414,7 @@ header .intro-text {
   text-align: center;
   margin: 0 auto;
   color: #fff;
-  background: linear-gradient(
-    to right,
-    rgba(99, 114, 255, 0.8) 0%,
-    rgba(92, 169, 251, 0.8) 100%
-  );
+  background: linear-gradient(to right, rgba(99, 114, 255, 0.8) 0%, rgba(92, 169, 251, 0.8) 100%);
   padding: 30% 0 0;
   height: 100%;
   width: 100%;
@@ -519,7 +512,7 @@ header .intro-text {
 }
 #aboutus .section-title h2::after {
   position: absolute;
-  content: "";
+  content: '';
   background: rgba(255, 255, 255, 0.3);
   height: 4px;
   width: 60px;
@@ -552,7 +545,7 @@ header .intro-text {
 label {
   font-size: 12px;
   font-weight: 400;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   float: left;
 }
 #aboutus .form-control {
