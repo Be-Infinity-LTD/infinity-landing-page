@@ -5,6 +5,13 @@ import { useStyles } from './styles/toolsStyle'
 export default function Tools() {
   const { t } = useTranslation()
   const classes = useStyles()
+  const toolsImgs = [
+    './img/landing/tools_advisor.jpg',
+    './img/landing/tools_trade.jpg',
+    './img/landing/tools_indicator.jpg',
+  ]
+  const toolsTitles = ['INFINITYLIVEOPTIONTITLE1', 'INFINITYLIVEOPTIONTITLE2', 'INFINITYLIVEOPTIONTITLE3']
+  const toolsContents = ['INFINITYLIVEOPTIONCONTENT1', 'INFINITYLIVEOPTIONCONTENT2', 'INFINITYLIVEOPTIONCONTENT3']
 
   return (
     <div id="tools" className={classes.mainContent}>
@@ -12,45 +19,21 @@ export default function Tools() {
         <Typography className={classes.toolsTextTitle}>{t('TOOLSTITLE')}</Typography>
         <Typography className={classes.toolsTextContent}>{t('TOOLSCONTENT')}</Typography>
         <Grid className={classes.toolsItems}>
-          <Grid item xs={4} className={classes.toolsItem}>
-            <div className={classes.toolsContentLiveImg}>
-              <a href="#">
-                <img src={'./img/landing/tools_advisor.jpg'} className={classes.contentLiveImg}></img>
-              </a>
-            </div>
-            <div className={classes.toolsContentLiveTitle}>
-              <Typography className={classes.toolsLiveItemTitle}>{t('INFINITYLIVEOPTIONTITLE1')}</Typography>
-            </div>
-            <div className={classes.toolsContent}>
-              <Typography className={classes.toolsLiveItemContent}>{t('INFINITYLIVEOPTIONCONTENT1')}</Typography>
-            </div>
-          </Grid>
-          <Grid item xs={4} className={classes.toolsItem}>
-            <div className={classes.toolsContentLiveImg}>
-              <a href="#">
-                <img src={'./img/landing/tools_trade.jpg'} className={classes.contentLiveImg}></img>
-              </a>
-            </div>
-            <div className={classes.toolsContentLiveTitle}>
-              <Typography className={classes.toolsLiveItemTitle}>{t('INFINITYLIVEOPTIONTITLE1')}</Typography>
-            </div>
-            <div className={classes.toolsContentItem}>
-              <Typography className={classes.toolsLiveItemContent}>{t('INFINITYLIVEOPTIONCONTENT1')}</Typography>
-            </div>
-          </Grid>
-          <Grid item xs={4} className={classes.toolsItem}>
-            <div className={classes.toolsContentLiveImg}>
-              <a href="#">
-                <img src={'./img/landing/tools_indicator.jpg'} className={classes.contentLiveImg}></img>
-              </a>
-            </div>
-            <div className={classes.toolsContentLiveTitle}>
-              <Typography className={classes.toolsLiveItemTitle}>{t('INFINITYLIVEOPTIONTITLE1')}</Typography>
-            </div>
-            <div className={classes.toolsContent}>
-              <Typography className={classes.toolsLiveItemContent}>{t('INFINITYLIVEOPTIONCONTENT1')}</Typography>
-            </div>
-          </Grid>
+          {toolsTitles.map((item, i) => (
+            <Grid item xs={4} className={classes.toolsItem} key={i}>
+              <div className={classes.toolsContentLiveImg}>
+                <a href="#">
+                  <img src={toolsImgs[i]} className={classes.contentLiveImg}></img>
+                </a>
+              </div>
+              <div className={classes.toolsContentLiveTitle}>
+                <Typography className={classes.toolsLiveItemTitle}>{toolsTitles[i]}</Typography>
+              </div>
+              <div className={classes.toolsContent}>
+                <Typography className={classes.toolsLiveItemContent}>{toolsContents[i]}</Typography>
+              </div>
+            </Grid>
+          ))}
         </Grid>
       </Grid>
       <Grid>
