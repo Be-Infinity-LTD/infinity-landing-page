@@ -1,7 +1,7 @@
 import { Grid, Typography } from '@material-ui/core'
 import { useTranslation } from 'react-i18next'
 import { academyImgLists } from '../common/constant'
-import { useStyles } from './academyStyle'
+import { useStyles } from './styles/academyStyle'
 
 export default function Academy() {
   const classes = useStyles()

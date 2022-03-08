@@ -7,6 +7,10 @@
   "PATHS": "başarıya giden yollar",
   "FAQ": "FAQ",
   "ABOUTUS": "Hakkımızda",
+  "PHILOSOPHYDESCTITLE": "SONSUZLUK nedir?",
+  "PHILOSOPHYDESCCONTENT1": "„Normal“ okul eğitimi artık başarılı olmak için yeterli değil.",
+  "PHILOSOPHYDESCCONTENT2": "Size, bir sonraki seviyeye geçmek için vücudunuzu ve zihninizi nasıl eğiteceğinizi gösteriyoruz.",
+  "PHILOSOPHYDESCCONTENT3": "Infinity bir şirketten daha fazlasıdır. SONSUZ bir yaşam tarzıdır.",
   "PHILOSOPHYTITLE": "INFINITY ile",
   "PHILOSOPHYCONTENT1": "İnsanlara finansal olarak nasıl bağımsız olacaklarını ve hayatlarının her alanında gerçek refah ve zenginliğe ulaşmak için kendi sistemlerini nasıl kuracaklarını göstererek daha iyi bir yaşam sürmelerine yardımcı oluyoruz.",
   "PHILOSOPHYCONTENT2": "Bu şekilde her birey için değer ve mutluluk yaratırız.",
@@ -45,5 +49,13 @@
   "INFINITYLIVEOPTIONTITLE2": "Hisse Senetleri / Endeksler",
   "INFINITYLIVEOPTIONCONTENT2": "Profesyonel tüccarlarımızdan canlı oturumlarda şirketlerin performansının nasıl değerlendirilebileceğini ve bundan nasıl yararlanabileceğinizi öğrenin.",
   "HOMETITLE": "Bu SONSUZ.",
-  "HOMECONTENT": "Hayatınızdan tam olarak istediğinizi yapabilirsiniz."
+  "HOMECONTENT": "Hayatınızdan tam olarak istediğinizi yapabilirsiniz.",
+  "TOOLSTITLE": "sunulan araçlar",
+  "TOOLSCONTENT": "Risk yönetiminize uygun stratejiler bulun ve paranızı büyütün",
+  "TOOLSEXPERTTITLE": "Uzman danışman",
+  "TOOLSEXPERTCONTENT": "Dünyanın en büyük pazarından nasıl yararlanabileceklerini profesyonel tüccarlarımızdan canlı oturumlarda öğrenin.",
+  "TOOLSTRADETITLE": "Ticaret Fikirleri",
+  "TOOLSTRADECONTENT": "Trades2Go & Coins2Go bilgisi..",
+  "TOOLSINDICATORTITLE": "Gösterge",
+  "TOOLSINDICATORCONTENT": "Dünyanın en büyük pazarından nasıl yararlanabileceklerini profesyonel tüccarlarımızdan canlı oturumlarda öğrenin."
 }

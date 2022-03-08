@@ -7,6 +7,10 @@
   "PATHS": "Les chemins du succès",
   "FAQ": "FAQ",
   "ABOUTUS": "À propos de nous",
+  "PHILOSOPHYDESCTITLE": "Qu'est-ce qu'INFINITY ?",
+  "PHILOSOPHYDESCCONTENT1": "L'éducation scolaire „normale“ ne suffit plus pour réussir.",
+  "PHILOSOPHYDESCCONTENT2": "Nous vous montrons comment entraîner votre corps et votre esprit pour passer au niveau supérieur.",
+  "PHILOSOPHYDESCCONTENT3": "Infinity est plus qu'une entreprise. INFINITY est un style de vie.",
   "PHILOSOPHYTITLE": "Avec INFINITY",
   "PHILOSOPHYCONTENT1": "Nous aidons les gens à vivre une vie meilleure en leur montrant comment être financièrement indépendants et construire leurs propres systèmes pour atteindre une prospérité et une richesse réelles dans tous les aspects de leur vie.",
   "PHILOSOPHYCONTENT2": "C'est ainsi que nous créons de la valeur et du bonheur pour chaque individu.",
@@ -45,5 +49,13 @@
   "INFINITYLIVEOPTIONTITLE2": "Actions / Indices",
   "INFINITYLIVEOPTIONCONTENT2": "Apprenez lors de sessions en direct de nos traders professionnels comment la performance des entreprises peut être évaluée et comment vous pouvez en bénéficier.",
   "HOMETITLE": "C'est l'INFINI.",
-  "HOMECONTENT": "Vous pouvez faire exactement ce que vous voulez de votre vie."
+  "HOMECONTENT": "Vous pouvez faire exactement ce que vous voulez de votre vie.",
+  "TOOLSTITLE": "Outils offerts",
+  "TOOLSCONTENT": "Trouvez des stratégies adaptées à votre gestion des risques et faites fructifier votre argent",
+  "TOOLSEXPERTTITLE": "Conseiller expert",
+  "TOOLSEXPERTCONTENT": "Découvrez lors de sessions en direct de nos traders professionnels comment ils peuvent bénéficier du plus grand marché du monde.",
+  "TOOLSTRADETITLE": "Idées commerciales",
+  "TOOLSTRADECONTENT": "Trades2Go & Coins2Go lorem..",
+  "TOOLSINDICATORTITLE": "Indicateur",
+  "TOOLSINDICATORCONTENT": "Découvrez lors de sessions en direct de nos traders professionnels comment ils peuvent bénéficier du plus grand marché du monde."
 }

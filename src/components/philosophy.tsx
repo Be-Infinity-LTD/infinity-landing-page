@@ -1,26 +1,7 @@
 import Grid from '@material-ui/core/Grid'
 import { useTranslation } from 'react-i18next'
 import { useState } from 'react'
-import { makeStyles, Theme, createStyles } from '@material-ui/core/styles'
-
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    svgMainUp: {
-      backgroundColor: '#2d3036',
-    },
-    pathStyleUp: {
-      stroke: '#f6f6f6',
-      fill: '#f6f6f6',
-    },
-    svgMainDown: {
-      backgroundColor: '#f6f6f6',
-    },
-    pathStyleDown: {
-      stroke: '#2d3036',
-      fill: '#2d3036',
-    },
-  }),
-)
+import { useStyles } from './styles/philosophyStyle'
 
 export default function Philosophy() {
   const { t } = useTranslation()
@@ -83,7 +64,7 @@ export default function Philosophy() {
   }
 
   return (
-    <div id="philosophy" className="text-center">
+    <div id="philosophy" className={classes.textCenter}>
       <Grid>
         <svg
           viewBox="0 0 1000 20"
@@ -100,14 +81,26 @@ export default function Philosophy() {
           />
         </svg>
       </Grid>
-      <Grid className="main-content">
-        <Grid item xs={6} className="content-left">
-          <div className="content-img"></div>
+      <Grid className={classes.mainContent}>
+        <Grid item xs={6} className={classes.contentGridText}>
+          <Grid className={classes.contentTextTitle}>{t('PHILOSOPHYDESCTITLE')}</Grid>
+          <Grid className={classes.contentTextContext1}>{t('PHILOSOPHYDESCCONTENT1')}</Grid>
+          <Grid className={classes.contentTextContext1}>{t('PHILOSOPHYDESCCONTENT2')}</Grid>
+          <Grid className={classes.contentTextContext2}>{t('PHILOSOPHYDESCCONTENT3')}</Grid>
         </Grid>
-        <Grid item xs={6} className="content-right">
-          <Grid className="content-text-title">{t('PHILOSOPHYTITLE')}</Grid>
-          <Grid className="content-text-context1">{t('PHILOSOPHYCONTENT1')}</Grid>
-          <Grid className="content-text-context2">{t('PHILOSOPHYCONTENT2')}</Grid>
+        <Grid item xs={6} className={classes.contentGridImg}>
+          <div className={classes.contentDescImg}></div>
+        </Grid>
+      </Grid>
+
+      <Grid className={classes.mainContent}>
+        <Grid item xs={6} className={classes.contentGridImg}>
+          <div className={classes.contentImg}></div>
+        </Grid>
+        <Grid item xs={6} className={classes.contentGridText}>
+          <Grid className={classes.contentTextTitle}>{t('PHILOSOPHYTITLE')}</Grid>
+          <Grid className={classes.contentTextContext1}>{t('PHILOSOPHYCONTENT1')}</Grid>
+          <Grid className={classes.contentTextContext2}>{t('PHILOSOPHYCONTENT2')}</Grid>
         </Grid>
       </Grid>
       <Grid>
@@ -126,18 +119,18 @@ export default function Philosophy() {
           />
         </svg>
       </Grid>
-      <Grid className="philosophy-options">
-        <Grid container className="philosophy-options-btn">
+      <Grid className={classes.philosophyOptions}>
+        <Grid container className={classes.philosophyOptionsBtn}>
           <Grid
             item
             xs={2}
             id="optBtn1"
-            className={opt1 ? 'philosophy-options-btn-grid-active' : 'philosophy-options-btn-grid'}
+            className={opt1 ? classes.philosophyOptionsBtnGridActive : classes.philosophyOptionsBtnGrid}
             onMouseOver={handleOptBtn1}
           >
             <div
               id="optBtnItem1"
-              className={opt1 ? 'philosophy-options-btn-item-active' : 'philosophy-options-btn-item'}
+              className={opt1 ? classes.philosophyOptionsBtnItemActive : classes.philosophyOptionsBtnItem}
             >
               {t('PHILOSOPHYBTNNAME1')}
             </div>
@@ -146,12 +139,12 @@ export default function Philosophy() {
             item
             xs={2}
             id="optBtn2"
-            className={opt2 ? 'philosophy-options-btn-grid-active' : 'philosophy-options-btn-grid'}
+            className={opt2 ? classes.philosophyOptionsBtnGridActive : classes.philosophyOptionsBtnGrid}
             onMouseOver={handleOptBtn2}
           >
             <div
               id="optBtnItem2"
-              className={opt2 ? 'philosophy-options-btn-item-active' : 'philosophy-options-btn-item'}
+              className={opt2 ? classes.philosophyOptionsBtnItemActive : classes.philosophyOptionsBtnItem}
             >
               {t('PHILOSOPHYBTNNAME2')}
             </div>
@@ -160,12 +153,12 @@ export default function Philosophy() {
             item
             xs={2}
             id="optBtn3"
-            className={opt3 ? 'philosophy-options-btn-grid-active' : 'philosophy-options-btn-grid'}
+            className={opt3 ? classes.philosophyOptionsBtnGridActive : classes.philosophyOptionsBtnGrid}
             onMouseOver={handleOptBtn3}
           >
             <div
               id="optBtnItem3"
-              className={opt3 ? 'philosophy-options-btn-item-active' : 'philosophy-options-btn-item'}
+              className={opt3 ? classes.philosophyOptionsBtnItemActive : classes.philosophyOptionsBtnItem}
             >
               {t('PHILOSOPHYBTNNAME3')}
             </div>
@@ -174,12 +167,12 @@ export default function Philosophy() {
             item
             xs={2}
             id="optBtn4"
-            className={opt4 ? 'philosophy-options-btn-grid-active' : 'philosophy-options-btn-grid'}
+            className={opt4 ? classes.philosophyOptionsBtnGridActive : classes.philosophyOptionsBtnGrid}
             onMouseOver={handleOptBtn4}
           >
             <div
               id="optBtnItem4"
-              className={opt4 ? 'philosophy-options-btn-item-active' : 'philosophy-options-btn-item'}
+              className={opt4 ? classes.philosophyOptionsBtnItemActive : classes.philosophyOptionsBtnItem}
             >
               {t('PHILOSOPHYBTNNAME4')}
             </div>
@@ -188,12 +181,12 @@ export default function Philosophy() {
             item
             xs={2}
             id="optBtn5"
-            className={opt5 ? 'philosophy-options-btn-grid-active' : 'philosophy-options-btn-grid'}
+            className={opt5 ? classes.philosophyOptionsBtnGridActive : classes.philosophyOptionsBtnGrid}
             onMouseOver={handleOptBtn5}
           >
             <div
               id="optBtnItem5"
-              className={opt5 ? 'philosophy-options-btn-item-active' : 'philosophy-options-btn-item'}
+              className={opt5 ? classes.philosophyOptionsBtnItemActive : classes.philosophyOptionsBtnItem}
             >
               {t('PHILOSOPHYBTNNAME5')}
             </div>
@@ -202,12 +195,12 @@ export default function Philosophy() {
             item
             xs={2}
             id="optBtn6"
-            className={opt6 ? 'philosophy-options-btn-grid-active' : 'philosophy-options-btn-grid'}
+            className={opt6 ? classes.philosophyOptionsBtnGridActive : classes.philosophyOptionsBtnGrid}
             onMouseOver={handleOptBtn6}
           >
             <div
               id="optBtnItem6"
-              className={opt6 ? 'philosophy-options-btn-item-active' : 'philosophy-options-btn-item'}
+              className={opt6 ? classes.philosophyOptionsBtnItemActive : classes.philosophyOptionsBtnItem}
             >
               {t('PHILOSOPHYBTNNAME6')}
             </div>
