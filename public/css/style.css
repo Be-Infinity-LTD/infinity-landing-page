@@ -72,6 +72,7 @@ hr {
 }
 /* Navigation */
 #menu {
+  padding-top: 10px;
   transition: all 0.8s;
 }
 #menu .navbar-header {
@@ -563,4 +564,28 @@ label {
   right: 0;
   left: 0;
   z-index: 1030;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

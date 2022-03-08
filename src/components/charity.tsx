@@ -1,15 +1,14 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useLayoutEffect, useState } from 'react'
 import { Grid, Typography } from '@material-ui/core'
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles'
 import { useTranslation } from 'react-i18next'
+
 import { zoomIn } from 'react-animations'
 import styled, { keyframes } from 'styled-components'
-
 const zoomInAnimation = keyframes`${zoomIn}`
-const ZoomInDiv = styled.div`
+let ZoomInDiv = styled.div`
   animation: 1.5s ${zoomInAnimation};
 `
-
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     mainContainer: {
@@ -84,14 +83,18 @@ export default function Charity() {
   const [curCharityContent, setCurCharityContent] = useState(charityContent[0])
   let curIndex = 0
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const interval = setInterval(() => {
       setCharityContent()
     }, 5000)
     return () => clearInterval(interval)
-  }, [])
+  })
 
   const setCharityContent = () => {
+    ZoomInDiv = styled.div`
+      animation: 1.5s ${zoomInAnimation};
+    `
+
     curIndex++
     if (curIndex > charityTitle.length - 1) curIndex = 0
 
