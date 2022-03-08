@@ -90,13 +90,17 @@ export const useStyles = makeStyles((theme: Theme) =>
       color: '#AAAAAA',
       fontSize: '17px',
     },
+    academyLiveMainDiv: {
+      backgroundColor: '#151515',
+    },
     academyLiveMain: {
       display: 'flex',
-      backgroundColor: '#151515',
       transition: 'background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s',
-      marginTop: '0px',
-      marginBottom: '0px',
       padding: '60px 0px 60px 0px',
+      maxWidth: '1400px',
+      width: 'auto',
+      marginLeft: 'auto',
+      marginRight: 'auto',
     },
     academyLiveText: {
       marginLeft: '40px',
@@ -113,9 +117,10 @@ export const useStyles = makeStyles((theme: Theme) =>
       textShadow: '0px 0px 10px rgb(255 221 160 / 50%)',
       fontWeight: 600,
       marginBottom: '20px',
+      textAlign: 'center',
     },
     academyLiveContent: {
-      textAlign: 'left',
+      textAlign: 'center',
       color: '#A7A7A7',
       fontFamily: "'ZCOOL XiaoWei', Sans-serif",
       fontSize: '20px',

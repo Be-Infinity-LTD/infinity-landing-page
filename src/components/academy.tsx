@@ -63,38 +63,40 @@ export default function Academy() {
           />
         </svg>
       </Grid>
-      <Grid className={classes.academyLiveMain}>
-        <Grid item xs={6} sm={3} className={classes.academyLiveItem}>
-          <div className={classes.academyContentLiveImg}>
-            <a href="#">
-              <img src={'./img/landing/academy/learn_forex.jpg'} className={classes.contentLiveImg}></img>
-            </a>
-          </div>
-          <div className={classes.academyContentLiveTitle}>
-            <Typography className={classes.academyLiveItemTitle}>{t('INFINITYLIVEOPTIONTITLE1')}</Typography>
-          </div>
-          <div className={classes.academyContent}>
-            <Typography className={classes.academyLiveItemContent}>{t('INFINITYLIVEOPTIONCONTENT1')}</Typography>
-          </div>
+      <div className={classes.academyLiveMainDiv}>
+        <Grid className={classes.academyLiveMain}>
+          <Grid item xs={6} sm={3} className={classes.academyLiveItem}>
+            <div className={classes.academyContentLiveImg}>
+              <a href="#">
+                <img src={'./img/landing/academy/learn_forex.jpg'} className={classes.contentLiveImg}></img>
+              </a>
+            </div>
+            <div className={classes.academyContentLiveTitle}>
+              <Typography className={classes.academyLiveItemTitle}>{t('INFINITYLIVEOPTIONTITLE1')}</Typography>
+            </div>
+            <div className={classes.academyContent}>
+              <Typography className={classes.academyLiveItemContent}>{t('INFINITYLIVEOPTIONCONTENT1')}</Typography>
+            </div>
+          </Grid>
+          <Grid item xs={6} sm={3} className={classes.academyLiveItem}>
+            <div className={classes.academyContentLiveImg}>
+              <a href="#">
+                <img src={'./img/landing/academy/learn_stocks.jpg'} className={classes.contentLiveImg}></img>
+              </a>
+            </div>
+            <div className={classes.academyContentLiveTitle}>
+              <Typography className={classes.academyLiveItemTitle}>{t('INFINITYLIVEOPTIONTITLE2')}</Typography>
+            </div>
+            <div className={classes.academyContent}>
+              <Typography className={classes.academyLiveItemContent}>{t('INFINITYLIVEOPTIONCONTENT2')}</Typography>
+            </div>
+          </Grid>
+          <Grid item xs={6} className={classes.academyLiveText}>
+            <Typography className={classes.academyLiveTitle}>{t('INFINITYLIVETITLE')}</Typography>
+            <Typography className={classes.academyLiveContent}>{t('INFINITYLIVECONTENT')}</Typography>
+          </Grid>
         </Grid>
-        <Grid item xs={6} sm={3} className={classes.academyLiveItem}>
-          <div className={classes.academyContentLiveImg}>
-            <a href="#">
-              <img src={'./img/landing/academy/learn_stocks.jpg'} className={classes.contentLiveImg}></img>
-            </a>
-          </div>
-          <div className={classes.academyContentLiveTitle}>
-            <Typography className={classes.academyLiveItemTitle}>{t('INFINITYLIVEOPTIONTITLE2')}</Typography>
-          </div>
-          <div className={classes.academyContent}>
-            <Typography className={classes.academyLiveItemContent}>{t('INFINITYLIVEOPTIONCONTENT2')}</Typography>
-          </div>
-        </Grid>
-        <Grid item xs={6} className={classes.academyLiveText}>
-          <Typography className={classes.academyLiveTitle}>{t('INFINITYLIVETITLE')}</Typography>
-          <Typography className={classes.academyLiveContent}>{t('INFINITYLIVECONTENT')}</Typography>
-        </Grid>
-      </Grid>
+      </div>
     </div>
   )
 }
