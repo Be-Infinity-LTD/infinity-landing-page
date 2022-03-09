@@ -68,13 +68,13 @@ export const useStyles = makeStyles((theme: Theme) =>
       textAlign: 'left',
       fontWeight: 600,
       letterSpacing: '2px',
-      marginBottom: '20px',
+      paddingBottom: '20px',
     },
     contentTextContext1: {
       textAlign: 'justify',
       color: '#999999',
       fontSize: '16px',
-      marginBottom: '20px',
+      paddingBottom: '20px',
     },
     contentTextContext2: {
       color: '#ffffff',
@@ -82,10 +82,11 @@ export const useStyles = makeStyles((theme: Theme) =>
       fontFamily: "'ZCOOL XiaoWei', Sans-serif",
       fontSize: '30px',
       fontWeight: 400,
-      marginBottom: '20px',
+      paddingBottom: '20px',
     },
     philosophyOptions: {
       padding: '80px 50px',
+      display: 'block',
     },
     philosophyOptionsBtn: {
       border: '1px solid #d5d5d5',
@@ -104,8 +105,9 @@ export const useStyles = makeStyles((theme: Theme) =>
     philosophyOptionsBtnItemActive: {
       fontSize: '16px',
       fontFamily: "'Spartan', sans-serif",
-      overflow: 'auto',
       fontWeight: 600,
+      wordBreak: 'break-all',
+      padding: '7px',
       color: '#5a8cdd',
       height: 'calc(80% - 2px)',
       width: '100%',
@@ -145,6 +147,35 @@ export const useStyles = makeStyles((theme: Theme) =>
       fontWeight: 500,
       textAlign: 'left',
       color: 'black',
+    },
+    [theme.breakpoints.down('sm')]: {
+      contentImgAndText: {
+        display: 'block',
+      },
+      philosophyOptions: {
+        display: 'flex',
+        justifyContent: 'center',
+      },
+      philosophyOptionsBtn: {
+        display: 'block',
+      },
+      philosophyOptionsBtnGridActive: {
+        background: 'white',
+        transform: 'none',
+        borderTop: 'none',
+        width: '250px',
+        marginTop: '5px',
+        marginBottom: '5px',
+      },
+      philosophyOptionsBtnItemActive: {
+        height: '60px',
+        transform: 'none',
+      },
+      philosophyOptionsContent: {
+        margin: '0px 10px',
+        padding: '30px 20px',
+        height: '100%',
+      },
     },
   }),
 )

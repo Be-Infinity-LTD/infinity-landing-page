@@ -29,6 +29,8 @@ export const useStyles = makeStyles((theme: Theme) =>
     },
     rightContent: {
       padding: '30px',
+      marginTop: "auto",
+      marginBottom: "auto",
     },
     contentContent: {
       fontFamily: "'Spartan', Sans-serif",
@@ -52,6 +54,12 @@ export const useStyles = makeStyles((theme: Theme) =>
       boxShadow: '-10px 8px 40px 0px rgb(0 0 0 / 30%)',
       width: '-webkit-fill-available',
       height: 'fit-content',
+    },
+    [theme.breakpoints.down('sm')]: {
+      charityContent: {
+        width: '100%',
+        display: 'block',
+      },
     },
   }),
 )

@@ -53,7 +53,7 @@ export const useStyles = makeStyles((theme: Theme) =>
       borderWidth: '10px 5px 10px 5px',
       borderColor: '#292b2f',
       boxShadow: '0px 5px 45px 0px rgb(0 0 0 / 75%)',
-      margin: '0px 15px 0px 15px',
+      margin: '15px',
       padding: '0px 0px 30px 0px',
       backgroundColor: '#151515',
       borderRadius: '25px 25px 25px 25px',
@@ -160,6 +160,29 @@ export const useStyles = makeStyles((theme: Theme) =>
     academyLiveItemContent: {
       marginBottom: '1rem',
       fontSize: '16px',
+    },
+    [theme.breakpoints.down('sm')]: {
+      mainContent: {
+        display: 'block',
+      },
+      academyContentGrid: {
+        width: '100%',
+      },
+      academyLiveMain: {
+        display: 'block',
+      },
+      academyLiveItem: {
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        marginBottom: '20px',
+        maxWidth: '50%',
+      },
+      academyLiveText: {
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        marginBottom: '20px',
+        maxWidth: '70%',
+      },
     },
   }),
 )

@@ -82,5 +82,16 @@ export const useStyles = makeStyles((theme: Theme) =>
       stroke: '#151515',
       fill: '#151515',
     },
+    [theme.breakpoints.down('sm')]: {
+      toolsItems: {
+        display: 'block',
+      },
+      toolsItem: {
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        marginBottom: '20px',
+        maxWidth: '50%',
+      },
+    },
   }),
 )

@@ -83,13 +83,13 @@ export default function Philosophy() {
       </Grid>
       <Grid className={classes.mainContent}>
         <div className={classes.contentImgAndText}>
-          <Grid item xs={7} className={classes.contentGridText}>
+          <Grid item sm={12} md={6} className={classes.contentGridText}>
             <Grid className={classes.contentTextTitle}>{t('PHILOSOPHYDESCTITLE')}</Grid>
             <Grid className={classes.contentTextContext1}>{t('PHILOSOPHYDESCCONTENT1')}</Grid>
             <Grid className={classes.contentTextContext1}>{t('PHILOSOPHYDESCCONTENT2')}</Grid>
             <Grid className={classes.contentTextContext2}>{t('PHILOSOPHYDESCCONTENT3')}</Grid>
           </Grid>
-          <Grid item xs={5} className={classes.contentGridImg}>
+          <Grid item sm={12} md={6} className={classes.contentGridImg}>
             <img src="./img/landing/philosopydesc.jpg" alt="contentImg" className={classes.contentImg} />
           </Grid>
         </div>
@@ -97,37 +97,22 @@ export default function Philosophy() {
 
       <Grid className={classes.mainContent}>
         <div className={classes.contentImgAndText}>
-          <Grid item xs={5} className={classes.contentGridImg}>
+          <Grid item sm={12} md={6} className={classes.contentGridImg}>
             <img src="./img/landing/philosophy.jpg" alt="contentImg" className={classes.contentImg} />
           </Grid>
-          <Grid item xs={7} className={classes.contentGridText}>
+          <Grid item sm={12} md={6} className={classes.contentGridText}>
             <Grid className={classes.contentTextTitle}>{t('PHILOSOPHYTITLE')}</Grid>
             <Grid className={classes.contentTextContext1}>{t('PHILOSOPHYCONTENT1')}</Grid>
             <Grid className={classes.contentTextContext2}>{t('PHILOSOPHYCONTENT2')}</Grid>
           </Grid>
         </div>
       </Grid>
-      <Grid>
-        <svg
-          viewBox="0 0 1000 20"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-          className={classes.svgMainDown}
-        >
-          <path
-            className={classes.pathStyleDown}
-            d="M 500, 20
-               L 0, 6.1
-               V 0 h 1000 v 6.1
-               L 500, 20 z"
-          />
-        </svg>
-      </Grid>
       <Grid className={classes.philosophyOptions}>
         <Grid container className={classes.philosophyOptionsBtn}>
           <Grid
             item
-            xs={2}
+            sm={12}
+            md={2}
             id="optBtn1"
             className={opt1 ? classes.philosophyOptionsBtnGridActive : classes.philosophyOptionsBtnGrid}
             onMouseOver={handleOptBtn1}
@@ -141,7 +126,8 @@ export default function Philosophy() {
           </Grid>
           <Grid
             item
-            xs={2}
+            sm={12}
+            md={2}
             id="optBtn2"
             className={opt2 ? classes.philosophyOptionsBtnGridActive : classes.philosophyOptionsBtnGrid}
             onMouseOver={handleOptBtn2}
@@ -155,7 +141,8 @@ export default function Philosophy() {
           </Grid>
           <Grid
             item
-            xs={2}
+            sm={12}
+            md={2}
             id="optBtn3"
             className={opt3 ? classes.philosophyOptionsBtnGridActive : classes.philosophyOptionsBtnGrid}
             onMouseOver={handleOptBtn3}
@@ -169,7 +156,8 @@ export default function Philosophy() {
           </Grid>
           <Grid
             item
-            xs={2}
+            sm={12}
+            md={2}
             id="optBtn4"
             className={opt4 ? classes.philosophyOptionsBtnGridActive : classes.philosophyOptionsBtnGrid}
             onMouseOver={handleOptBtn4}
@@ -183,7 +171,8 @@ export default function Philosophy() {
           </Grid>
           <Grid
             item
-            xs={2}
+            sm={12}
+            md={2}
             id="optBtn5"
             className={opt5 ? classes.philosophyOptionsBtnGridActive : classes.philosophyOptionsBtnGrid}
             onMouseOver={handleOptBtn5}
@@ -197,7 +186,8 @@ export default function Philosophy() {
           </Grid>
           <Grid
             item
-            xs={2}
+            sm={12}
+            md={2}
             id="optBtn6"
             className={opt6 ? classes.philosophyOptionsBtnGridActive : classes.philosophyOptionsBtnGrid}
             onMouseOver={handleOptBtn6}

@@ -57,6 +57,8 @@ export default function Navigation() {
   const { t, i18n } = useTranslation()
   const [strCurLang, setCurStrLang] = useState('English')
   const [strCurAvatar, setCurAvatar] = useState('./img/flags/english.svg')
+  const [curStyleMenn, setCurStyleMenu] = useState('button')
+  const [curTogMenu, setCurTogMenu] = useState('menu')
 
   const anchorRef = React.useRef<HTMLButtonElement>(null)
   const [open, setOpen] = React.useState(false)
@@ -103,6 +105,15 @@ export default function Navigation() {
     setCurAvatar('./img/flags/turkey.svg')
 
     setOpen(false)
+  }
+  const handleShowMenu = () => {
+    if( curStyleMenn === "button") {
+      setCurStyleMenu("button menu-opened")
+      setCurTogMenu("menu open")
+    } else {
+      setCurStyleMenu("button")
+      setCurTogMenu("menu")
+    }
   }
 
   return (
@@ -215,6 +226,20 @@ export default function Navigation() {
             </li>
           </ul>
         </div>
+        <nav id='cssmenu'>
+          <div id="head-mobile"></div>
+          <div className={curStyleMenn} onClick={handleShowMenu}></div>
+          <ul id="menu-main-menu-english" className={curTogMenu}>
+            <li><a href="#philosophy">{t('PHILOSOPHY')}</a></li>
+            <li><a href="#charity">{t('CHARITY')}</a></li>
+            <li><a href="#community">{t('COMMUNITY')}</a></li>
+            <li><a href="#academy">{t('ACADEMY')}</a></li>
+            <li><a href="#tools">{t('TOOLS')}</a></li>
+            <li><a href="#path">{t('PATHS')}</a></li>
+            <li><a href="#faq">{t('FAQ')}</a></li>
+            <li><a href="#aboutus">{t('ABOUTUS')}</a></li>
+          </ul>
+        </nav>
       </div>
     </nav>
   )

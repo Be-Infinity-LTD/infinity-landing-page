@@ -59,5 +59,10 @@ export const useStyles = makeStyles((theme: Theme) =>
       fontWeight: 300,
       textAlign: 'center',
     },
+    [theme.breakpoints.down('sm')]: {
+      charityContent: {
+        display: 'none',
+      },
+    },
   }),
 )

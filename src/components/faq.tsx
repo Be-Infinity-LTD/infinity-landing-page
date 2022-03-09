@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme: Theme) =>
       fontFamily: "'Spartan', Sans-serif",
       fontSize: '20px',
       fontWeight: 600,
-      textAlign: 'center',
+      textAlign: 'left',
     },
     secondaryHeading: {
       fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",

@@ -10,11 +10,11 @@ export default function Header() {
   return (
     <div id="header" className={classes.mainContainer}>
       <Grid className={classes.charityContent}>
-        <Grid item xs={6} className={classes.leftContent}>
+        <Grid item sm={12} md={6} className={classes.leftContent}>
           <Typography className={classes.contentTitle}>{t('HOMECONTENT')}</Typography>
           <Typography className={classes.contentContent}>{t('HOMETITLE')}</Typography>
         </Grid>
-        <Grid item xs={6} className={classes.rightContent}>
+        <Grid item sm={12} md={6} className={classes.rightContent}>
           <img className={classes.homeImage} alt="headerImg" src="/img/landing/banner.jpg" />
         </Grid>
       </Grid>
