@@ -39,27 +39,22 @@ export default function Charity() {
   }
 
   return (
-    <div id="charity" className={classes.mainContainer}>
-      <div>
-        <Grid className={classes.colorBack}></Grid>
-      </div>
-      <Grid className={classes.charityContent}>
-        <Grid item xs={6} className={classes.leftContent}>
-          <Typography className={classes.title}>{t('CHARITY')}</Typography>
-        </Grid>
-        <Grid item xs={6} className={classes.rightContent}>
-          <div>
-            {curCharityTitle.length > 0 ? (
-              <>
-                <ZoomInDiv className={classes.charityContent1}>{t(curCharityTitle)}</ZoomInDiv>
-                <ZoomInDiv className={classes.charityContent2}>{t(curCharityContent)}</ZoomInDiv>
-              </>
-            ) : (
-              <></>
-            )}
-          </div>
-        </Grid>
+    <Grid id="charity" className={classes.charityContent}>
+      <Grid item xs={6} className={classes.leftContent}>
+        <Typography className={classes.title}>{t('CHARITY')}</Typography>
       </Grid>
-    </div>
+      <Grid item xs={6} className={classes.rightContent}>
+        <div>
+          {curCharityTitle.length > 0 ? (
+            <>
+              <ZoomInDiv className={classes.charityContent1}>{t(curCharityTitle)}</ZoomInDiv>
+              <ZoomInDiv className={classes.charityContent2}>{t(curCharityContent)}</ZoomInDiv>
+            </>
+          ) : (
+            <></>
+          )}
+        </div>
+      </Grid>
+    </Grid>
   )
 }

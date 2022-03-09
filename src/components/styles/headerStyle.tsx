@@ -7,7 +7,6 @@ export const useStyles = makeStyles((theme: Theme) =>
       backgroundPosition: 'center center',
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
-      transition: 'background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s',
       position: 'relative',
       padding: '30px',
     },
@@ -15,7 +14,6 @@ export const useStyles = makeStyles((theme: Theme) =>
       height: '100%',
       backgroundColor: '#FFFFFF',
       opacity: '0.94',
-      transition: 'background 0.3s, border-radius 0.3s, opacity 0.3s',
     },
     charityContent: {
       display: 'flex',

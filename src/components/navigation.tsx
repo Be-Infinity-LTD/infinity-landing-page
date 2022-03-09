@@ -1,8 +1,13 @@
-import { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles'
-import Select from '@material-ui/core/Select'
 import { Avatar, MenuItem } from '@material-ui/core'
+import Button from '@material-ui/core/Button'
+import Popper from '@material-ui/core/Popper'
+import Grow from '@material-ui/core/Grow'
+import ClickAwayListener from '@material-ui/core/ClickAwayListener'
+import Paper from '@material-ui/core/Paper'
+import MenuList from '@material-ui/core/MenuList'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -32,11 +37,17 @@ const useStyles = makeStyles((theme: Theme) =>
     langItem: {
       fontSize: '15px',
       display: 'flex',
+      '&:hover': {
+        backgroundColor: 'transparent',
+      },
     },
     avatar: {
       width: '30px',
       height: '30px',
       marginRight: '5px',
+    },
+    mainLangMenu: {
+      zIndex: 100,
     },
   }),
 )
@@ -44,11 +55,54 @@ const useStyles = makeStyles((theme: Theme) =>
 export default function Navigation() {
   const classes = useStyles()
   const { t, i18n } = useTranslation()
+  const [strCurLang, setCurStrLang] = useState('English')
+  const [strCurAvatar, setCurAvatar] = useState('./img/flags/english.svg')
 
-  useEffect(() => {}, [])
+  const anchorRef = React.useRef<HTMLButtonElement>(null)
+  const [open, setOpen] = React.useState(false)
+  const handleToggle = () => {
+    setOpen((prevOpen) => !prevOpen)
+  }
+  const handleClose = (event: React.MouseEvent<EventTarget>) => {
+    if (anchorRef.current && anchorRef.current.contains(event.target as HTMLElement)) {
+      return
+    }
+    setOpen(false)
+  }
+  function handleListKeyDown(event: React.KeyboardEvent) {
+    if (event.key === 'Tab') {
+      event.preventDefault()
+      setOpen(false)
+    }
+  }
 
-  const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
-    i18n.changeLanguage(event.target.value as string)
+  const handleEnglish = () => {
+    i18n.changeLanguage('en')
+    setCurStrLang('English')
+    setCurAvatar('./img/flags/english.svg')
+
+    setOpen(false)
+  }
+  const handleFrench = () => {
+    i18n.changeLanguage('fr')
+    setCurStrLang('Française')
+    setCurAvatar('./img/flags/france.svg')
+
+    setOpen(false)
+  }
+  const handleGerman = () => {
+    i18n.changeLanguage('ge')
+    setCurStrLang('Deutsch')
+    setCurAvatar('./img/flags/germany.svg')
+
+    setOpen(false)
+  }
+  const handleTurkish = () => {
+    i18n.changeLanguage('tu')
+    setCurStrLang('Türkiye')
+    setCurAvatar('./img/flags/turkey.svg')
+
+    setOpen(false)
   }
 
   return (
@@ -56,24 +110,61 @@ export default function Navigation() {
       <div className="container">
         <div className="navbar-header">
           <div className="navbar-lang">
-            <Select defaultValue="en" id="grouped-select" className={classes.langSel} onChange={handleChange}>
-              <MenuItem value="en" className={classes.langItem}>
-                <Avatar className={classes.avatar} alt="Remy Sharp" src="./img/flags/english.svg" />
-                English
-              </MenuItem>
-              <MenuItem value="ge" className={classes.langItem}>
-                <Avatar className={classes.avatar} alt="Remy Sharp" src="./img/flags/germany.svg" />
-                Deutsch
-              </MenuItem>
-              <MenuItem value="fr" className={classes.langItem}>
-                <Avatar className={classes.avatar} alt="Remy Sharp" src="./img/flags/france.svg" />
-                Française
-              </MenuItem>
-              <MenuItem value="tu" className={classes.langItem}>
-                <Avatar className={classes.avatar} alt="Remy Sharp" src="./img/flags/turkey.svg" />
-                Türkiye
-              </MenuItem>
-            </Select>
+            <div>
+              <Button
+                ref={anchorRef}
+                aria-controls={open ? 'menu-list-grow' : undefined}
+                aria-haspopup="true"
+                onClick={handleToggle}
+                className={classes.langItem}
+              >
+                <Avatar className={classes.avatar} alt="Remy Sharp" src={strCurAvatar} />
+                {strCurLang}
+              </Button>
+              <Popper
+                open={open}
+                anchorEl={anchorRef.current}
+                role={undefined}
+                transition
+                disablePortal
+                className={classes.mainLangMenu}
+              >
+                {({ TransitionProps, placement }) => (
+                  <Grow
+                    {...TransitionProps}
+                    style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
+                  >
+                    <Paper>
+                      <ClickAwayListener onClickAway={handleClose}>
+                        <MenuList
+                          autoFocusItem={open}
+                          id="menu-list-grow"
+                          className={classes.langSel}
+                          onKeyDown={handleListKeyDown}
+                        >
+                          <MenuItem className={classes.langItem} onClick={handleEnglish}>
+                            <Avatar className={classes.avatar} alt="Remy Sharp" src="./img/flags/english.svg" />
+                            English
+                          </MenuItem>
+                          <MenuItem className={classes.langItem} onClick={handleFrench}>
+                            <Avatar className={classes.avatar} alt="Remy Sharp" src="./img/flags/france.svg" />
+                            Française
+                          </MenuItem>
+                          <MenuItem className={classes.langItem} onClick={handleGerman}>
+                            <Avatar className={classes.avatar} alt="Remy Sharp" src="./img/flags/germany.svg" />
+                            Deutsch
+                          </MenuItem>
+                          <MenuItem className={classes.langItem} onClick={handleTurkish}>
+                            <Avatar className={classes.avatar} alt="Remy Sharp" src="./img/flags/turkey.svg" />
+                            Türkiye
+                          </MenuItem>
+                        </MenuList>
+                      </ClickAwayListener>
+                    </Paper>
+                  </Grow>
+                )}
+              </Popper>
+            </div>
           </div>
           <div className="navbar-logo">
             <img width="150" height="68" src="img/logo.png" alt="logo" />

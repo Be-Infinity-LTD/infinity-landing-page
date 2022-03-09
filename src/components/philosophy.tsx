@@ -82,26 +82,30 @@ export default function Philosophy() {
         </svg>
       </Grid>
       <Grid className={classes.mainContent}>
-        <Grid item xs={6} className={classes.contentGridText}>
-          <Grid className={classes.contentTextTitle}>{t('PHILOSOPHYDESCTITLE')}</Grid>
-          <Grid className={classes.contentTextContext1}>{t('PHILOSOPHYDESCCONTENT1')}</Grid>
-          <Grid className={classes.contentTextContext1}>{t('PHILOSOPHYDESCCONTENT2')}</Grid>
-          <Grid className={classes.contentTextContext2}>{t('PHILOSOPHYDESCCONTENT3')}</Grid>
-        </Grid>
-        <Grid item xs={6} className={classes.contentGridImg}>
-          <div className={classes.contentDescImg}></div>
-        </Grid>
+        <div className={classes.contentImgAndText}>
+          <Grid item xs={7} className={classes.contentGridText}>
+            <Grid className={classes.contentTextTitle}>{t('PHILOSOPHYDESCTITLE')}</Grid>
+            <Grid className={classes.contentTextContext1}>{t('PHILOSOPHYDESCCONTENT1')}</Grid>
+            <Grid className={classes.contentTextContext1}>{t('PHILOSOPHYDESCCONTENT2')}</Grid>
+            <Grid className={classes.contentTextContext2}>{t('PHILOSOPHYDESCCONTENT3')}</Grid>
+          </Grid>
+          <Grid item xs={5} className={classes.contentGridImg}>
+            <img src="./img/landing/philosopydesc.jpg" alt="contentImg" className={classes.contentImg} />
+          </Grid>
+        </div>
       </Grid>
 
       <Grid className={classes.mainContent}>
-        <Grid item xs={6} className={classes.contentGridImg}>
-          <div className={classes.contentImg}></div>
-        </Grid>
-        <Grid item xs={6} className={classes.contentGridText}>
-          <Grid className={classes.contentTextTitle}>{t('PHILOSOPHYTITLE')}</Grid>
-          <Grid className={classes.contentTextContext1}>{t('PHILOSOPHYCONTENT1')}</Grid>
-          <Grid className={classes.contentTextContext2}>{t('PHILOSOPHYCONTENT2')}</Grid>
-        </Grid>
+        <div className={classes.contentImgAndText}>
+          <Grid item xs={5} className={classes.contentGridImg}>
+            <img src="./img/landing/philosophy.jpg" alt="contentImg" className={classes.contentImg} />
+          </Grid>
+          <Grid item xs={7} className={classes.contentGridText}>
+            <Grid className={classes.contentTextTitle}>{t('PHILOSOPHYTITLE')}</Grid>
+            <Grid className={classes.contentTextContext1}>{t('PHILOSOPHYCONTENT1')}</Grid>
+            <Grid className={classes.contentTextContext2}>{t('PHILOSOPHYCONTENT2')}</Grid>
+          </Grid>
+        </div>
       </Grid>
       <Grid>
         <svg

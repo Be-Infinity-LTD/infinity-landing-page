@@ -220,13 +220,6 @@ a:focus,
   outline: none;
   outline-offset: none;
 }
-
-/* Charity Section */
-#charity {
-  background: url(../img/landing/charity.jpg) no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
 /* Community Section */
 #community {
   padding: 100px 0;

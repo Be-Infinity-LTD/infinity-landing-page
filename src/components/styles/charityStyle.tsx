@@ -2,26 +2,24 @@ import { makeStyles, Theme, createStyles } from '@material-ui/core/styles'
 
 export const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    mainContainer: {
-      position: 'relative',
-    },
     colorBack: {
       backgroundColor: '#515151',
       opacity: '0.58',
       height: '85%',
     },
     charityContent: {
+      backgroundPosition: 'center center',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover',
+      backgroundImage:
+        'linear-gradient( rgba(81, 81, 81, 0.3), rgba(255, 255, 255, 0.3) ), url(img/landing/charity.jpg)',
       display: 'flex',
       justifyContent: 'center',
-      padding: '60px',
+      padding: '100px',
       width: '100%',
-      height: '100%',
-      position: 'absolute',
-      top: 0,
-      left: 0,
+      height: '600px',
     },
     leftContent: {
-      minHeight: '400px',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
@@ -42,7 +40,6 @@ export const useStyles = makeStyles((theme: Theme) =>
       backgroundColor: '#FFFFFF1F',
       padding: '60px',
       borderRadius: '20px',
-      minHeight: '400px',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',

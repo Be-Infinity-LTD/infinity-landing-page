@@ -4,7 +4,6 @@ export const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     mainContent: {
       backgroundColor: '#151515',
-      transition: 'background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s',
       paddingTop: '80px',
     },
     toolsContent: {
@@ -43,7 +42,6 @@ export const useStyles = makeStyles((theme: Theme) =>
       borderWidth: '2px',
       borderColor: '#333333',
       boxShadow: '0px 0px 0px 0px rgb(255 221 160 / 0%)',
-      transition: 'background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s',
       margin: '0px 15px 0px 15px',
       padding: '10px 15px 30px 15px',
       '&:hover': {
@@ -64,6 +62,7 @@ export const useStyles = makeStyles((theme: Theme) =>
     toolsLiveItemContent: {
       marginBottom: '1rem',
       fontSize: '16px',
+      textAlign: 'justify',
     },
     toolsContentLiveTitle: {
       margin: '15px 0px',

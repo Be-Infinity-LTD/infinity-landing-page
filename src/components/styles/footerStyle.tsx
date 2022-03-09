@@ -19,7 +19,6 @@ export const useStyles = makeStyles((theme: Theme) =>
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
       backgroundAttachment: 'fixed',
-      transition: 'background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s',
       padding: '0% 10% 0% 10%',
       position: 'relative',
       left: '0px',
@@ -28,7 +27,6 @@ export const useStyles = makeStyles((theme: Theme) =>
     },
     disclaimerGrid: {
       boxShadow: '0px 0px 40px 5px rgb(0 0 0 / 20%)',
-      transition: 'background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s',
       marginTop: '0px',
       marginBottom: '0px',
       padding: '30px 50px 30px 50px',

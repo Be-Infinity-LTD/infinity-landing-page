@@ -9,9 +9,6 @@ export default function Header() {
 
   return (
     <div id="header" className={classes.mainContainer}>
-      {/* <div>
-        <Grid className={classes.colorBack}></Grid>
-      </div> */}
       <Grid className={classes.charityContent}>
         <Grid item xs={6} className={classes.leftContent}>
           <Typography className={classes.contentTitle}>{t('HOMECONTENT')}</Typography>

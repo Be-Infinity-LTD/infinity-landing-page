@@ -59,7 +59,6 @@ export const useStyles = makeStyles((theme: Theme) =>
       borderRadius: '25px 25px 25px 25px',
       '&:hover': {
         boxShadow: '0px 0px 10px 0px rgb(0 0 0 / 75%)',
-        transition: 'background 0.3s, border 0.2s, border-radius 0.2s, box-shadow 0.2s',
       },
     },
     contentItemImg: {
@@ -95,7 +94,6 @@ export const useStyles = makeStyles((theme: Theme) =>
     },
     academyLiveMain: {
       display: 'flex',
-      transition: 'background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s',
       padding: '60px 0px 60px 0px',
       maxWidth: '1400px',
       width: 'auto',
@@ -134,12 +132,10 @@ export const useStyles = makeStyles((theme: Theme) =>
       borderWidth: '2px 2px 2px 2px',
       borderColor: '#333333',
       boxShadow: '0px 0px 0px 0px rgb(255 221 160 / 0%)',
-      transition: 'background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s',
       margin: '0px 15px 0px 15px',
       padding: '10px 15px 30px 15px',
       '&:hover': {
         boxShadow: '0px 0px 26px 0px rgb(149 174 215 / 73%)',
-        transition: 'background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s',
       },
     },
     academyContentLiveImg: {

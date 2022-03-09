@@ -7,8 +7,13 @@ export const useStyles = makeStyles((theme: Theme) =>
     },
     mainContent: {
       backgroundColor: '#090909',
+    },
+    contentImgAndText: {
+      maxWidth: '1500px',
       display: 'flex',
       justifyContent: 'center',
+      marginLeft: 'auto',
+      marginRight: 'auto',
     },
     contentGridText: {
       marginTop: 'auto',
@@ -18,20 +23,29 @@ export const useStyles = makeStyles((theme: Theme) =>
     },
     contentGridImg: {
       padding: '50px 30px',
+      display: 'flex',
+      justifyContent: 'center',
     },
     contentDescImg: {
       borderRadius: '50px',
       border: 'solid 5px #222222',
       minHeight: '360px',
-      background: 'url(../img/landing/philosopydesc.jpg) center no-repeat',
-      backgroundSize: 'cover',
     },
     contentImg: {
       borderRadius: '50px',
       border: 'solid 5px #222222',
       minHeight: '360px',
-      background: 'url(../img/landing/philosophy.jpg) center no-repeat',
-      backgroundSize: 'cover',
+      backgroundImage: 'url(./img/landing/philosopydesc.jpg)',
+      backgroundRepeat: 'no-repeat',
+      width: '-webkit-fill-available',
+    },
+    contentOtherImg: {
+      borderRadius: '50px',
+      border: 'solid 5px #222222',
+      minHeight: '360px',
+      backgroundImage: 'url(./img/landing/philosophy.jpg)',
+      backgroundRepeat: 'no-repeat',
+      width: '-webkit-fill-available',
     },
     svgMainUp: {
       backgroundColor: '#090909',

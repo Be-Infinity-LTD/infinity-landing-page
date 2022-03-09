@@ -53,6 +53,7 @@
   "devDependencies": {
     "@types/radium": "^0.24.4",
     "@types/react-animations": "^1.0.0",
+    "@types/react-imgix": "^9.4.0",
     "@types/smooth-scroll": "^16.1.1",
     "@types/styled-components": "^5.1.24"
   }
