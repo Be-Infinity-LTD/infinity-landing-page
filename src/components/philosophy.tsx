@@ -208,42 +208,42 @@ export default function Philosophy() {
         </Grid>
         <Grid>
           {opt1 ? (
-            <Grid className="philosophy-options-content" id="optContent1">
+            <Grid className={classes.philosophyOptionsContent} id="optContent1">
               {t('PHILOSOPHYBTNCONTENT1')}
             </Grid>
           ) : (
             <></>
           )}
           {opt2 ? (
-            <Grid className="philosophy-options-content" id="optContent2">
+            <Grid className={classes.philosophyOptionsContent} id="optContent2">
               {t('PHILOSOPHYBTNCONTENT2')}
             </Grid>
           ) : (
             <></>
           )}
           {opt3 ? (
-            <Grid className="philosophy-options-content" id="optContent3">
+            <Grid className={classes.philosophyOptionsContent} id="optContent3">
               {t('PHILOSOPHYBTNCONTENT3')}
             </Grid>
           ) : (
             <></>
           )}
           {opt4 ? (
-            <Grid className="philosophy-options-content" id="optContent4">
+            <Grid className={classes.philosophyOptionsContent} id="optContent4">
               {t('PHILOSOPHYBTNCONTENT4')}
             </Grid>
           ) : (
             <></>
           )}
           {opt5 ? (
-            <Grid className="philosophy-options-content" id="optContent5">
+            <Grid className={classes.philosophyOptionsContent} id="optContent5">
               {t('PHILOSOPHYBTNCONTENT5')}
             </Grid>
           ) : (
             <></>
           )}
           {opt6 ? (
-            <Grid className="philosophy-options-content" id="optContent6">
+            <Grid className={classes.philosophyOptionsContent} id="optContent6">
               {t('PHILOSOPHYBTNCONTENT6')}
             </Grid>
           ) : (

@@ -19,7 +19,7 @@ export default function Academy() {
     <div id="academy">
       <Grid>
         <div>
-          <img src="./img/landing/beach.jpg" alt="academy-image" className={classes.academyImage} />
+          <img src="./img/landing/beach.jpg" alt="academyImage" className={classes.academyImage} />
         </div>
         <Grid className={classes.main}>
           <Grid className={classes.academyTitleGrid}>
@@ -31,8 +31,8 @@ export default function Academy() {
               <Grid className={classes.academyContentGrid} key={i}>
                 <div className={classes.academyContentItem}>
                   <div className={classes.contentItemImg}>
-                    <a href="#">
-                      <img src={academyImgLists[i]} className={classes.contentImg}></img>
+                    <a href="/">
+                      <img src={academyImgLists[i]} alt="academyContentIMg" className={classes.contentImg}></img>
                     </a>
                   </div>
                   <div className={classes.academyContentTitle}>
@@ -67,8 +67,12 @@ export default function Academy() {
         <Grid className={classes.academyLiveMain}>
           <Grid item xs={6} sm={3} className={classes.academyLiveItem}>
             <div className={classes.academyContentLiveImg}>
-              <a href="#">
-                <img src={'./img/landing/academy/learn_forex.jpg'} className={classes.contentLiveImg}></img>
+              <a href="/">
+                <img
+                  src={'./img/landing/academy/learn_forex.jpg'}
+                  alt="imgLive"
+                  className={classes.contentLiveImg}
+                ></img>
               </a>
             </div>
             <div className={classes.academyContentLiveTitle}>
@@ -80,8 +84,12 @@ export default function Academy() {
           </Grid>
           <Grid item xs={6} sm={3} className={classes.academyLiveItem}>
             <div className={classes.academyContentLiveImg}>
-              <a href="#">
-                <img src={'./img/landing/academy/learn_stocks.jpg'} className={classes.contentLiveImg}></img>
+              <a href="/">
+                <img
+                  src={'./img/landing/academy/learn_stocks.jpg'}
+                  alt="imgStock"
+                  className={classes.contentLiveImg}
+                ></img>
               </a>
             </div>
             <div className={classes.academyContentLiveTitle}>

@@ -10,8 +10,8 @@ export default function Tools() {
     './img/landing/tools_trade.jpg',
     './img/landing/tools_indicator.jpg',
   ]
-  const toolsTitles = ['INFINITYLIVEOPTIONTITLE1', 'INFINITYLIVEOPTIONTITLE2', 'INFINITYLIVEOPTIONTITLE3']
-  const toolsContents = ['INFINITYLIVEOPTIONCONTENT1', 'INFINITYLIVEOPTIONCONTENT2', 'INFINITYLIVEOPTIONCONTENT3']
+  const toolsTitles = ['TOOLSEXPERTTITLE', 'TOOLSTRADETITLE', 'TOOLSINDICATORTITLE']
+  const toolsContents = ['TOOLSEXPERTCONTENT', 'TOOLSTRADECONTENT', 'TOOLSINDICATORCONTENT']
 
   return (
     <div id="tools" className={classes.mainContent}>
@@ -22,15 +22,15 @@ export default function Tools() {
           {toolsTitles.map((item, i) => (
             <Grid item xs={4} className={classes.toolsItem} key={i}>
               <div className={classes.toolsContentLiveImg}>
-                <a href="#">
-                  <img src={toolsImgs[i]} className={classes.contentLiveImg}></img>
+                <a href="/">
+                  <img src={toolsImgs[i]} alt="imgtools" className={classes.contentLiveImg}></img>
                 </a>
               </div>
               <div className={classes.toolsContentLiveTitle}>
-                <Typography className={classes.toolsLiveItemTitle}>{toolsTitles[i]}</Typography>
+                <Typography className={classes.toolsLiveItemTitle}>{t(toolsTitles[i])}</Typography>
               </div>
               <div className={classes.toolsContent}>
-                <Typography className={classes.toolsLiveItemContent}>{toolsContents[i]}</Typography>
+                <Typography className={classes.toolsLiveItemContent}>{t(toolsContents[i])}</Typography>
               </div>
             </Grid>
           ))}

@@ -18,7 +18,7 @@ export default function Header() {
           <Typography className={classes.contentContent}>{t('HOMETITLE')}</Typography>
         </Grid>
         <Grid item xs={6} className={classes.rightContent}>
-          <img className={classes.homeImage} src="/img/landing/banner.jpg" />
+          <img className={classes.homeImage} alt="headerImg" src="/img/landing/banner.jpg" />
         </Grid>
       </Grid>
     </div>
