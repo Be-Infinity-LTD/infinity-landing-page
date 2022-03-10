@@ -47,22 +47,6 @@ export default function Academy() {
           </div>
         </Grid>
       </Grid>
-      <Grid>
-        <svg
-          viewBox="0 0 1000 20"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-          className={classes.svgMainDown}
-        >
-          <path
-            className={classes.pathStyleDown}
-            d="M 500, 20
-               L 0, 6.1
-               V 0 h 1000 v 6.1
-               L 500, 20 z"
-          />
-        </svg>
-      </Grid>
       <div className={classes.academyLiveMainDiv}>
         <Grid className={classes.academyLiveMain}>
           <Grid item xs={6} sm={3} className={classes.academyLiveItem}>

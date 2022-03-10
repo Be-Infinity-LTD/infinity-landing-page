@@ -44,6 +44,8 @@ export const useStyles = makeStyles((theme: Theme) =>
       boxShadow: '0px 0px 0px 0px rgb(255 221 160 / 0%)',
       margin: '0px 15px 0px 15px',
       padding: '10px 15px 30px 15px',
+      minWidth: '270px',
+      transition: 'background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s',
       '&:hover': {
         boxShadow: '0px 0px 26px 0px rgb(149 174 215 / 73%)',
       },
@@ -62,7 +64,7 @@ export const useStyles = makeStyles((theme: Theme) =>
     toolsLiveItemContent: {
       marginBottom: '1rem',
       fontSize: '16px',
-      textAlign: 'justify',
+      textAlign: 'center',
     },
     toolsContentLiveTitle: {
       margin: '15px 0px',
@@ -75,13 +77,6 @@ export const useStyles = makeStyles((theme: Theme) =>
       fontWeight: 600,
       textTransform: 'uppercase',
     },
-    svgMain: {
-      backgroundColor: '#f6f6f6',
-    },
-    pathStyle: {
-      stroke: '#151515',
-      fill: '#151515',
-    },
     [theme.breakpoints.down('sm')]: {
       toolsItems: {
         display: 'block',
@@ -91,6 +86,9 @@ export const useStyles = makeStyles((theme: Theme) =>
         marginRight: 'auto',
         marginBottom: '20px',
         maxWidth: '50%',
+      },
+      toolsTextTitle: {
+        fontSize: '35px',
       },
     },
   }),

@@ -6,6 +6,7 @@ export const useStyles = makeStyles((theme: Theme) =>
       background: '#f6f6f6',
     },
     mainContent: {
+      marginBottom: '-1px',
       backgroundColor: '#090909',
     },
     contentImgAndText: {
@@ -26,15 +27,9 @@ export const useStyles = makeStyles((theme: Theme) =>
       display: 'flex',
       justifyContent: 'center',
     },
-    contentDescImg: {
-      borderRadius: '50px',
-      border: 'solid 5px #222222',
-      minHeight: '360px',
-    },
     contentImg: {
       borderRadius: '50px',
       border: 'solid 5px #222222',
-      minHeight: '360px',
       backgroundImage: 'url(./img/landing/philosopydesc.jpg)',
       backgroundRepeat: 'no-repeat',
       width: '-webkit-fill-available',
@@ -42,33 +37,19 @@ export const useStyles = makeStyles((theme: Theme) =>
     contentOtherImg: {
       borderRadius: '50px',
       border: 'solid 5px #222222',
-      minHeight: '360px',
       backgroundImage: 'url(./img/landing/philosophy.jpg)',
       backgroundRepeat: 'no-repeat',
       width: '-webkit-fill-available',
-    },
-    svgMainUp: {
-      backgroundColor: '#090909',
-    },
-    pathStyleUp: {
-      stroke: '#f6f6f6',
-      fill: '#f6f6f6',
-    },
-    svgMainDown: {
-      backgroundColor: '#f6f6f6',
-    },
-    pathStyleDown: {
-      stroke: '#090909',
-      fill: '#090909',
     },
     contentTextTitle: {
       color: '#ffffff',
       fontFamily: "'Spartan', Sans-serif",
       fontSize: '50px',
-      textAlign: 'left',
+      textAlign: 'center',
       fontWeight: 600,
       letterSpacing: '2px',
       paddingBottom: '20px',
+      paddingTop: '10px',
     },
     contentTextContext1: {
       textAlign: 'justify',
@@ -149,6 +130,9 @@ export const useStyles = makeStyles((theme: Theme) =>
       color: 'black',
     },
     [theme.breakpoints.down('sm')]: {
+      contentTextTitle: {
+        paddingTop: '20px',
+      },
       contentImgAndText: {
         display: 'block',
       },
@@ -163,18 +147,27 @@ export const useStyles = makeStyles((theme: Theme) =>
         background: 'white',
         transform: 'none',
         borderTop: 'none',
-        width: '250px',
+        width: '210px',
         marginTop: '5px',
         marginBottom: '5px',
+      },
+      philosophyOptionsBtnItem: {
+        fontSize: '14px',
       },
       philosophyOptionsBtnItemActive: {
         height: '60px',
         transform: 'none',
+        fontSize: '14px',
       },
       philosophyOptionsContent: {
         margin: '0px 10px',
         padding: '30px 20px',
         height: '100%',
+      },
+    },
+    [theme.breakpoints.down(500)]: {
+      philosophyOptionText: {
+        width: '140px',
       },
     },
   }),

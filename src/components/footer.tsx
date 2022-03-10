@@ -11,13 +11,13 @@ export default function Aboutus() {
     <div id="footer">
       <Grid className={classes.disclaimer}>
         <Grid className={classes.disclaimerGrid}>
-          <Grid item xs={6}>
+          <Grid item xs={12} sm={6} className={classes.disclaimerDesc}>
             <Typography className={classes.disclaimerTextTitle}>{t('FOOTERDISCLAIMERTITLE')}</Typography>
             <Typography className={classes.disclaimerTextContent}>{t('FOOTERDISCLAIMERCONTENT')}</Typography>
           </Grid>
-          <Grid item xs={6} className={classes.disclaimerAvatar}>
+          <Grid item xs={12} sm={6} className={classes.disclaimerAvatar}>
             <Grid className={classes.avaterImgMain}>
-              <img src="./img/logo.png" alt="footerImg" />
+              <img src="./img/logo.png" alt="footerImg" className={classes.footerImg} />
             </Grid>
             <Typography className={classes.avatarContent1}>{t('FOOTERICONTENT1')}</Typography>
             <Typography className={classes.avatarContent2}>{t('FOOTERICONTENT2')}</Typography>
@@ -26,12 +26,12 @@ export default function Aboutus() {
       </Grid>
       <Grid className={classes.footerSeperator}>
         <Grid className={classes.footerSepContent}>
-          <Grid item xs={3}>
+          <Grid item xs={3} className={classes.footerInfo}>
             <img width="150" height="68" src="img/logo.png" alt="logo" />
             <Typography className={classes.avatarContent}>{t('FOOTERLOGOCONTENT1')}</Typography>
             <Typography className={classes.avatarContent}>{t('FOOTERLOGOCONTENT2')}</Typography>
           </Grid>
-          <Grid item xs={3}>
+          <Grid item xs={3} className={classes.footerInfo}>
             <Typography className={classes.footerSepItemTitle}>
               <i className="fas fa-map-marker-alt"></i>&nbsp;
               {t('FOOTERADDRESS')}
@@ -44,7 +44,7 @@ export default function Aboutus() {
             <Typography className={classes.footerSepItemContent}>{t('FOOTERADDRESSCONTENT6')}</Typography>
             <Typography className={classes.footerSepItemContent}>{t('FOOTERADDRESSCONTENT7')}</Typography>
           </Grid>
-          <Grid item xs={3}>
+          <Grid item xs={3} className={classes.footerInfo}>
             <Typography className={classes.footerSepItemTitle}>
               <i className="fas fa-address-book"></i>&nbsp;{t('FOOTERCONTACT')}
             </Typography>
@@ -53,11 +53,11 @@ export default function Aboutus() {
               {t('FOOTERCONTACTEMAIL')}
             </Typography>
           </Grid>
-          <Grid item xs={3}>
+          <Grid item xs={3} className={classes.footerInfo}>
             <Typography className={classes.footerSepItemTitle}>
               <i className="fas fa-users"></i>&nbsp;{t('FOOTERSOCIALMEDIA')}
             </Typography>
-            <Typography className={classes.footerSepItemContent}>
+            <Typography className={classes.footerInfo}>
               <a href="/" className={classes.footerinstagram}>
                 <i className="fab fa-instagram"></i>&nbsp;{t('FOOTERSOCIALINSTAGRAM')}
               </a>
@@ -65,35 +65,43 @@ export default function Aboutus() {
           </Grid>
         </Grid>
         <Grid className={classes.footerTitles}>
-          <Typography className={classes.footerItemCaption}>{t('FOOTERASSETS')}</Typography>
-          <Typography className={classes.footerItemText}>{t('FOOTERDISCLAIMER')}</Typography>
-          <Typography className={classes.footerItemText}>{t('FOOTERLETTERS')}</Typography>
-          <Typography className={classes.footerItemText}>{t('FOOTERAGREE')}</Typography>
-          <Typography className={classes.footerItemText}>{t('FOOTERCOPY')}</Typography>
+          <Grid>
+            <Typography className={classes.footerItemCaption}>{t('FOOTERASSETS')}</Typography>
+          </Grid>
+          <Grid className={classes.footerAsstes}>
+            <Typography className={classes.footerItemText}>{t('FOOTERDISCLAIMER')}</Typography>
+            <Typography className={classes.footerItemText}>{t('FOOTERLETTERS')}</Typography>
+            <Typography className={classes.footerItemText}>{t('FOOTERAGREE')}</Typography>
+            <Typography className={classes.footerItemText}>{t('FOOTERCOPY')}</Typography>
+          </Grid>
         </Grid>
         <Grid className={classes.footerTitles}>
-          <Typography className={classes.footerItemCaption}>{t('FOOTERRESOURCES')}</Typography>
-          <a href="/" className={classes.footerItemText}>
-            {t('FOOTERTERMS')}
-          </a>
-          <a href="/" className={classes.footerItemText}>
-            {t('FOOTERPRIVACY')}
-          </a>
-          <a href="/" className={classes.footerItemText}>
-            {t('FOOTERPRICING')}
-          </a>
-          <a href="/" className={classes.footerItemText}>
-            {t('FOOTERREFUND')}
-          </a>
-          <a href="/" className={classes.footerItemText}>
-            {t('FOOTERCOOKIES')}
-          </a>
-          <a href="/" className={classes.footerItemText}>
-            {t('FOOTERSPAM')}
-          </a>
-          <a href="/" className={classes.footerItemText}>
-            {t('FOOTERPROCE')}
-          </a>
+          <Grid>
+            <Typography className={classes.footerItemCaption}>{t('FOOTERRESOURCES')}</Typography>
+          </Grid>
+          <Grid className={classes.footerAsstes}>
+            <a href="/" className={classes.footerItemText}>
+              {t('FOOTERTERMS')}
+            </a>
+            <a href="/" className={classes.footerItemText}>
+              {t('FOOTERPRIVACY')}
+            </a>
+            <a href="/" className={classes.footerItemText}>
+              {t('FOOTERPRICING')}
+            </a>
+            <a href="/" className={classes.footerItemText}>
+              {t('FOOTERREFUND')}
+            </a>
+            <a href="/" className={classes.footerItemText}>
+              {t('FOOTERCOOKIES')}
+            </a>
+            <a href="/" className={classes.footerItemText}>
+              {t('FOOTERSPAM')}
+            </a>
+            <a href="/" className={classes.footerItemText}>
+              {t('FOOTERPROCE')}
+            </a>
+          </Grid>
         </Grid>
       </Grid>
       <Grid className={classes.footerDesc}>

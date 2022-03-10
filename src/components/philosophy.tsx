@@ -65,22 +65,6 @@ export default function Philosophy() {
 
   return (
     <div id="philosophy" className={classes.textCenter}>
-      <Grid>
-        <svg
-          viewBox="0 0 1000 20"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-          className={classes.svgMainUp}
-        >
-          <path
-            className={classes.pathStyleUp}
-            d="M 500, 20
-               L 0, 6.1
-               V 0 h 1000 v 6.1
-               L 500, 20 z"
-          />
-        </svg>
-      </Grid>
       <Grid className={classes.mainContent}>
         <div className={classes.contentImgAndText}>
           <Grid item sm={12} md={6} className={classes.contentGridText}>
@@ -200,7 +184,7 @@ export default function Philosophy() {
             </div>
           </Grid>
         </Grid>
-        <Grid>
+        <Grid className={classes.philosophyOptionText}>
           {opt1 ? (
             <Grid className={classes.philosophyOptionsContent} id="optContent1">
               {t('PHILOSOPHYBTNCONTENT1')}

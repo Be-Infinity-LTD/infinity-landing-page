@@ -2,13 +2,6 @@ import { makeStyles, Theme, createStyles } from '@material-ui/core/styles'
 
 export const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    svgMainDown: {
-      backgroundColor: '#151515',
-    },
-    pathStyleDown: {
-      stroke: '#2d3036',
-      fill: '#2d3036',
-    },
     academyImage: {
       width: '100%',
     },
@@ -16,11 +9,13 @@ export const useStyles = makeStyles((theme: Theme) =>
       backgroundColor: 'transparent',
       backgroundImage: 'linear-gradient(200deg, #292a2e 50%, #2D3036 60%)',
       padding: '50px',
+      marginBottom: '-1px',
     },
     academyTitleGrid: {
       marginBottom: '50px',
     },
     academyTitle: {
+      marginTop: '20px',
       color: '#FFFFFF',
       fontFamily: "'Spartan', Sans-serif",
       fontSize: '60px',
@@ -57,6 +52,7 @@ export const useStyles = makeStyles((theme: Theme) =>
       padding: '0px 0px 30px 0px',
       backgroundColor: '#151515',
       borderRadius: '25px 25px 25px 25px',
+      transition: 'background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s',
       '&:hover': {
         boxShadow: '0px 0px 10px 0px rgb(0 0 0 / 75%)',
       },
@@ -70,7 +66,6 @@ export const useStyles = makeStyles((theme: Theme) =>
     },
     academyContentTitle: {
       margin: '15px 0px 15px 0px',
-      padding: '0px 15px 0px 15px',
     },
     ContentItemTitle: {
       color: '#FFFFFF',
@@ -134,6 +129,7 @@ export const useStyles = makeStyles((theme: Theme) =>
       boxShadow: '0px 0px 0px 0px rgb(255 221 160 / 0%)',
       margin: '0px 15px 0px 15px',
       padding: '10px 15px 30px 15px',
+      transition: 'background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s',
       '&:hover': {
         boxShadow: '0px 0px 26px 0px rgb(149 174 215 / 73%)',
       },
@@ -160,28 +156,40 @@ export const useStyles = makeStyles((theme: Theme) =>
     academyLiveItemContent: {
       marginBottom: '1rem',
       fontSize: '16px',
+      textAlign: 'center',
     },
     [theme.breakpoints.down('sm')]: {
       mainContent: {
         display: 'block',
+      },
+      academyTitle: {
+        fontSize: '40px',
+      },
+      academyTitleDesc: {
+        fontSize: '20px',
       },
       academyContentGrid: {
         width: '100%',
       },
       academyLiveMain: {
         display: 'block',
+        marginBottom: '-1px',
       },
       academyLiveItem: {
         marginLeft: 'auto',
         marginRight: 'auto',
         marginBottom: '20px',
         maxWidth: '50%',
+        minWidth: '270px',
       },
       academyLiveText: {
         marginLeft: 'auto',
         marginRight: 'auto',
         marginBottom: '20px',
         maxWidth: '70%',
+      },
+      academyLiveTitle: {
+        fontSize: '35px',
       },
     },
   }),

@@ -35,6 +35,20 @@ const useStyles = makeStyles((theme: Theme) =>
       fontSize: '18px',
       fontWeight: 400,
     },
+    [theme.breakpoints.down('sm')]: {
+      root: {
+        padding: '100px 50px',
+      },
+      faqTitle: {
+        fontSize: '35px',
+      },
+      heading: {
+        fontSize: '15px',
+      },
+      secondaryHeading: {
+        fontSize: '14px',
+      },
+    },
   }),
 )
 
@@ -61,7 +75,7 @@ export default function FAQ() {
     'FAQFIVCONTENT',
     'FAQSIXCONTENT',
     'FAQSEVCONTENT',
-    'FAQEIgCONTENT',
+    'FAQEIGCONTENT',
   ]
   const faqPanels = ['panel1', 'panel2', 'panel3', 'panel4', 'panel5', 'panel6', 'panel7', 'panel8']
 

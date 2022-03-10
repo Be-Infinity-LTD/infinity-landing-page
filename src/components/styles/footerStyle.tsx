@@ -22,8 +22,6 @@ export const useStyles = makeStyles((theme: Theme) =>
       padding: '0% 10% 0% 10%',
       position: 'relative',
       left: '0px',
-      display: 'flex',
-      justifyContent: 'center',
     },
     disclaimerGrid: {
       boxShadow: '0px 0px 40px 5px rgb(0 0 0 / 20%)',
@@ -37,6 +35,8 @@ export const useStyles = makeStyles((theme: Theme) =>
       display: 'flex',
       backgroundColor: 'white',
       maxWidth: '1200px',
+      marginLeft: 'auto',
+      marginRight: 'auto',
     },
     disclaimerTextTitle: {
       textAlign: 'left',
@@ -148,8 +148,8 @@ export const useStyles = makeStyles((theme: Theme) =>
       fontFamily: "'Montserrat', sans-serif",
       color: '#333',
       borderRight: '1px solid #333',
-      paddingRight: '5px',
-      width: '100px',
+      paddingRight: '10px',
+      width: '150px',
       textAlign: 'right',
     },
     footerItemText: {
@@ -157,7 +157,61 @@ export const useStyles = makeStyles((theme: Theme) =>
       fontSize: '15px',
       fontFamily: "'Montserrat', sans-serif",
       fontWeight: 500,
-      marginLeft: '30px',
+      marginLeft: '10px',
+      marginRight: '15px',
+      marginBottom: '5px',
+    },
+    footerImg: {
+      width: '-webkit-fill-available',
+      maxWidth: '300px',
+    },
+    footerAsstes: {
+      display: 'flex',
+      flexWrap: 'wrap',
+    },
+    [theme.breakpoints.down('sm')]: {
+      disclaimerDesc: {
+        maxWidth: '100%',
+        flexBasis: '100%',
+      },
+      disclaimerAvatar: {
+        maxWidth: '100%',
+        flexBasis: '100%',
+      },
+      disclaimerGrid: {
+        display: 'block',
+        padding: '20px',
+      },
+      disclaimerTextTitle: {
+        fontSize: '25px',
+        textAlign: 'center',
+      },
+      disclaimerTextContent: {
+        fontSize: '15px',
+      },
+      footerInfo: {
+        maxWidth: '50%',
+        flexBasis: '50%',
+        marginBottom: '20px',
+      },
+      footerSepContent: {
+        marginLeft: '50px',
+        marginRight: '50px',
+      },
+    },
+    [theme.breakpoints.down(400)]: {
+      footerInfo: {
+        maxWidth: '100%',
+        flexBasis: '100%',
+        marginBottom: '20px',
+      },
+      footerSepContent: {
+        marginLeft: '50px',
+        marginRight: '50px',
+      },
+      footerTitles: {
+        padding: '0px 10px 20px 20px',
+      },
     },
   }),
 )

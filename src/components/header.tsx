@@ -12,7 +12,7 @@ export default function Header() {
       <Grid className={classes.charityContent}>
         <Grid item sm={12} md={6} className={classes.leftContent}>
           <Typography className={classes.contentTitle}>{t('HOMECONTENT')}</Typography>
-          <Typography className={classes.contentContent}>{t('HOMETITLE')}</Typography>
+          <Typography className={classes.contentText}>{t('HOMETITLE')}</Typography>
         </Grid>
         <Grid item sm={12} md={6} className={classes.rightContent}>
           <img className={classes.homeImage} alt="headerImg" src="/img/landing/banner.jpg" />

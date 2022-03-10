@@ -9,14 +9,8 @@ import Paths from './components/paths'
 import FAQ from './components/faq'
 import Aboutus from './components/aboutus'
 import Footer from './components/footer'
-import SmoothScroll from 'smooth-scroll'
 import './App.css'
 import './i18n'
-
-export const scroll = new SmoothScroll('a[href*="#"]', {
-  speed: 1000,
-  speedAsDuration: true,
-})
 
 const App = () => {
   return (

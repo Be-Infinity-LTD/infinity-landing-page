@@ -29,10 +29,10 @@ export const useStyles = makeStyles((theme: Theme) =>
     },
     rightContent: {
       padding: '30px',
-      marginTop: "auto",
-      marginBottom: "auto",
+      marginTop: 'auto',
+      marginBottom: 'auto',
     },
-    contentContent: {
+    contentText: {
       fontFamily: "'Spartan', Sans-serif",
       fontSize: '50px',
       fontWeight: 600,
@@ -59,6 +59,12 @@ export const useStyles = makeStyles((theme: Theme) =>
       charityContent: {
         width: '100%',
         display: 'block',
+      },
+      contentTitle: {
+        fontSize: '20px',
+      },
+      contentText: {
+        fontSize: '30px',
       },
     },
   }),
