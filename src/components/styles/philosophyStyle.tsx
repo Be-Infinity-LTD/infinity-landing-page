@@ -142,14 +142,15 @@ export const useStyles = makeStyles((theme: Theme) =>
       },
       philosophyOptionsBtn: {
         display: 'block',
+        width: '200px',
       },
       philosophyOptionsBtnGridActive: {
         background: 'white',
         transform: 'none',
         borderTop: 'none',
-        width: '210px',
         marginTop: '5px',
         marginBottom: '5px',
+        width: '200px',
       },
       philosophyOptionsBtnItem: {
         fontSize: '14px',
@@ -166,8 +167,27 @@ export const useStyles = makeStyles((theme: Theme) =>
       },
     },
     [theme.breakpoints.down(500)]: {
-      philosophyOptionText: {
-        width: '140px',
+      philosophyOptionsBtn: {
+        width: '115px',
+      },
+      philosophyOptions: {
+        padding: '50px 10px',
+      },
+      philosophyOptionsBtnItemActive: {
+        fontSize: '12px',
+        borderRadius: '20px',
+      },
+      philosophyOptionsBtnItem: {
+        whiteSpace: 'normal',
+        wordWrap: 'break-word',
+        fontSize: '12px',
+      },
+      philosophyOptionsContent: {
+        fontSize: '14px',
+        margin: '0 0 0 5px',
+      },
+      philosophyOptionsBtnGridActive: {
+        width: '111px',
       },
     },
   }),

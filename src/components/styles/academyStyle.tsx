@@ -169,6 +169,8 @@ export const useStyles = makeStyles((theme: Theme) =>
         fontSize: '20px',
       },
       academyContentGrid: {
+        paddingLeft: '100px',
+        paddingRight: '100px',
         width: '100%',
       },
       academyLiveMain: {
@@ -190,6 +192,18 @@ export const useStyles = makeStyles((theme: Theme) =>
       },
       academyLiveTitle: {
         fontSize: '35px',
+      },
+    },
+    [theme.breakpoints.down(600)]: {
+      academyContentGrid: {
+        paddingLeft: '50px',
+        paddingRight: '50px',
+      },
+    },
+    [theme.breakpoints.down(450)]: {
+      academyContentGrid: {
+        paddingLeft: '0px',
+        paddingRight: '0px',
       },
     },
   }),
