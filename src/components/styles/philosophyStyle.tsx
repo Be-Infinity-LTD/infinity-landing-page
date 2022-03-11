@@ -65,7 +65,7 @@ export const useStyles = makeStyles((theme: Theme) =>
       fontWeight: 400,
       paddingBottom: '20px',
     },
-    philosophyOptions: {
+    philosophyOptionsType1: {
       padding: '80px 50px',
       display: 'block',
     },
@@ -129,6 +129,22 @@ export const useStyles = makeStyles((theme: Theme) =>
       textAlign: 'left',
       color: 'black',
     },
+    philosophyOptionsType2: {
+      width: '100%',
+      padding: '100px',
+      display: 'none',
+    },
+    philosophyOptionTitle: {
+      fontFamily: "'Spartan', Sans-serif",
+      fontSize: '20px',
+      fontWeight: 600,
+      textAlign: 'left',
+    },
+    philosophyOptionContent: {
+      fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
+      fontSize: '18px',
+      fontWeight: 400,
+    },
     [theme.breakpoints.down('sm')]: {
       contentTextTitle: {
         paddingTop: '20px',
@@ -136,7 +152,7 @@ export const useStyles = makeStyles((theme: Theme) =>
       contentImgAndText: {
         display: 'block',
       },
-      philosophyOptions: {
+      philosophyOptionsType1: {
         display: 'flex',
         justifyContent: 'center',
       },
@@ -165,29 +181,23 @@ export const useStyles = makeStyles((theme: Theme) =>
         padding: '30px 20px',
         height: '100%',
       },
+      philosophyOptionsType2: {
+        display: 'none',
+      },
     },
-    [theme.breakpoints.down(500)]: {
-      philosophyOptionsBtn: {
-        width: '115px',
+    [theme.breakpoints.down(600)]: {
+      philosophyOptionsType1: {
+        display: 'none',
       },
-      philosophyOptions: {
-        padding: '50px 10px',
+      philosophyOptionsType2: {
+        padding: '50px',
+        display: 'block',
       },
-      philosophyOptionsBtnItemActive: {
-        fontSize: '12px',
-        borderRadius: '20px',
-      },
-      philosophyOptionsBtnItem: {
-        whiteSpace: 'normal',
-        wordWrap: 'break-word',
-        fontSize: '12px',
-      },
-      philosophyOptionsContent: {
-        fontSize: '14px',
-        margin: '0 0 0 5px',
-      },
-      philosophyOptionsBtnGridActive: {
-        width: '111px',
+    },
+    [theme.breakpoints.down(450)]: {
+      philosophyOptionsType2: {
+        padding: '30px',
+        display: 'block',
       },
     },
   }),

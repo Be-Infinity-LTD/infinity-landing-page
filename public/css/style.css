@@ -746,6 +746,7 @@ label {
   background: transparent;
   position: sticky;
   z-index: 100;
+  top: 0;
 }
 
 .c-header-root.sticky {

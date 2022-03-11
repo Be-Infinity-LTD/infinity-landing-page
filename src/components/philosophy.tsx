@@ -1,11 +1,17 @@
 import Grid from '@material-ui/core/Grid'
 import { useTranslation } from 'react-i18next'
-import { useState } from 'react'
+import React, { useState } from 'react'
 import { useStyles } from './styles/philosophyStyle'
+import Accordion from '@material-ui/core/Accordion'
+import AccordionDetails from '@material-ui/core/AccordionDetails'
+import AccordionSummary from '@material-ui/core/AccordionSummary'
+import Typography from '@material-ui/core/Typography'
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 
 export default function Philosophy() {
   const { t } = useTranslation()
   const classes = useStyles()
+  const [expanded, setExpanded] = React.useState<string | false>(false)
 
   const [opt1, setOpt1] = useState(true)
   const [opt2, setOpt2] = useState(false)
@@ -13,6 +19,23 @@ export default function Philosophy() {
   const [opt4, setOpt4] = useState(false)
   const [opt5, setOpt5] = useState(false)
   const [opt6, setOpt6] = useState(false)
+
+  const philOptTitles = [
+    'PHILOSOPHYBTNNAME1',
+    'PHILOSOPHYBTNNAME2',
+    'PHILOSOPHYBTNNAME3',
+    'PHILOSOPHYBTNNAME4',
+    'PHILOSOPHYBTNNAME5',
+    'PHILOSOPHYBTNNAME6',
+  ]
+  const philOptContents = [
+    'PHILOSOPHYBTNCONTENT1',
+    'PHILOSOPHYBTNCONTENT2',
+    'PHILOSOPHYBTNCONTENT3',
+    'PHILOSOPHYBTNCONTENT4',
+    'PHILOSOPHYBTNCONTENT5',
+    'PHILOSOPHYBTNCONTENT6',
+  ]
 
   const handleOptBtn1 = () => {
     setOpt1(true)
@@ -63,6 +86,10 @@ export default function Philosophy() {
     setOpt6(true)
   }
 
+  const handleChange = (panel: string) => (event: React.ChangeEvent<{}>, isExpanded: boolean) => {
+    setExpanded(isExpanded ? panel : false)
+  }
+
   return (
     <div id="philosophy" className={classes.textCenter}>
       <Grid className={classes.mainContent}>
@@ -91,7 +118,7 @@ export default function Philosophy() {
           </Grid>
         </div>
       </Grid>
-      <Grid className={classes.philosophyOptions}>
+      <Grid className={classes.philosophyOptionsType1}>
         <Grid container className={classes.philosophyOptionsBtn}>
           <Grid
             item
@@ -228,6 +255,18 @@ export default function Philosophy() {
             <></>
           )}
         </Grid>
+      </Grid>
+      <Grid className={classes.philosophyOptionsType2}>
+        {philOptTitles.map((item, i) => (
+          <Accordion expanded={expanded === item} onChange={handleChange(item)} key={i}>
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+              <Typography className={classes.philosophyOptionTitle}>{t(philOptTitles[i])}</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography className={classes.philosophyOptionContent}>{t(philOptContents[i])}</Typography>
+            </AccordionDetails>
+          </Accordion>
+        ))}
       </Grid>
     </div>
   )
