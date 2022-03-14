@@ -8,6 +8,9 @@ import Grow from '@material-ui/core/Grow'
 import ClickAwayListener from '@material-ui/core/ClickAwayListener'
 import Paper from '@material-ui/core/Paper'
 import MenuList from '@material-ui/core/MenuList'
+import Modal from '@material-ui/core/Modal'
+import Backdrop from '@material-ui/core/Backdrop'
+import Fade from '@material-ui/core/Fade'
 
 interface Props {
   scrolltotop: boolean
@@ -70,6 +73,52 @@ const useStyles = makeStyles((theme: Theme) =>
     mainLangMenu: {
       zIndex: 100,
     },
+    modal: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    paper: {
+      backgroundColor: theme.palette.background.paper,
+      boxShadow: theme.shadows[5],
+      padding: theme.spacing(2, 4, 3),
+      borderRadius: '15px',
+      margin: '0px 20%',
+      '&:focus-visible': {
+        outline: 'none',
+      },
+    },
+    paperTitle: {
+      textAlign: 'center',
+      fontFamily: "'Spartan', Sans-serif",
+      fontWeight: 700,
+      color: 'black',
+    },
+    paperContent: {
+      fontSize: '20px',
+      fontFamily: "'ZCOOL XiaoWei', Sans-serif",
+      fontWeight: 600,
+      color: 'black',
+    },
+    modalLink: {
+      color: '#555',
+      fontSize: '15px',
+      fontWeight: 600,
+      padding: '8px 2px',
+      borderRadius: '0',
+      marginLeft: '10px',
+      marginRight: '10px',
+      textTransform: 'capitalize',
+      cursor: 'pointer',
+    },
+    [theme.breakpoints.down(800)]: {
+      paperTitle: {
+        fontSize: '25px',
+      },
+      paperContent: {
+        fontSize: '15px',
+      },
+    },
   }),
 )
 
@@ -97,6 +146,7 @@ export default function Navigation() {
   const [strCurAvatar, setCurAvatar] = useState('./img/flags/english.svg')
   const [curStyleMenn, setCurStyleMenu] = useState('button')
   const [curTogMenu, setCurTogMenu] = useState('menu')
+  const [openGetStart, setOpenGetStart] = React.useState(false)
 
   const anchorRef = React.useRef<HTMLButtonElement>(null)
   const [open, setOpen] = React.useState(false)
@@ -153,6 +203,12 @@ export default function Navigation() {
       setCurTogMenu('menu')
     }
   }
+  const handleGetStartOpen = () => {
+    setOpenGetStart(true)
+  }
+  const handleGetStartClose = () => {
+    setOpenGetStart(false)
+  }
 
   return (
     <>
@@ -160,65 +216,65 @@ export default function Navigation() {
         <nav id="menu" className="navbar navbar-default navbar-sticky-top">
           <div className="container">
             <div className="navbar-header">
-              <div className="navbar-lang">
-                <div>
-                  <Button
-                    ref={anchorRef}
-                    aria-controls={open ? 'menu-list-grow' : undefined}
-                    aria-haspopup="true"
-                    onClick={handleToggle}
-                    className={classes.langItem}
-                  >
-                    <Avatar className={classes.avatar} alt="Remy Sharp" src={strCurAvatar} />
-                    {strCurLang}
-                  </Button>
-                  <Popper
-                    open={open}
-                    anchorEl={anchorRef.current}
-                    role={undefined}
-                    transition
-                    disablePortal
-                    className={classes.mainLangMenu}
-                  >
-                    {({ TransitionProps, placement }) => (
-                      <Grow
-                        {...TransitionProps}
-                        style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
-                      >
-                        <Paper>
-                          <ClickAwayListener onClickAway={handleClose}>
-                            <MenuList
-                              autoFocusItem={open}
-                              id="menu-list-grow"
-                              className={classes.langSel}
-                              onKeyDown={handleListKeyDown}
-                            >
-                              <MenuItem className={classes.langItem} onClick={handleEnglish}>
-                                <Avatar className={classes.avatar} alt="Remy Sharp" src="./img/flags/english.svg" />
-                                English
-                              </MenuItem>
-                              <MenuItem className={classes.langItem} onClick={handleFrench}>
-                                <Avatar className={classes.avatar} alt="Remy Sharp" src="./img/flags/france.svg" />
-                                Française
-                              </MenuItem>
-                              <MenuItem className={classes.langItem} onClick={handleGerman}>
-                                <Avatar className={classes.avatar} alt="Remy Sharp" src="./img/flags/germany.svg" />
-                                Deutsch
-                              </MenuItem>
-                              <MenuItem className={classes.langItem} onClick={handleTurkish}>
-                                <Avatar className={classes.avatar} alt="Remy Sharp" src="./img/flags/turkey.svg" />
-                                Türkiye
-                              </MenuItem>
-                            </MenuList>
-                          </ClickAwayListener>
-                        </Paper>
-                      </Grow>
-                    )}
-                  </Popper>
-                </div>
-              </div>
               <div className="navbar-logo">
                 <img width="150" height="68" src="img/logo.png" alt="logo" />
+                <div className="navbar-lang">
+                  <div>
+                    <Button
+                      ref={anchorRef}
+                      aria-controls={open ? 'menu-list-grow' : undefined}
+                      aria-haspopup="true"
+                      onClick={handleToggle}
+                      className={classes.langItem}
+                    >
+                      <Avatar className={classes.avatar} alt="Remy Sharp" src={strCurAvatar} />
+                      {strCurLang}
+                    </Button>
+                    <Popper
+                      open={open}
+                      anchorEl={anchorRef.current}
+                      role={undefined}
+                      transition
+                      disablePortal
+                      className={classes.mainLangMenu}
+                    >
+                      {({ TransitionProps, placement }) => (
+                        <Grow
+                          {...TransitionProps}
+                          style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
+                        >
+                          <Paper>
+                            <ClickAwayListener onClickAway={handleClose}>
+                              <MenuList
+                                autoFocusItem={open}
+                                id="menu-list-grow"
+                                className={classes.langSel}
+                                onKeyDown={handleListKeyDown}
+                              >
+                                <MenuItem className={classes.langItem} onClick={handleEnglish}>
+                                  <Avatar className={classes.avatar} alt="Remy Sharp" src="./img/flags/english.svg" />
+                                  English
+                                </MenuItem>
+                                <MenuItem className={classes.langItem} onClick={handleFrench}>
+                                  <Avatar className={classes.avatar} alt="Remy Sharp" src="./img/flags/france.svg" />
+                                  Française
+                                </MenuItem>
+                                <MenuItem className={classes.langItem} onClick={handleGerman}>
+                                  <Avatar className={classes.avatar} alt="Remy Sharp" src="./img/flags/germany.svg" />
+                                  Deutsch
+                                </MenuItem>
+                                <MenuItem className={classes.langItem} onClick={handleTurkish}>
+                                  <Avatar className={classes.avatar} alt="Remy Sharp" src="./img/flags/turkey.svg" />
+                                  Türkiye
+                                </MenuItem>
+                              </MenuList>
+                            </ClickAwayListener>
+                          </Paper>
+                        </Grow>
+                      )}
+                    </Popper>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -227,16 +283,6 @@ export default function Navigation() {
                 <li>
                   <a href="#philosophy" className="page-scroll">
                     {t('PHILOSOPHY')}
-                  </a>
-                </li>
-                <li>
-                  <a href="#charity" className="page-scroll">
-                    {t('CHARITY')}
-                  </a>
-                </li>
-                <li>
-                  <a href="#community" className="page-scroll">
-                    {t('COMMUNITY')}
                   </a>
                 </li>
                 <li>
@@ -255,14 +301,22 @@ export default function Navigation() {
                   </a>
                 </li>
                 <li>
+                  <a href="#team" className="page-scroll">
+                    {t('TEAM')}
+                  </a>
+                </li>
+                <li>
+                  <a href="#charity" className="page-scroll">
+                    {t('CHARITY')}
+                  </a>
+                </li>
+                <li>
                   <a href="#faq" className="page-scroll">
                     {t('FAQ')}
                   </a>
                 </li>
-                <li>
-                  <a href="#aboutus" className="page-scroll">
-                    {t('ABOUTUS')}
-                  </a>
+                <li className={classes.modalLink} onClick={handleGetStartOpen}>
+                  {t('GETSTARTED')}
                 </li>
               </ul>
             </div>
@@ -274,12 +328,6 @@ export default function Navigation() {
                   <a href="#philosophy">{t('PHILOSOPHY')}</a>
                 </li>
                 <li>
-                  <a href="#charity">{t('CHARITY')}</a>
-                </li>
-                <li>
-                  <a href="#community">{t('COMMUNITY')}</a>
-                </li>
-                <li>
                   <a href="#academy">{t('ACADEMY')}</a>
                 </li>
                 <li>
@@ -289,16 +337,45 @@ export default function Navigation() {
                   <a href="#path">{t('PATHS')}</a>
                 </li>
                 <li>
-                  <a href="#faq">{t('FAQ')}</a>
+                  <a href="#team">{t('TEAM')}</a>
                 </li>
                 <li>
-                  <a href="#aboutus">{t('ABOUTUS')}</a>
+                  <a href="#charity">{t('CHARITY')}</a>
+                </li>
+                <li>
+                  <a href="#faq">{t('FAQ')}</a>
+                </li>
+                <li className={classes.modalLink} onClick={handleGetStartOpen}>
+                  {t('GETSTARTED')}
                 </li>
               </ul>
             </nav>
           </div>
         </nav>
       </div>
+      <Modal
+        aria-labelledby="transition-modal-title"
+        aria-describedby="transition-modal-description"
+        className={classes.modal}
+        open={openGetStart}
+        onClose={handleGetStartClose}
+        closeAfterTransition
+        BackdropComponent={Backdrop}
+        BackdropProps={{
+          timeout: 500,
+        }}
+      >
+        <Fade in={openGetStart}>
+          <div className={classes.paper}>
+            <h1 className={classes.paperTitle}>Transition modal</h1>
+            <p className={classes.paperContent}>{t('GETSTARTEDTEXT1')}</p>
+            <p className={classes.paperContent}>{t('GETSTARTEDTEXT2')}</p>
+            <p className={classes.paperContent}>{t('GETSTARTEDTEXT3')}</p>
+            <p className={classes.paperContent}>{t('GETSTARTEDTEXT4')}</p>
+            <p className={classes.paperContent}>{t('GETSTARTEDTEXT5')}</p>
+          </div>
+        </Fade>
+      </Modal>
       <div id="back-to-top-anchor" />
       <ScrollTop scrolltotop={scrolltotop} />
     </>

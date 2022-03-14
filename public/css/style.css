@@ -79,14 +79,18 @@ hr {
   width: 100%;
 }
 #menu .navbar-lang {
-  width: 100%;
   display: flex;
   justify-content: right;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
 }
 #menu .navbar-logo {
   width: 100%;
-  display: flex;
   justify-content: center;
+  text-align: center;
+  position: relative;
 }
 #menu.navbar-default {
   background-color: #fff;
