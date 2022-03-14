@@ -21,9 +21,7 @@ export default function Paths() {
             <Grid className={classes.pathContentGrid} key={i}>
               <div className={classes.pathContentItem}>
                 <div className={classes.contentItemImg}>
-                  <a href="/">
-                    <img src={pathImgs[i]} alt="pathImg" className={classes.contentImg}></img>
-                  </a>
+                  <img src={pathImgs[i]} alt="pathImg" className={classes.contentImg}></img>
                 </div>
                 <div className={classes.pathContentTitle}>
                   <Typography className={classes.ContentItemTitle}>{t(pathTitles[i])}</Typography>
