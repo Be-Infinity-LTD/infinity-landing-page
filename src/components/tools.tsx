@@ -1,15 +1,11 @@
 import { Grid, Typography } from '@material-ui/core'
 import { useTranslation } from 'react-i18next'
 import { useStyles } from './styles/toolsStyle'
+import { toolsImgs } from '../common/constant'
 
 export default function Tools() {
   const { t } = useTranslation()
   const classes = useStyles()
-  const toolsImgs = [
-    './img/landing/tools_advisor.jpg',
-    './img/landing/tools_trade.jpg',
-    './img/landing/tools_indicator.jpg',
-  ]
   const toolsTitles = ['TOOLSEXPERTTITLE', 'TOOLSTRADETITLE', 'TOOLSINDICATORTITLE']
   const toolsContents = ['TOOLSEXPERTCONTENT', 'TOOLSTRADECONTENT', 'TOOLSINDICATORCONTENT']
 
