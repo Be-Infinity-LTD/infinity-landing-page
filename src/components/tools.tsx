@@ -6,8 +6,8 @@ import { toolsImgs } from '../common/constant'
 export default function Tools() {
   const { t } = useTranslation()
   const classes = useStyles()
-  const toolsTitles = ['TOOLSEXPERTTITLE', 'TOOLSTRADETITLE', 'TOOLSINDICATORTITLE']
-  const toolsContents = ['TOOLSEXPERTCONTENT', 'TOOLSTRADECONTENT', 'TOOLSINDICATORCONTENT']
+  const toolsTitles = ['TOOLSEXPERTTITLE', 'TOOLSTRADETITLE', 'TOOLSINDICATORTITLE', 'TOOLSCOINTITLE']
+  const toolsContents = ['TOOLSEXPERTCONTENT', 'TOOLSTRADECONTENT', 'TOOLSINDICATORCONTENT', 'TOOLSCOINCONTENT']
 
   return (
     <div id="tools" className={classes.mainContent}>
@@ -16,7 +16,7 @@ export default function Tools() {
         <Typography className={classes.toolsTextContent}>{t('TOOLSCONTENT')}</Typography>
         <Grid className={classes.toolsItems}>
           {toolsTitles.map((item, i) => (
-            <Grid item xs={4} className={classes.toolsItem} key={i}>
+            <Grid item xs={3} className={classes.toolsItem} key={i}>
               <div className={classes.toolsContentLiveImg}>
                 <a href="/">
                   <img src={toolsImgs[i]} alt="imgtools" className={classes.contentLiveImg}></img>

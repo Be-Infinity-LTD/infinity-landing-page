@@ -43,12 +43,14 @@ export const useStyles = makeStyles((theme: Theme) =>
       },
     },
     contentItemImg: {
-      marginBottom: '20px',
+      margin: '30px 0px',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      fontSize: '150px',
     },
     contentImg: {
-      borderRadius: '50px',
-      width: '-webkit-fill-available',
-      padding: '30px',
+      fontSize: '150px',
     },
     pathContentTitle: {
       margin: '15px 0px 15px 0px',

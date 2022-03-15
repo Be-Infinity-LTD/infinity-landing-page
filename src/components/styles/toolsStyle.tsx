@@ -5,6 +5,7 @@ export const useStyles = makeStyles((theme: Theme) =>
     mainContent: {
       backgroundColor: '#151515',
       paddingTop: '80px',
+      paddingBottom: '30px',
     },
     toolsContent: {
       padding: '10px 10px 30px 10px',
@@ -35,6 +36,7 @@ export const useStyles = makeStyles((theme: Theme) =>
       marginLeft: 'auto',
     },
     toolsItem: {
+      width: 'calc(25% - 120px/4)',
       backgroundColor: 'transparent',
       backgroundImage: 'linear-gradient(260deg, #FFFFFF 50%, #eef1f6 50%)',
       borderRadius: '10px',
@@ -43,8 +45,7 @@ export const useStyles = makeStyles((theme: Theme) =>
       borderColor: '#333333',
       boxShadow: '0px 0px 0px 0px rgb(255 221 160 / 0%)',
       margin: '0px 15px 0px 15px',
-      padding: '10px 15px 30px 15px',
-      minWidth: '270px',
+      padding: '10px 15px 0px 15px',
       transition: 'background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s',
       '&:hover': {
         boxShadow: '0px 0px 26px 0px rgb(149 174 215 / 73%)',
@@ -57,6 +58,7 @@ export const useStyles = makeStyles((theme: Theme) =>
       display: 'inline-block',
       height: 'auto',
       width: '100%',
+      borderRadius: '25px',
     },
     toolsContentItem: {
       padding: '0px 15px 0px 15px',
@@ -76,6 +78,15 @@ export const useStyles = makeStyles((theme: Theme) =>
       fontSize: '22px',
       fontWeight: 600,
       textTransform: 'uppercase',
+      wordBreak: 'break-all',
+    },
+    [theme.breakpoints.down(1130)]: {
+      toolsContentLiveTitle: {
+        height: '60px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+      },
     },
     [theme.breakpoints.down('sm')]: {
       toolsItems: {
@@ -84,11 +95,17 @@ export const useStyles = makeStyles((theme: Theme) =>
       toolsItem: {
         marginLeft: 'auto',
         marginRight: 'auto',
-        marginBottom: '20px',
-        maxWidth: '50%',
+        marginBottom: '10%',
+        maxWidth: '60%',
+        width: '100%',
       },
       toolsTextTitle: {
         fontSize: '35px',
+      },
+    },
+    [theme.breakpoints.down(500)]: {
+      toolsItem: {
+        maxWidth: '70%',
       },
     },
   }),

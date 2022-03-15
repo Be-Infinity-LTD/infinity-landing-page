@@ -23,9 +23,8 @@ export const toolsImgs = [
   './img/landing/tools_advisor.jpg',
   './img/landing/tools_trade.jpg',
   './img/landing/tools_indicator.jpg',
+  './img/landing/tools_coinanalyzer.jpg',
 ]
-
-export const pathImgs = ['./img/landing/path1.jpg', './img/landing/path2.jpg']
 
 export const teamMainImgs = [
   './img/landing/teams/patrik.png',

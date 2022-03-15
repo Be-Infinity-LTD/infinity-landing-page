@@ -148,7 +148,8 @@ export const useStyles = makeStyles((theme: Theme) =>
       justifyContent: 'center',
       alignItems: 'center',
       textAlign: 'center',
-      height: '35px,',
+      height: '60px',
+      padding: '10px 0px',
     },
     academyLiveItemTitle: {
       color: '#030303',
@@ -156,6 +157,7 @@ export const useStyles = makeStyles((theme: Theme) =>
       fontSize: '22px',
       fontWeight: 600,
       textTransform: 'uppercase',
+      wordBreak: 'break-all',
     },
     academyLiveItemContent: {
       marginBottom: '1rem',
@@ -166,6 +168,7 @@ export const useStyles = makeStyles((theme: Theme) =>
       display: 'flex',
       justifyContent: 'center',
       margin: '0px auto',
+      padding: '0px 3%',
     },
     [theme.breakpoints.down(1200)]: {
       academyLiveMain: {
