@@ -93,6 +93,18 @@ export default function Philosophy() {
   return (
     <div id="philosophy" className={classes.textCenter}>
       <Grid className={classes.mainContent}>
+        <Grid className={classes.mainContent}>
+          <div className={classes.contentImgAndText}>
+            <Grid item sm={12} md={6} className={classes.contentGridImg}>
+              <img src="./img/landing/philosophy.jpg" alt="contentImg" className={classes.contentImg} />
+            </Grid>
+            <Grid item sm={12} md={6} className={classes.contentGridText}>
+              <Grid className={classes.contentTextTitle}>{t('PHILOSOPHYTITLE')}</Grid>
+              <Grid className={classes.contentTextContext1}>{t('PHILOSOPHYCONTENT1')}</Grid>
+              <Grid className={classes.contentTextContext2}>{t('PHILOSOPHYCONTENT2')}</Grid>
+            </Grid>
+          </div>
+        </Grid>
         <div className={classes.contentImgAndText}>
           <Grid item sm={12} md={6} className={classes.contentGridText}>
             <Grid className={classes.contentTextTitle}>{t('PHILOSOPHYDESCTITLE')}</Grid>
@@ -106,18 +118,6 @@ export default function Philosophy() {
         </div>
       </Grid>
 
-      <Grid className={classes.mainContent}>
-        <div className={classes.contentImgAndText}>
-          <Grid item sm={12} md={6} className={classes.contentGridImg}>
-            <img src="./img/landing/philosophy.jpg" alt="contentImg" className={classes.contentImg} />
-          </Grid>
-          <Grid item sm={12} md={6} className={classes.contentGridText}>
-            <Grid className={classes.contentTextTitle}>{t('PHILOSOPHYTITLE')}</Grid>
-            <Grid className={classes.contentTextContext1}>{t('PHILOSOPHYCONTENT1')}</Grid>
-            <Grid className={classes.contentTextContext2}>{t('PHILOSOPHYCONTENT2')}</Grid>
-          </Grid>
-        </div>
-      </Grid>
       <Grid className={classes.philosophyOptionsType1}>
         <Grid container className={classes.philosophyOptionsBtn}>
           <Grid

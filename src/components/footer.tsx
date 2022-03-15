@@ -30,6 +30,16 @@ export default function Aboutus() {
             <img width="150" height="68" src="img/logo.png" alt="logo" />
             <Typography className={classes.avatarContent}>{t('FOOTERLOGOCONTENT1')}</Typography>
             <Typography className={classes.avatarContent}>{t('FOOTERLOGOCONTENT2')}</Typography>
+            <Typography className={classes.footerSepItemTitle}>
+              <i className="fas fa-address-book"></i>&nbsp;{t('FOOTERCONTACT')}
+            </Typography>
+            <Typography className={classes.footerSepItemContent}>
+              <i className="fas fa-envelope"></i>&nbsp;
+              {t('FOOTERCONTACTEMAIL')}
+            </Typography>
+            <a href="/" className={classes.footerinstagram}>
+              <i className="fab fa-instagram"></i>&nbsp;{t('FOOTERSOCIALINSTAGRAM')}
+            </a>
           </Grid>
           <Grid item xs={3} className={classes.footerInfo}>
             <Typography className={classes.footerSepItemTitle}>
@@ -46,60 +56,39 @@ export default function Aboutus() {
           </Grid>
           <Grid item xs={3} className={classes.footerInfo}>
             <Typography className={classes.footerSepItemTitle}>
-              <i className="fas fa-address-book"></i>&nbsp;{t('FOOTERCONTACT')}
+              <i className="fad fa-award"></i>&nbsp;{t('FOOTERASSETS')}
             </Typography>
-            <Typography className={classes.footerSepItemContent}>
-              <i className="fas fa-envelope"></i>&nbsp;
-              {t('FOOTERCONTACTEMAIL')}
-            </Typography>
+            <a href="/disclaimer">
+              <Typography className={classes.footerItemLink}>{t('FOOTERDISCLAIMER')}</Typography>
+            </a>
+            <a href="/companyletter">
+              <Typography className={classes.footerItemLink}>{t('FOOTERCOMPANYLETTER')}</Typography>
+            </a>
+            <a href="/salesletter">
+              <Typography className={classes.footerItemLink}>{t('FOOTERSALESLETTER')}</Typography>
+            </a>
+            <a href="/agree">
+              <Typography className={classes.footerItemLink}>{t('FOOTERAGREE')}</Typography>
+            </a>
           </Grid>
           <Grid item xs={3} className={classes.footerInfo}>
             <Typography className={classes.footerSepItemTitle}>
-              <i className="fas fa-users"></i>&nbsp;{t('FOOTERSOCIALMEDIA')}
+              <i className="fab fa-sourcetree"></i>&nbsp;{t('FOOTERRESOURCES')}
             </Typography>
-            <Typography className={classes.footerInfo}>
-              <a href="/" className={classes.footerinstagram}>
-                <i className="fab fa-instagram"></i>&nbsp;{t('FOOTERSOCIALINSTAGRAM')}
-              </a>
-            </Typography>
-          </Grid>
-        </Grid>
-        <Grid className={classes.footerTitles}>
-          <Grid>
-            <Typography className={classes.footerItemCaption}>{t('FOOTERASSETS')}</Typography>
-          </Grid>
-          <Grid className={classes.footerAsstes}>
-            <Typography className={classes.footerItemText}>{t('FOOTERDISCLAIMER')}</Typography>
-            <Typography className={classes.footerItemText}>{t('FOOTERLETTERS')}</Typography>
-            <Typography className={classes.footerItemText}>{t('FOOTERAGREE')}</Typography>
-            <Typography className={classes.footerItemText}>{t('FOOTERCOPY')}</Typography>
-          </Grid>
-        </Grid>
-        <Grid className={classes.footerTitles}>
-          <Grid>
-            <Typography className={classes.footerItemCaption}>{t('FOOTERRESOURCES')}</Typography>
-          </Grid>
-          <Grid className={classes.footerAsstes}>
-            <a href="/" className={classes.footerItemText}>
-              {t('FOOTERTERMS')}
+            <a href="/terms">
+              <Typography className={classes.footerItemLink}>{t('FOOTERTERMS')}</Typography>
             </a>
-            <a href="/" className={classes.footerItemText}>
-              {t('FOOTERPRIVACY')}
+            <a href="/privacy">
+              <Typography className={classes.footerItemLink}>{t('FOOTERPRIVACY')}</Typography>
             </a>
-            <a href="/" className={classes.footerItemText}>
-              {t('FOOTERPRICING')}
+            <a href="/pricing">
+              <Typography className={classes.footerItemLink}>{t('FOOTERPRICING')}</Typography>
             </a>
-            <a href="/" className={classes.footerItemText}>
-              {t('FOOTERREFUND')}
+            <a href="/refund">
+              <Typography className={classes.footerItemLink}>{t('FOOTERREFUND')}</Typography>
             </a>
-            <a href="/" className={classes.footerItemText}>
-              {t('FOOTERCOOKIES')}
-            </a>
-            <a href="/" className={classes.footerItemText}>
-              {t('FOOTERSPAM')}
-            </a>
-            <a href="/" className={classes.footerItemText}>
-              {t('FOOTERPROCE')}
+            <a href="/imprint">
+              <Typography className={classes.footerItemLink}>{t('FOOTERIMPRINT')}</Typography>
             </a>
           </Grid>
         </Grid>

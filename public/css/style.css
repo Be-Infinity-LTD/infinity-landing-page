@@ -85,6 +85,7 @@ hr {
   top: 50%;
   transform: translateY(-50%);
   right: 0;
+  z-index: 1000;
 }
 #menu .navbar-logo {
   width: 100%;

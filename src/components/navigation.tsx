@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
+
 import { useTranslation } from 'react-i18next'
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles'
 import { Avatar, MenuItem } from '@material-ui/core'
@@ -79,7 +81,9 @@ const useStyles = makeStyles((theme: Theme) =>
       justifyContent: 'center',
     },
     paper: {
-      backgroundColor: theme.palette.background.paper,
+      // backgroundColor: theme.palette.background.paper,
+      backgroundColor: 'transparent',
+      backgroundImage: 'linear-gradient(260deg, #FFFFFF 50%, #eef1f6 50%)',
       boxShadow: theme.shadows[5],
       padding: theme.spacing(2, 4, 3),
       borderRadius: '15px',
@@ -255,18 +259,18 @@ export default function Navigation() {
                                   <Avatar className={classes.avatar} alt="Remy Sharp" src="./img/flags/english.svg" />
                                   English
                                 </MenuItem>
-                                <MenuItem className={classes.langItem} onClick={handleFrench}>
+                                {/* <MenuItem className={classes.langItem} onClick={handleFrench}>
                                   <Avatar className={classes.avatar} alt="Remy Sharp" src="./img/flags/france.svg" />
                                   Française
-                                </MenuItem>
+                                </MenuItem> */}
                                 <MenuItem className={classes.langItem} onClick={handleGerman}>
                                   <Avatar className={classes.avatar} alt="Remy Sharp" src="./img/flags/germany.svg" />
                                   Deutsch
                                 </MenuItem>
-                                <MenuItem className={classes.langItem} onClick={handleTurkish}>
+                                {/* <MenuItem className={classes.langItem} onClick={handleTurkish}>
                                   <Avatar className={classes.avatar} alt="Remy Sharp" src="./img/flags/turkey.svg" />
                                   Türkiye
-                                </MenuItem>
+                                </MenuItem> */}
                               </MenuList>
                             </ClickAwayListener>
                           </Paper>
@@ -280,11 +284,6 @@ export default function Navigation() {
 
             <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul className="nav navbar-nav navbar-right">
-                <li>
-                  <a href="#philosophy" className="page-scroll">
-                    {t('PHILOSOPHY')}
-                  </a>
-                </li>
                 <li>
                   <a href="#academy" className="page-scroll">
                     {t('ACADEMY')}
@@ -315,6 +314,11 @@ export default function Navigation() {
                     {t('FAQ')}
                   </a>
                 </li>
+                <li>
+                  <a href="https://infinity-backoffice.com/backoffice/" className="page-scroll">
+                    {t('LOGIN')}
+                  </a>
+                </li>
                 <li className={classes.modalLink} onClick={handleGetStartOpen}>
                   {t('GETSTARTED')}
                 </li>
@@ -324,9 +328,6 @@ export default function Navigation() {
               <div id="head-mobile"></div>
               <div className={curStyleMenn} onClick={handleShowMenu}></div>
               <ul id="menu-main-menu-english" className={curTogMenu}>
-                <li>
-                  <a href="#philosophy">{t('PHILOSOPHY')}</a>
-                </li>
                 <li>
                   <a href="#academy">{t('ACADEMY')}</a>
                 </li>
@@ -344,6 +345,11 @@ export default function Navigation() {
                 </li>
                 <li>
                   <a href="#faq">{t('FAQ')}</a>
+                </li>
+                <li>
+                  <a href="https://infinity-backoffice.com/backoffice/" className="page-scroll">
+                    {t('LOGIN')}
+                  </a>
                 </li>
                 <li className={classes.modalLink} onClick={handleGetStartOpen}>
                   {t('GETSTARTED')}

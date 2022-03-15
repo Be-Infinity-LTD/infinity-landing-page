@@ -8,7 +8,7 @@ export const useStyles = makeStyles((theme: Theme) =>
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
       position: 'relative',
-      padding: '30px',
+      padding: '30px 0px',
     },
     colorBack: {
       height: '100%',

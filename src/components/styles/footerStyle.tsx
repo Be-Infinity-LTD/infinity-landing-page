@@ -138,37 +138,44 @@ export const useStyles = makeStyles((theme: Theme) =>
       fontFamily: "'Montserrat', sans-serif",
       color: '#333',
     },
-    footerTitles: {
-      padding: '0px 50px 20px 50px',
-      display: 'flex',
-    },
-    footerItemCaption: {
+    footerItemLink: {
+      color: '#333',
       fontSize: '15px',
       fontWeight: 500,
       fontFamily: "'Montserrat', sans-serif",
-      color: '#333',
-      borderRight: '1px solid #333',
-      paddingRight: '10px',
-      width: '150px',
-      textAlign: 'right',
-    },
-    footerItemText: {
-      color: '#333',
-      fontSize: '15px',
-      fontFamily: "'Montserrat', sans-serif",
-      fontWeight: 500,
-      marginLeft: '10px',
-      marginRight: '15px',
       marginBottom: '5px',
     },
+    // footerTitles: {
+    //   padding: '0px 50px 20px 50px',
+    //   display: 'flex',
+    // },
+    // footerItemCaption: {
+    //   fontSize: '15px',
+    //   fontWeight: 500,
+    //   fontFamily: "'Montserrat', sans-serif",
+    //   color: '#333',
+    //   borderRight: '1px solid #333',
+    //   paddingRight: '10px',
+    //   width: '150px',
+    //   textAlign: 'right',
+    // },
+    // footerItemText: {
+    //   color: '#333',
+    //   fontSize: '15px',
+    //   fontFamily: "'Montserrat', sans-serif",
+    //   fontWeight: 500,
+    //   marginLeft: '10px',
+    //   marginRight: '15px',
+    //   marginBottom: '5px',
+    // },
     footerImg: {
       width: '-webkit-fill-available',
       maxWidth: '300px',
     },
-    footerAsstes: {
-      display: 'flex',
-      flexWrap: 'wrap',
-    },
+    // footerAsstes: {
+    //   display: 'flex',
+    //   flexWrap: 'wrap',
+    // },
     [theme.breakpoints.down('sm')]: {
       disclaimerDesc: {
         maxWidth: '100%',

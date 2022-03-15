@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme: Theme) =>
     root: {
       width: '100%',
       padding: '100px',
+      paddingBottom: '150px',
     },
     faqTitle: {
       marginBottom: '30px',
@@ -38,6 +39,7 @@ const useStyles = makeStyles((theme: Theme) =>
     [theme.breakpoints.down('sm')]: {
       root: {
         padding: '0px 50px',
+        paddingBottom: '150px',
       },
       faqTitle: {
         fontSize: '35px',

@@ -146,6 +146,9 @@ export const useStyles = makeStyles((theme: Theme) =>
       fontWeight: 400,
     },
     [theme.breakpoints.down('sm')]: {
+      contentGridImg: {
+        padding: '50px 10%',
+      },
       contentTextTitle: {
         paddingTop: '20px',
       },

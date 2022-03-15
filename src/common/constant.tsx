@@ -13,6 +13,12 @@ export const academyImgLists = [
   './img/landing/academy/property.jpg',
 ]
 
+export const academyLiveLists = [
+  './img/landing/academy/crypto.jpg',
+  './img/landing/academy/learn_forex.jpg',
+  './img/landing/academy/learn_stocks.jpg',
+]
+
 export const toolsImgs = [
   './img/landing/tools_advisor.jpg',
   './img/landing/tools_trade.jpg',
@@ -20,3 +26,16 @@ export const toolsImgs = [
 ]
 
 export const pathImgs = ['./img/landing/path1.jpg', './img/landing/path2.jpg']
+
+export const teamMainImgs = [
+  './img/landing/teams/patrik.png',
+  './img/landing/teams/daniel.png',
+  './img/landing/teams/andreas.png',
+]
+
+export const teamSubMainImgs = [
+  './img/landing/teams/joseph.png',
+  './img/landing/teams/furkan.png',
+  './img/landing/teams/artur.png',
+  './img/landing/teams/henrik.png',
+]
