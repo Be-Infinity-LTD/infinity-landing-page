@@ -77,6 +77,9 @@ export const useStyles = makeStyles((theme: Theme) =>
       fontSize: '15px',
       fontFamily: "'Spartan', Sans-serif",
       fontWeight: 700,
+      textAlign: 'center',
+      wordBreak: 'break-all',
+      padding: '0px 6%',
     },
     avatarImg: {
       position: 'absolute',
@@ -173,6 +176,50 @@ export const useStyles = makeStyles((theme: Theme) =>
       subMainTeam: {
         display: 'block',
         marginTop: '40%',
+      },
+    },
+    [theme.breakpoints.down(900)]: {
+      hostLead: {
+        width: '90px',
+        height: '90px',
+      },
+    },
+    [theme.breakpoints.down(700)]: {
+      hostLead: {
+        width: '70px',
+        height: '70px',
+      },
+      mainTeamMate: {
+        display: 'block',
+      },
+      teamMate: {
+        marginTop: '25%',
+      },
+      subMainTeam: {
+        display: 'block',
+      },
+    },
+    [theme.breakpoints.down(500)]: {
+      hostTitle: {
+        fontSize: '14px',
+        paddingRight: '11px',
+      },
+      hostPos: {
+        fontSize: '11px',
+      },
+      hostName: {
+        fontSize: '13px',
+      },
+      hostContent: {
+        fontSize: '13px',
+      },
+      hostLead: {
+        width: '60px',
+        height: '60px',
+        marginRight: '3%',
+      },
+      hostLeadText: {
+        fontSize: '12px',
       },
     },
   }),

@@ -14,7 +14,7 @@ export const academyImgLists = [
 ]
 
 export const academyLiveLists = [
-  './img/landing/academy/crypto.jpg',
+  './img/landing/academy/learn_crypto.jpg',
   './img/landing/academy/learn_forex.jpg',
   './img/landing/academy/learn_stocks.jpg',
 ]
