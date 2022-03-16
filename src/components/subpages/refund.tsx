@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import Navigation from '../../components/navigation'
 import Footer from '../../components/footer'
 import { useStyles } from './styles/refundstyle'
+import { Typography } from '@material-ui/core'
 
 export default function Refund() {
   const { t } = useTranslation()
@@ -12,7 +13,26 @@ export default function Refund() {
   return (
     <Grid>
       <Navigation type={'submenu'} />
-      Refund
+      <Grid className={classes.mainGrid}>
+        <Typography className={classes.title}>
+            {t("REFUNDTITLE1")}
+        </Typography>
+        <Typography className={classes.contents}>
+            {t("REFUNDCONTENT1")}
+        </Typography>
+        <Typography className={classes.title}>
+            {t("REFUNDTITLE2")}
+        </Typography>
+        <Typography className={classes.contents}>
+            {t("REFUNDCONTENT2")}
+        </Typography>
+        <Typography className={classes.title}>
+            {t("REFUNDTITLE3")}
+        </Typography>
+        <Typography className={classes.contents}>
+            {t("REFUNDCONTENT3")}
+        </Typography>
+      </Grid>
       <Footer />
     </Grid>
   )

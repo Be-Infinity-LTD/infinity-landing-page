@@ -5,7 +5,7 @@ export const useStyles = makeStyles((theme: Theme) => createStyles({
         whiteSpace: 'pre-line',
         margin: '100px auto 200px',
         width: '1000px',
-        wordBreak: "break-all"
+        wordBreak: 'break-word'
     },
     title: {
         fontSize: '30px',

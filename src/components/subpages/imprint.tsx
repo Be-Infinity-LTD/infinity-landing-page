@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import Navigation from '../../components/navigation'
 import Footer from '../../components/footer'
 import { useStyles } from './styles/imprintstyle'
+import { Typography } from '@material-ui/core'
 
 export default function Imprint() {
   const { t } = useTranslation()
@@ -12,7 +13,42 @@ export default function Imprint() {
   return (
     <Grid>
       <Navigation type={'submenu'} />
-      Imprint
+      <Grid className={classes.mainGrid}>
+        <Typography className={classes.title}>
+            {t("IMPRINTTITLE")}
+        </Typography>
+        <Typography className={classes.contents}>
+            {t("IMPRINTCONTENT")}
+        </Typography>
+        <Grid className={classes.inline}>
+          <Typography className={classes.title}>
+              {t("IMPRINTTITLE1")}
+          </Typography>
+          <Typography className={classes.inlineContents}>
+              {t("IMPRINTCONTENT1")}
+          </Typography>
+        </Grid>
+        <Grid className={classes.inline}>
+          <Typography className={classes.title}>
+              {t("IMPRINTTITLE2")}
+          </Typography>
+          <Typography className={classes.inlineContents}>
+              {t("IMPRINTCONTENT2")}
+          </Typography>
+        </Grid>
+        <Grid className={classes.inline}>
+          <Typography className={classes.title}>
+              {t("IMPRINTTITLE3")}
+          </Typography>
+          <Typography className={classes.inlineContents}>
+              {t("IMPRINTCONTENT3")}
+          </Typography>
+        </Grid>
+
+        <Typography className={classes.contents}>
+              {t("IMPRINTCOPYRIGHT")}
+          </Typography>
+      </Grid>
       <Footer />
     </Grid>
   )
