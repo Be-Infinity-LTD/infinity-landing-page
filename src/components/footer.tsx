@@ -6,6 +6,8 @@ import { useStyles } from './styles/footerStyle'
 export default function Aboutus() {
   const { t } = useTranslation()
   const classes = useStyles()
+  let companyLetters = ['/docs/CompanyLetter/EN.pdf', '/docs/CompanyLetter/DE.pdf']
+  let salesLetters = ['/docs/SalesLetter/EN.pdf', '/docs/SalesLetter/DE.pdf']
 
   return (
     <div id="footer">
@@ -58,13 +60,19 @@ export default function Aboutus() {
             <Typography className={classes.footerSepItemTitle}>
               <i className="fad fa-award"></i>&nbsp;{t('FOOTERASSETS')}
             </Typography>
+            <a href="/imprint">
+              <Typography className={classes.footerItemLink}>{t('FOOTERIMPRINT')}</Typography>
+            </a>
             <a href="/disclaimer">
               <Typography className={classes.footerItemLink}>{t('FOOTERDISCLAIMER')}</Typography>
             </a>
-            <a href="/companyletter">
+            <a
+              href={localStorage.getItem('Language') == 'en' ? companyLetters[0] : companyLetters[1]}
+              download="Company.pdf"
+            >
               <Typography className={classes.footerItemLink}>{t('FOOTERCOMPANYLETTER')}</Typography>
             </a>
-            <a href="/salesletter">
+            <a href={localStorage.getItem('Language') == 'en' ? salesLetters[0] : salesLetters[1]} download="Sales.pdf">
               <Typography className={classes.footerItemLink}>{t('FOOTERSALESLETTER')}</Typography>
             </a>
             <a href="/agree">
@@ -86,9 +94,6 @@ export default function Aboutus() {
             </a>
             <a href="/refund">
               <Typography className={classes.footerItemLink}>{t('FOOTERREFUND')}</Typography>
-            </a>
-            <a href="/imprint">
-              <Typography className={classes.footerItemLink}>{t('FOOTERIMPRINT')}</Typography>
             </a>
           </Grid>
         </Grid>

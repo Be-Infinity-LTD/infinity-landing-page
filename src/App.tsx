@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { useEffect } from 'react'
 
 import Home from './home'
 import Disclaimer from './components/subpages/disclaimer'
@@ -12,6 +13,10 @@ import Refund from './components/subpages/refund'
 import Imprint from './components/subpages/imprint'
 
 const App = () => {
+  useEffect(() => {
+    localStorage.setItem('Language', 'en')
+  }, [])
+
   return (
     <Router>
       <Route exact path="/" component={Home}></Route>

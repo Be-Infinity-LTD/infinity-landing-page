@@ -163,6 +163,7 @@ export default function Navigation({ type }: NavigationProps) {
 
   const anchorRef = React.useRef<HTMLButtonElement>(null)
   const [open, setOpen] = React.useState(false)
+
   const handleToggle = () => {
     setOpen((prevOpen) => !prevOpen)
   }
@@ -185,6 +186,7 @@ export default function Navigation({ type }: NavigationProps) {
     setCurAvatar('./img/flags/english.svg')
 
     setOpen(false)
+    localStorage.setItem('Language', 'en')
   }
   const handleGerman = () => {
     i18n.changeLanguage('ge')
@@ -192,6 +194,7 @@ export default function Navigation({ type }: NavigationProps) {
     setCurAvatar('./img/flags/germany.svg')
 
     setOpen(false)
+    localStorage.setItem('Language', 'ge')
   }
 
   // const handleFrench = () => {
@@ -328,9 +331,7 @@ export default function Navigation({ type }: NavigationProps) {
                     {t('FAQ')}
                   </li>
                   <li>
-                    <a href="https://infinity-backoffice.com/backoffice/" className="page-scroll">
-                      {t('LOGIN')}
-                    </a>
+                    <a href="https://infinity-backoffice.com/backoffice/">{t('LOGIN')}</a>
                   </li>
                   <li className={classes.modalLink} onClick={handleGetStartOpen}>
                     {t('GETSTARTED')}
