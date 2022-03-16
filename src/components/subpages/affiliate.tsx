@@ -163,11 +163,17 @@ export default function Affiliate() {
         <Typography className={classes.subtitleCenter}>
           {t("AFFILIATESUBTITLE5")}
         </Typography>
+
+
+
+
+
+        
         <Grid className={classes.subitem}>
           <Typography className={classes.subItemNumber}>
             1.
           </Typography>
-          <Typography className={classes.subItemContent}>
+          <Grid className={classes.subItemContent}>
             {t("AFFILIATECONTENT5-1")}
             <Grid className={classes.subChildItem}>
               <Typography className={classes.subItemNumber}>
@@ -201,19 +207,21 @@ export default function Affiliate() {
                 {t("AFFILIATECONTENT5-1-4")}
               </Typography>
             </Grid>
-            {t("AFFILIATECONTENT5-1-5") ? (
-               <Grid className={classes.subChildItem}>
-                  <Typography className={classes.subItemNumber}>
-                    f)
-                  </Typography>
-                  <Typography className={classes.subItemContent}>
-                    {t("AFFILIATECONTENT5-1-5")}
-                  </Typography>
-                </Grid>
-            )
-             : <></>
+            {
+              t("AFFILIATECONTENT5-1-5") ? (
+                <Grid className={classes.subChildItem}>
+                    <Typography className={classes.subItemNumber}>
+                      f)
+                    </Typography>
+                    <Typography className={classes.subItemContent}>
+                      {t("AFFILIATECONTENT5-1-5")}
+                    </Typography>
+                  </Grid>
+              )
+              : <></>
              }
-            {t("AFFILIATECONTENT5-1-6") ? (
+            {
+              t("AFFILIATECONTENT5-1-6") ? (
                 <Grid className={classes.subChildItem}>
                 <Typography className={classes.subItemNumber}>
                   g)
@@ -222,7 +230,7 @@ export default function Affiliate() {
                   {t("AFFILIATECONTENT5-1-6")}
                 </Typography>
               </Grid>
-            ) : <></>
+              ) : <></>
             }
             <Grid className={classes.subChildItem}>
               <Typography className={classes.subItemNumber}>
@@ -240,8 +248,16 @@ export default function Affiliate() {
                 {t("AFFILIATECONTENT5-1-8")}
               </Typography>
             </Grid>
-          </Typography>
+          </Grid>
         </Grid>
+
+
+
+
+
+
+
+
         <Grid className={classes.subitem}>
           <Typography className={classes.subItemNumber}>
             2.
