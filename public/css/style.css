@@ -565,7 +565,7 @@ label {
     display: none;
   }
   #cssmenu ul li {
-    width: 100%;
+    display: block;
     border-top: 1px solid #f7f7f7;
   }
 

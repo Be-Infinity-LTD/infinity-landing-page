@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import Navigation from '../../components/navigation'
 import Footer from '../../components/footer'
 import { useStyles } from './styles/companyletterstyle'
+import { Typography } from '@material-ui/core'
 
 export default function CompanyLetter() {
   const { t } = useTranslation()
@@ -12,7 +13,9 @@ export default function CompanyLetter() {
   return (
     <Grid>
       <Navigation />
-      Companyletter
+      <Grid className={classes.mainGrid}>
+      
+      </Grid>
       <Footer />
     </Grid>
   )
