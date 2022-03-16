@@ -11,7 +11,7 @@ export default function Affiliate() {
 
   return (
     <Grid>
-      <Navigation />
+      <Navigation type={'submenu'} />
       Affiliate
       <Footer />
     </Grid>

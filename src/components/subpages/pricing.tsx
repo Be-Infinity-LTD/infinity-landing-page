@@ -11,7 +11,7 @@ export default function Pricing() {
 
   return (
     <Grid>
-      <Navigation />
+      <Navigation type={'submenu'} />
       Pricing
       <Footer />
     </Grid>

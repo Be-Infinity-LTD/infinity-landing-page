@@ -11,7 +11,7 @@ export default function SalesLetter() {
 
   return (
     <Grid>
-      <Navigation />
+      <Navigation type={'submenu'} />
       SalesLetter
       <Footer />
     </Grid>

@@ -11,7 +11,7 @@ export default function Terms() {
 
   return (
     <Grid>
-      <Navigation />
+      <Navigation type={'submenu'} />
       Terms/Conditions
       <Footer />
     </Grid>

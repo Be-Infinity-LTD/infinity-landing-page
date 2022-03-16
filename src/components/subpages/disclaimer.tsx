@@ -11,7 +11,7 @@ export default function Disclaimer() {
 
   return (
     <Grid>
-      <Navigation />
+      <Navigation type={'submenu'} />
       Disclaimer
       <Footer />
     </Grid>

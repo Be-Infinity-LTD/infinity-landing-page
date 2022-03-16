@@ -11,7 +11,7 @@ export default function Refund() {
 
   return (
     <Grid>
-      <Navigation />
+      <Navigation type={'submenu'} />
       Refund
       <Footer />
     </Grid>

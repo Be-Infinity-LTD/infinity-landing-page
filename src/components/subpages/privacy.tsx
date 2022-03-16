@@ -11,7 +11,7 @@ export default function Privacy() {
 
   return (
     <Grid>
-      <Navigation />
+      <Navigation type={'submenu'} />
       Privacy
       <Footer />
     </Grid>

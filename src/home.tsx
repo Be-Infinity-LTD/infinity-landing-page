@@ -15,7 +15,7 @@ import './i18n'
 const App = () => {
   return (
     <div>
-      <Navigation />
+      <Navigation type={'main'} />
       <Header />
       <Academy />
       <Tools />

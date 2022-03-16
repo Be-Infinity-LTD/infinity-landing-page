@@ -74,6 +74,12 @@ const useStyles = makeStyles((theme: Theme) =>
     mainLangMenu: {
       zIndex: 100,
     },
+    navMenu: {
+      display: 'block',
+    },
+    navSubMenu: {
+      display: 'none',
+    },
     modal: {
       display: 'flex',
       alignItems: 'center',
@@ -125,7 +131,11 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 )
 
-export default function Navigation() {
+interface NavigationProps {
+  type: string
+}
+
+export default function Navigation({ type }: NavigationProps) {
   const [scrolltotop, setScrolltotop] = useState(false)
   const [sticky, setSticky] = useState(false)
 
@@ -233,7 +243,9 @@ export default function Navigation() {
           <div className="container">
             <div className="navbar-header">
               <div className="navbar-logo">
-                <img width="150" height="68" src="img/logo.png" alt="logo" />
+                <a href="/" className={classes.modalLink}>
+                  <img width="150" height="68" src="img/logo.png" alt="logo" />
+                </a>
                 <div className="navbar-lang">
                   <div>
                     <Button
@@ -294,68 +306,70 @@ export default function Navigation() {
               </div>
             </div>
 
-            <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul className="nav navbar-nav navbar-right">
-                <li className={classes.modalLink} onClick={() => scrollTo('academy')}>
-                  {t('ACADEMY')}
-                </li>
-                <li className={classes.modalLink} onClick={() => scrollTo('tools')}>
-                  {t('TOOLS')}
-                </li>
-                <li className={classes.modalLink} onClick={() => scrollTo('path')}>
-                  {t('PATHS')}
-                </li>
-                <li className={classes.modalLink} onClick={() => scrollTo('team')}>
-                  {t('TEAM')}
-                </li>
-                <li className={classes.modalLink} onClick={() => scrollTo('charity')}>
-                  {t('CHARITY')}
-                </li>
-                <li className={classes.modalLink} onClick={() => scrollTo('faq')}>
-                  {t('FAQ')}
-                </li>
-                <li>
-                  <a href="https://infinity-backoffice.com/backoffice/" className="page-scroll">
-                    {t('LOGIN')}
-                  </a>
-                </li>
-                <li className={classes.modalLink} onClick={handleGetStartOpen}>
-                  {t('GETSTARTED')}
-                </li>
-              </ul>
+            <div className={type === 'main' ? classes.navMenu : classes.navSubMenu}>
+              <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul className="nav navbar-nav navbar-right">
+                  <li className={classes.modalLink} onClick={() => scrollTo('academy')}>
+                    {t('ACADEMY')}
+                  </li>
+                  <li className={classes.modalLink} onClick={() => scrollTo('tools')}>
+                    {t('TOOLS')}
+                  </li>
+                  <li className={classes.modalLink} onClick={() => scrollTo('path')}>
+                    {t('PATHS')}
+                  </li>
+                  <li className={classes.modalLink} onClick={() => scrollTo('team')}>
+                    {t('TEAM')}
+                  </li>
+                  <li className={classes.modalLink} onClick={() => scrollTo('charity')}>
+                    {t('CHARITY')}
+                  </li>
+                  <li className={classes.modalLink} onClick={() => scrollTo('faq')}>
+                    {t('FAQ')}
+                  </li>
+                  <li>
+                    <a href="https://infinity-backoffice.com/backoffice/" className="page-scroll">
+                      {t('LOGIN')}
+                    </a>
+                  </li>
+                  <li className={classes.modalLink} onClick={handleGetStartOpen}>
+                    {t('GETSTARTED')}
+                  </li>
+                </ul>
+              </div>
+              <nav id="cssmenu">
+                <div id="head-mobile"></div>
+                <div className={curStyleMenn} onClick={handleShowMenu}></div>
+                <ul id="menu-main-menu-english" className={curTogMenu}>
+                  <li className={classes.modalLink} onClick={() => scrollTo('academy')}>
+                    {t('ACADEMY')}
+                  </li>
+                  <li className={classes.modalLink} onClick={() => scrollTo('tools')}>
+                    {t('TOOLS')}
+                  </li>
+                  <li className={classes.modalLink} onClick={() => scrollTo('path')}>
+                    {t('PATHS')}
+                  </li>
+                  <li className={classes.modalLink} onClick={() => scrollTo('team')}>
+                    {t('TEAM')}
+                  </li>
+                  <li className={classes.modalLink} onClick={() => scrollTo('charity')}>
+                    {t('CHARITY')}
+                  </li>
+                  <li className={classes.modalLink} onClick={() => scrollTo('faq')}>
+                    {t('FAQ')}
+                  </li>
+                  <li>
+                    <a href="https://infinity-backoffice.com/backoffice/" className="page-scroll">
+                      {t('LOGIN')}
+                    </a>
+                  </li>
+                  <li className={classes.modalLink} onClick={handleGetStartOpen}>
+                    {t('GETSTARTED')}
+                  </li>
+                </ul>
+              </nav>
             </div>
-            <nav id="cssmenu">
-              <div id="head-mobile"></div>
-              <div className={curStyleMenn} onClick={handleShowMenu}></div>
-              <ul id="menu-main-menu-english" className={curTogMenu}>
-                <li className={classes.modalLink} onClick={() => scrollTo('academy')}>
-                  {t('ACADEMY')}
-                </li>
-                <li className={classes.modalLink} onClick={() => scrollTo('tools')}>
-                  {t('TOOLS')}
-                </li>
-                <li className={classes.modalLink} onClick={() => scrollTo('path')}>
-                  {t('PATHS')}
-                </li>
-                <li className={classes.modalLink} onClick={() => scrollTo('team')}>
-                  {t('TEAM')}
-                </li>
-                <li className={classes.modalLink} onClick={() => scrollTo('charity')}>
-                  {t('CHARITY')}
-                </li>
-                <li className={classes.modalLink} onClick={() => scrollTo('faq')}>
-                  {t('FAQ')}
-                </li>
-                <li>
-                  <a href="https://infinity-backoffice.com/backoffice/" className="page-scroll">
-                    {t('LOGIN')}
-                  </a>
-                </li>
-                <li className={classes.modalLink} onClick={handleGetStartOpen}>
-                  {t('GETSTARTED')}
-                </li>
-              </ul>
-            </nav>
           </div>
         </nav>
       </div>
