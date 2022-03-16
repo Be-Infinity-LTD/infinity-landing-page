@@ -2,9 +2,6 @@ import { makeStyles, Theme, createStyles } from '@material-ui/core/styles'
 
 export const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    main: {
-      padding: '50px 0px',
-    },
     host: {
       backgroundImage: 'url(./img/landing/teams/back.jpg)',
       backgroundRepeat: 'no-repeat',
@@ -164,6 +161,11 @@ export const useStyles = makeStyles((theme: Theme) =>
         position: 'absolute',
         width: '35%!important',
         right: '5%',
+      },
+    },
+    [theme.breakpoints.down(1000)]: {
+      main: {
+        padding: '30px 0px',
       },
     },
     [theme.breakpoints.down(700)]: {

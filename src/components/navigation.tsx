@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
-
 import { useTranslation } from 'react-i18next'
+
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles'
 import { Avatar, MenuItem } from '@material-ui/core'
 import Button from '@material-ui/core/Button'
@@ -177,13 +176,6 @@ export default function Navigation() {
 
     setOpen(false)
   }
-  const handleFrench = () => {
-    i18n.changeLanguage('fr')
-    setCurStrLang('Française')
-    setCurAvatar('./img/flags/france.svg')
-
-    setOpen(false)
-  }
   const handleGerman = () => {
     i18n.changeLanguage('ge')
     setCurStrLang('Deutsch')
@@ -191,13 +183,21 @@ export default function Navigation() {
 
     setOpen(false)
   }
-  const handleTurkish = () => {
-    i18n.changeLanguage('tu')
-    setCurStrLang('Türkiye')
-    setCurAvatar('./img/flags/turkey.svg')
 
-    setOpen(false)
-  }
+  // const handleFrench = () => {
+  //   i18n.changeLanguage('fr')
+  //   setCurStrLang('Française')
+  //   setCurAvatar('./img/flags/france.svg')
+
+  //   setOpen(false)
+  // }
+  // const handleTurkish = () => {
+  //   i18n.changeLanguage('tu')
+  //   setCurStrLang('Türkiye')
+  //   setCurAvatar('./img/flags/turkey.svg')
+
+  //   setOpen(false)
+  // }
   const handleShowMenu = () => {
     if (curStyleMenn === 'button') {
       setCurStyleMenu('button menu-opened')
@@ -212,6 +212,18 @@ export default function Navigation() {
   }
   const handleGetStartClose = () => {
     setOpenGetStart(false)
+  }
+
+  const scrollTo = (id: string) => {
+    const element = document.getElementById(id) as HTMLDivElement
+    var elementPosition = element.getBoundingClientRect().top
+    var headerOffset = 90
+    var offsetPosition = elementPosition + headerOffset
+
+    window.scrollTo({
+      behavior: 'smooth',
+      top: window.scrollY + offsetPosition - headerOffset * 2,
+    })
   }
 
   return (
@@ -284,35 +296,23 @@ export default function Navigation() {
 
             <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul className="nav navbar-nav navbar-right">
-                <li>
-                  <a href="#academy" className="page-scroll">
-                    {t('ACADEMY')}
-                  </a>
+                <li className={classes.modalLink} onClick={() => scrollTo('academy')}>
+                  {t('ACADEMY')}
                 </li>
-                <li>
-                  <a href="#tools" className="page-scroll">
-                    {t('TOOLS')}
-                  </a>
+                <li className={classes.modalLink} onClick={() => scrollTo('tools')}>
+                  {t('TOOLS')}
                 </li>
-                <li>
-                  <a href="#path" className="page-scroll">
-                    {t('PATHS')}
-                  </a>
+                <li className={classes.modalLink} onClick={() => scrollTo('path')}>
+                  {t('PATHS')}
                 </li>
-                <li>
-                  <a href="#team" className="page-scroll">
-                    {t('TEAM')}
-                  </a>
+                <li className={classes.modalLink} onClick={() => scrollTo('team')}>
+                  {t('TEAM')}
                 </li>
-                <li>
-                  <a href="#charity" className="page-scroll">
-                    {t('CHARITY')}
-                  </a>
+                <li className={classes.modalLink} onClick={() => scrollTo('charity')}>
+                  {t('CHARITY')}
                 </li>
-                <li>
-                  <a href="#faq" className="page-scroll">
-                    {t('FAQ')}
-                  </a>
+                <li className={classes.modalLink} onClick={() => scrollTo('faq')}>
+                  {t('FAQ')}
                 </li>
                 <li>
                   <a href="https://infinity-backoffice.com/backoffice/" className="page-scroll">
@@ -328,23 +328,23 @@ export default function Navigation() {
               <div id="head-mobile"></div>
               <div className={curStyleMenn} onClick={handleShowMenu}></div>
               <ul id="menu-main-menu-english" className={curTogMenu}>
-                <li>
-                  <a href="#academy">{t('ACADEMY')}</a>
+                <li className={classes.modalLink} onClick={() => scrollTo('academy')}>
+                  {t('ACADEMY')}
                 </li>
-                <li>
-                  <a href="#tools">{t('TOOLS')}</a>
+                <li className={classes.modalLink} onClick={() => scrollTo('tools')}>
+                  {t('TOOLS')}
                 </li>
-                <li>
-                  <a href="#path">{t('PATHS')}</a>
+                <li className={classes.modalLink} onClick={() => scrollTo('path')}>
+                  {t('PATHS')}
                 </li>
-                <li>
-                  <a href="#team">{t('TEAM')}</a>
+                <li className={classes.modalLink} onClick={() => scrollTo('team')}>
+                  {t('TEAM')}
                 </li>
-                <li>
-                  <a href="#charity">{t('CHARITY')}</a>
+                <li className={classes.modalLink} onClick={() => scrollTo('charity')}>
+                  {t('CHARITY')}
                 </li>
-                <li>
-                  <a href="#faq">{t('FAQ')}</a>
+                <li className={classes.modalLink} onClick={() => scrollTo('faq')}>
+                  {t('FAQ')}
                 </li>
                 <li>
                   <a href="https://infinity-backoffice.com/backoffice/" className="page-scroll">
