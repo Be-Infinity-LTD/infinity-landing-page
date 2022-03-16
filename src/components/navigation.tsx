@@ -90,7 +90,7 @@ const useStyles = makeStyles((theme: Theme) =>
       backgroundColor: 'transparent',
       backgroundImage: 'linear-gradient(260deg, #FFFFFF 50%, #eef1f6 50%)',
       boxShadow: theme.shadows[5],
-      padding: theme.spacing(2, 4, 3),
+      padding: '4% 3%',
       borderRadius: '15px',
       margin: '0px 20%',
       '&:focus-visible': {
@@ -388,7 +388,6 @@ export default function Navigation({ type }: NavigationProps) {
       >
         <Fade in={openGetStart}>
           <div className={classes.paper}>
-            <h1 className={classes.paperTitle}>Transition modal</h1>
             <p className={classes.paperContent}>{t('GETSTARTEDTEXT1')}</p>
             <p className={classes.paperContent}>{t('GETSTARTEDTEXT2')}</p>
             <p className={classes.paperContent}>{t('GETSTARTEDTEXT3')}</p>

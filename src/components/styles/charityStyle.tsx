@@ -38,11 +38,14 @@ export const useStyles = makeStyles((theme: Theme) =>
     },
     rightContent: {
       backgroundColor: '#FFFFFF1F',
-      padding: '60px',
       borderRadius: '20px',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
+    },
+    videoPlayer: {
+      width: '100%',
+      height: '100%',
     },
     charityContent1: {
       color: '#FFFFFF',

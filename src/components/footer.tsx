@@ -6,7 +6,7 @@ import { useStyles } from './styles/footerStyle'
 export default function Aboutus() {
   const { t } = useTranslation()
   const classes = useStyles()
-  let companyLetters = ['/docs/CompanyLetter/EN.pdf', '/docs/CompanyLetter/DE.pdf']
+  let companyLetters = ['/docs/LegalLetter/EN.pdf', '/docs/LegalLetter/DE.pdf']
   let salesLetters = ['/docs/SalesLetter/EN.pdf', '/docs/SalesLetter/DE.pdf']
 
   return (
@@ -52,9 +52,6 @@ export default function Aboutus() {
             <Typography className={classes.footerSepItemContent}>{t('FOOTERADDRESSCONTENT2')}</Typography>
             <Typography className={classes.footerSepItemContent}>{t('FOOTERADDRESSCONTENT3')}</Typography>
             <Typography className={classes.footerSepItemContent}>{t('FOOTERADDRESSCONTENT4')}</Typography>
-            <Typography className={classes.footerSepItemContent}>{t('FOOTERADDRESSCONTENT5')}</Typography>
-            <Typography className={classes.footerSepItemContent}>{t('FOOTERADDRESSCONTENT6')}</Typography>
-            <Typography className={classes.footerSepItemContent}>{t('FOOTERADDRESSCONTENT7')}</Typography>
           </Grid>
           <Grid item xs={3} className={classes.footerInfo}>
             <Typography className={classes.footerSepItemTitle}>
@@ -68,9 +65,9 @@ export default function Aboutus() {
             </a>
             <a
               href={localStorage.getItem('Language') == 'en' ? companyLetters[0] : companyLetters[1]}
-              download="Company.pdf"
+              download="Legal.pdf"
             >
-              <Typography className={classes.footerItemLink}>{t('FOOTERCOMPANYLETTER')}</Typography>
+              <Typography className={classes.footerItemLink}>{t('FOOTERLEGALLETTER')}</Typography>
             </a>
             <a href={localStorage.getItem('Language') == 'en' ? salesLetters[0] : salesLetters[1]} download="Sales.pdf">
               <Typography className={classes.footerItemLink}>{t('FOOTERSALESLETTER')}</Typography>
