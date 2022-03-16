@@ -91,6 +91,7 @@ export const useStyles = makeStyles((theme: Theme) =>
       fontFamily: "'Spartan', Sans-serif",
       fontWeight: 700,
       marginTop: '3%',
+      textTransform: 'uppercase',
     },
     mainTeamMate: {
       display: 'flex',
