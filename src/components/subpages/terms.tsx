@@ -12,7 +12,7 @@ export default function Terms() {
 
   return (
     <Grid>
-      <Navigation />
+      <Navigation type={'submenu'} />
       <Grid className={classes.mainGrid}>
         <Typography className={classes.title}>
             {t("TERMSTITLE0")}

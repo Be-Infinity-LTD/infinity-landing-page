@@ -11,7 +11,7 @@ export default function Imprint() {
 
   return (
     <Grid>
-      <Navigation />
+      <Navigation type={'submenu'} />
       Imprint
       <Footer />
     </Grid>

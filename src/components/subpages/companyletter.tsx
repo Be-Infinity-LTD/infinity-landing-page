@@ -12,10 +12,8 @@ export default function CompanyLetter() {
 
   return (
     <Grid>
-      <Navigation />
-      <Grid className={classes.mainGrid}>
-      
-      </Grid>
+      <Navigation type={'submenu'} />
+      Companyletter
       <Footer />
     </Grid>
   )

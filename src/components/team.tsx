@@ -28,15 +28,15 @@ export default function Team() {
         <Typography className={classes.hostContent}>{t('CHRISTIANDESC')}</Typography>
         <Grid className={classes.hostSpec}>
           <div className={classes.hostLead}>
-            <CircularProgress variant="determinate" thickness={1} value={80} className={classes.hostCircle} />
+            <CircularProgress variant="determinate" thickness={1} value={95} className={classes.hostCircle} />
             <Typography className={classes.hostLeadText}>{t('CHRISTIANLEAD')}</Typography>
           </div>
           <div className={classes.hostLead}>
-            <CircularProgress variant="determinate" thickness={1} value={80} className={classes.hostCircle} />
+            <CircularProgress variant="determinate" thickness={1} value={95} className={classes.hostCircle} />
             <Typography className={classes.hostLeadText}>{t('CHRISTIANTRACTION')}</Typography>
           </div>
           <div className={classes.hostLead}>
-            <CircularProgress variant="determinate" thickness={1} value={80} className={classes.hostCircle} />
+            <CircularProgress variant="determinate" thickness={1} value={95} className={classes.hostCircle} />
             <Typography className={classes.hostLeadText}>{t('CHRISTIANOTHER')}</Typography>
           </div>
         </Grid>

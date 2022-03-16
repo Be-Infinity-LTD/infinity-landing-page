@@ -128,7 +128,7 @@ export const useStyles = makeStyles((theme: Theme) =>
       borderColor: '#333333',
       boxShadow: '0px 0px 0px 0px rgb(255 221 160 / 0%)',
       margin: '0px 15px 0px 15px',
-      padding: '10px 15px 30px 15px',
+      padding: '10px 15px 10px 15px',
       transition: 'background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s',
       '&:hover': {
         boxShadow: '0px 0px 26px 0px rgb(149 174 215 / 73%)',
@@ -141,10 +141,15 @@ export const useStyles = makeStyles((theme: Theme) =>
       display: 'inline-block',
       height: 'auto',
       width: '100%',
+      borderRadius: '15px',
     },
     academyContentLiveTitle: {
-      margin: '15px 0px',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
       textAlign: 'center',
+      height: '60px',
+      padding: '10px 0px',
     },
     academyLiveItemTitle: {
       color: '#030303',
@@ -152,11 +157,33 @@ export const useStyles = makeStyles((theme: Theme) =>
       fontSize: '22px',
       fontWeight: 600,
       textTransform: 'uppercase',
+      wordBreak: 'break-all',
     },
     academyLiveItemContent: {
       marginBottom: '1rem',
       fontSize: '16px',
       textAlign: 'center',
+    },
+    academyLiveItems: {
+      display: 'flex',
+      justifyContent: 'center',
+      margin: '0px auto',
+      padding: '0px 3%',
+    },
+    [theme.breakpoints.down(1200)]: {
+      academyLiveMain: {
+        display: 'block',
+        paddingBottom: '30px',
+      },
+      academyLiveText: {
+        margin: '3% auto 0px auto',
+        maxWidth: '70%',
+      },
+      academyLiveItems: {
+        maxWidth: '100%',
+        flexBasis: '100%',
+        margin: '0px 5%',
+      },
     },
     [theme.breakpoints.down('sm')]: {
       mainContent: {
@@ -173,25 +200,31 @@ export const useStyles = makeStyles((theme: Theme) =>
         paddingRight: '100px',
         width: '100%',
       },
-      academyLiveMain: {
-        display: 'block',
-        marginBottom: '-1px',
-      },
       academyLiveItem: {
-        marginLeft: 'auto',
-        marginRight: 'auto',
+        marginRight: '5%',
         marginBottom: '20px',
         maxWidth: '50%',
-        minWidth: '270px',
       },
       academyLiveText: {
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        marginBottom: '20px',
+        margin: '20px auto',
         maxWidth: '70%',
       },
       academyLiveTitle: {
         fontSize: '35px',
+      },
+      academyLiveItems: {
+        maxWidth: '100%',
+        flexBasis: '100%',
+        padding: '0px 5%',
+      },
+    },
+    [theme.breakpoints.down(900)]: {
+      academyLiveItems: {
+        display: 'block',
+      },
+      academyLiveItem: {
+        margin: '0px auto 10% auto',
+        maxWidth: '70%',
       },
     },
     [theme.breakpoints.down(600)]: {
@@ -199,11 +232,17 @@ export const useStyles = makeStyles((theme: Theme) =>
         paddingLeft: '50px',
         paddingRight: '50px',
       },
+      academyLiveItem: {
+        maxWidth: '70%',
+      },
     },
     [theme.breakpoints.down(450)]: {
       academyContentGrid: {
         paddingLeft: '0px',
         paddingRight: '0px',
+      },
+      academyLiveItem: {
+        maxWidth: '80%',
       },
     },
   }),

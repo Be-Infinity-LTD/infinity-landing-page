@@ -12,7 +12,7 @@ export default function Privacy() {
 
   return (
     <Grid>
-      <Navigation />
+      <Navigation type={'submenu'} />
       <Grid className={classes.mainGrid}>
         <Typography className={classes.title}>
             {t("PRIVACYTITLE1")}
