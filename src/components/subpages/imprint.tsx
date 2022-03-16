@@ -25,7 +25,7 @@ export default function Imprint() {
               {t("IMPRINTTITLE1")}
           </Typography>
           <Typography className={classes.inlineContents}>
-              {t("IMPRINTCONTENT1")}
+              &nbsp;&nbsp;{t("IMPRINTCONTENT1")}
           </Typography>
         </Grid>
         <Grid className={classes.inline}>
@@ -33,7 +33,7 @@ export default function Imprint() {
               {t("IMPRINTTITLE2")}
           </Typography>
           <Typography className={classes.inlineContents}>
-              {t("IMPRINTCONTENT2")}
+              &nbsp;&nbsp;{t("IMPRINTCONTENT2")}
           </Typography>
         </Grid>
         <Grid className={classes.inline}>
@@ -41,7 +41,7 @@ export default function Imprint() {
               {t("IMPRINTTITLE3")}
           </Typography>
           <Typography className={classes.inlineContents}>
-              {t("IMPRINTCONTENT3")}
+            &nbsp;&nbsp;{t("IMPRINTCONTENT3")}
           </Typography>
         </Grid>
 
