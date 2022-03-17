@@ -33,11 +33,11 @@ export default function Team() {
           </div>
           <div className={classes.hostLead}>
             <CircularProgress variant="determinate" thickness={1} value={95} className={classes.hostCircle} />
-            <Typography className={classes.hostLeadText}>{t('CHRISTIANTRACTION')}</Typography>
+            <Typography className={classes.hostLeadText}>{t('CHRISTIANVISION')}</Typography>
           </div>
           <div className={classes.hostLead}>
             <CircularProgress variant="determinate" thickness={1} value={95} className={classes.hostCircle} />
-            <Typography className={classes.hostLeadText}>{t('CHRISTIANOTHER')}</Typography>
+            <Typography className={classes.hostLeadText}>{t('CHRISTIANFAIRNESS')}</Typography>
           </div>
         </Grid>
         <img src="./img/landing/teams/christian.png" alt="christiamImg" className={classes.avatarImg}></img>
