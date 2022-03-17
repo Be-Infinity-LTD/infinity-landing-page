@@ -120,6 +120,32 @@ const useStyles = makeStyles((theme: Theme) =>
       textTransform: 'capitalize',
       cursor: 'pointer',
     },
+    modalGetStartLink: {
+      color: 'blue',
+      fontSize: '15px',
+      fontWeight: 600,
+      padding: '15px 0px',
+      borderRadius: '0',
+      marginLeft: '10px',
+      marginRight: '10px',
+      textTransform: 'capitalize',
+      cursor: 'pointer',
+    },
+    navGetStartLinkDiv: {
+      display: 'flex !important',
+      justifyContent: 'center',
+      alignItems: 'center',
+      cursor: 'pointer',
+    },
+    navGetStartLink: {
+      color: 'blue !important',
+      fontSize: '15px !important',
+      fontWeight: 600,
+      padding: '8px 2px !important',
+      borderRadius: '0 !important',
+      marginLeft: '10px !important',
+      marginRight: '10px !important',
+    },
     [theme.breakpoints.down(800)]: {
       paperTitle: {
         fontSize: '25px',
@@ -330,11 +356,11 @@ export default function Navigation({ type }: NavigationProps) {
                   <li className={classes.modalLink} onClick={() => scrollTo('faq')}>
                     <a>{t('FAQ')}</a>
                   </li>
+                  <li className={classes.navGetStartLinkDiv} onClick={handleGetStartOpen}>
+                    <a className={classes.navGetStartLink}>{t('GETSTARTED')}</a>
+                  </li>
                   <li className={classes.modalLink}>
                     <a href="https://infinity-backoffice.com/backoffice/">{t('LOGIN')}</a>
-                  </li>
-                  <li className={classes.modalLink} onClick={handleGetStartOpen}>
-                    <a>{t('GETSTARTED')}</a>
                   </li>
                 </ul>
               </div>
@@ -360,13 +386,13 @@ export default function Navigation({ type }: NavigationProps) {
                   <li className={classes.modalLink} onClick={() => scrollTo('faq')}>
                     {t('FAQ')}
                   </li>
+                  <li className={classes.modalGetStartLink} onClick={handleGetStartOpen}>
+                    {t('GETSTARTED')}
+                  </li>
                   <li>
                     <a href="https://infinity-backoffice.com/backoffice/" className="page-scroll">
                       {t('LOGIN')}
                     </a>
-                  </li>
-                  <li className={classes.modalLink} onClick={handleGetStartOpen}>
-                    {t('GETSTARTED')}
                   </li>
                 </ul>
               </nav>
