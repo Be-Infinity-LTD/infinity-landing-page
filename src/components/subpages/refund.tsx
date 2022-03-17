@@ -14,6 +14,9 @@ export default function Refund() {
     <Grid>
       <Navigation type={'submenu'} />
       <Grid className={classes.mainGrid}>
+        <Typography className={classes.largeTitle}>
+            {t("FOOTERREFUND")}
+        </Typography>
         <Typography className={classes.title}>
             {t("REFUNDTITLE1")}
         </Typography>

@@ -14,6 +14,9 @@ export default function Terms() {
     <Grid>
       <Navigation type={'submenu'} />
       <Grid className={classes.mainGrid}>
+        <Typography className={classes.largeTitle}>
+            {t("FOOTERTERMS")}
+        </Typography>
         <Typography className={classes.title}>
             {t("TERMSTITLE0")}
         </Typography>

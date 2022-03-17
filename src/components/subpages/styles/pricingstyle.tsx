@@ -7,6 +7,11 @@ export const useStyles = makeStyles((theme: Theme) => createStyles({
         width: '1000px',
         wordBreak: "break-word"
     },
+    largeTitle: {
+        fontSize: '50px',
+        color: '#020202',
+        margin: "0 0 15px"
+    },
     title: {
         fontSize: '30px',
         fontWeight: 'bold',
@@ -16,10 +21,10 @@ export const useStyles = makeStyles((theme: Theme) => createStyles({
         fontSize: '22px',
         fontWeight: 'bold',
         color: '#020202',
-        marginTop: '30px'
+        marginTop: '15px'
     },
     contents: {
-        margin: '30px 0',
+        margin: '15px 0',
         fontSize: '16px',
         color: '#4A4848',
         letterSpacing: '1px',
@@ -27,7 +32,7 @@ export const useStyles = makeStyles((theme: Theme) => createStyles({
     },
     item: {
         display: 'flex',
-        margin: '30px 0'
+        margin: '15px 0'
     },
     itemNumber: {
         fontSize: '16px',
@@ -46,6 +51,9 @@ export const useStyles = makeStyles((theme: Theme) => createStyles({
         mainGrid: {
             margin: '30px 15px 130px',
             width: 'auto'
+        },
+        largeTitle: {
+            fontSize: '40px'
         },
         title: {
             fontSize: '25px',

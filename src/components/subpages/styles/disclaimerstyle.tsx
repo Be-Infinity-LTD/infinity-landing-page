@@ -4,7 +4,8 @@ export const useStyles = makeStyles((theme: Theme) => createStyles({
     mainGrid: {
         whiteSpace: 'pre-line',
         margin: '100px auto 200px',
-        width: '1000px'
+        width: '1000px',
+        wordBreak: "break-word"
     },
     largeTitle: {
         fontSize: '50px',

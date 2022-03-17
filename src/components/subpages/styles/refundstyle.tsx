@@ -7,13 +7,18 @@ export const useStyles = makeStyles((theme: Theme) => createStyles({
         width: '1000px',
         wordBreak: "break-word"
     },
+    largeTitle: {
+        fontSize: '50px',
+        color: '#020202',
+        margin: "0 0 15px"
+    },
     title: {
         fontSize: '30px',
         fontWeight: 'bold',
         color: '#020202'
     },
     contents: {
-        margin: '30px 0',
+        margin: '15px 0',
         fontSize: '16px',
         color: '#4A4848',
         letterSpacing: '1px',
@@ -23,6 +28,9 @@ export const useStyles = makeStyles((theme: Theme) => createStyles({
         mainGrid: {
             margin: '30px 15px 130px',
             width: 'auto'
+        },
+        largeTitle: {
+            fontSize: '40px'
         },
         title: {
             fontSize: '25px',
