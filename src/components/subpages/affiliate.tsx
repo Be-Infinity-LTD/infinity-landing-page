@@ -23,8 +23,7 @@ export default function Affiliate() {
         <Typography className={classes.subtitle}>
           {t("AFFILIATESUBTITLE")}
         </Typography>
-        <Typography className={classes.contents}>
-          {t("AFFILIATECONTENT")}
+        <Typography className={classes.contents} dangerouslySetInnerHTML= { {__html: t("AFFILIATECONTENT")} }>
         </Typography>
 
         <Typography className={classes.subtitleCenter}>
@@ -34,8 +33,7 @@ export default function Affiliate() {
           <Typography className={classes.subItemNumber}>
             1.
           </Typography>
-          <Typography className={classes.subItemContent}>
-            {t("AFFILIATECONTENT0-1")}
+          <Typography className={classes.subItemContent} dangerouslySetInnerHTML= { {__html: t("AFFILIATECONTENT0-1")} }>
           </Typography>
         </Grid>
         <Grid className={classes.subitem}>
@@ -328,7 +326,7 @@ export default function Affiliate() {
           <Typography className={classes.subItemNumber}>
             1.
           </Typography>
-          <Typography className={classes.subItemContent}>
+          <Typography className={classes.subItemContent} >
             {t("AFFILIATECONTENT8-1")}
           </Typography>
         </Grid>
@@ -344,8 +342,7 @@ export default function Affiliate() {
         <Typography className={classes.subtitleCenter}>
           {t("AFFILIATESUBTITLE9")}
         </Typography>
-        <Typography className={classes.contents}>
-          {t("AFFILIATECONTENT9")}
+        <Typography className={classes.contents} dangerouslySetInnerHTML= { {__html: t("AFFILIATECONTENT9")} }>
         </Typography>
 
         <Typography className={classes.subtitleCenter}>

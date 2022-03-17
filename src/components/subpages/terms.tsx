@@ -24,8 +24,7 @@ export default function Terms() {
           <Typography className={classes.itemNumber}>
             (1)
           </Typography>
-          <Typography className={classes.contents}>
-            {t("TERMSCONTENT0-1")}
+          <Typography className={classes.contents} dangerouslySetInnerHTML= { {__html: t("TERMSCONTENT0-1")} }>
           </Typography>
         </Grid>
         <Grid className={classes.item}>
@@ -164,8 +163,7 @@ export default function Terms() {
           <Typography className={classes.itemNumber}>
             (2)
           </Typography>
-          <Typography className={classes.contents}>
-            {t("TERMSCONTENT5-2")}
+          <Typography className={classes.contents} dangerouslySetInnerHTML= { {__html: t("TERMSCONTENT5-2")} }>
           </Typography>
         </Grid>
 
