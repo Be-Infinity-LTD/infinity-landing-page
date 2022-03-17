@@ -19,7 +19,7 @@ export default function Paths() {
           <Grid className={classes.pathContentGrid}>
             <div className={classes.pathContentItem}>
               <div className={classes.contentItemImg}>
-                <i aria-hidden="true" className="fas fa-user-graduate"></i>
+                <i aria-hidden="true" className="fas fa-user-graduate pathAvatar"></i>
               </div>
               <div className={classes.pathContentTitle}>
                 <Typography className={classes.ContentItemTitle}>{t('PATHITEMTITLE1')}</Typography>
@@ -32,7 +32,7 @@ export default function Paths() {
           <Grid className={classes.pathContentGrid}>
             <div className={classes.pathContentItem}>
               <div className={classes.contentItemImg}>
-                <i aria-hidden="true" className="fas fa-users"></i>
+                <i aria-hidden="true" className="fas fa-users pathAvatar"></i>
               </div>
               <div className={classes.pathContentTitle}>
                 <Typography className={classes.ContentItemTitle}>{t('PATHITEMTITLE2')}</Typography>
