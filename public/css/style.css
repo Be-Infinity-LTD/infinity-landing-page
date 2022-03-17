@@ -800,9 +800,32 @@ label {
   cursor: pointer;
 }
 
-.alice-carousel__prev-btn,
+/* .alice-carousel__prev-btn,
 .alice-carousel__next-btn {
   display: none !important;
+} */
+
+.alice-carousel__prev-btn-item.__inactive,
+.alice-carousel__next-btn-item.__inactive {
+  color: white !important;
+  font-size: 50px;
+}
+.alice-carousel__prev-btn-item,
+.alice-carousel__next-btn-item {
+  color: white !important;
+  font-size: 50px;
+}
+.alice-carousel__prev-btn {
+  position: absolute;
+  bottom: 45%;
+  left: 0;
+  width: 15% !important;
+}
+.alice-carousel__next-btn {
+  position: absolute;
+  bottom: 45%;
+  right: 0;
+  width: 15% !important;
 }
 
 .react-video-wrap {
