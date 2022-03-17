@@ -2,20 +2,16 @@ import { makeStyles, Theme, createStyles } from '@material-ui/core/styles'
 
 export const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    mainContainer: {
-      background: 'linear-gradient( rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.94) ), url(../img/intro-bg.jpg)',
-      backgroundPosition: 'center center',
-      backgroundRepeat: 'no-repeat',
-      backgroundSize: 'cover',
-      position: 'relative',
-      padding: '30px 0px',
-    },
     colorBack: {
       height: '100%',
       backgroundColor: '#FFFFFF',
       opacity: '0.94',
     },
     charityContent: {
+      background: 'linear-gradient( rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.94) ), url(../img/intro-bg.jpg)',
+      backgroundPosition: 'center center',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover',
       display: 'flex',
       justifyContent: 'center',
       width: '100%',

@@ -10,7 +10,7 @@ export default function Header() {
   const classes = useStyles()
 
   return (
-    <div id="header" className={classes.mainContainer}>
+    <div id="header">
       <Grid className={classes.charityContent}>
         <Grid item sm={12} md={6} className={classes.leftContent}>
           <Typography className={classes.contentTitle}>{t('HOMECONTENT')}</Typography>
