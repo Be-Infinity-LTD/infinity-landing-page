@@ -14,6 +14,9 @@ export default function Pricing() {
     <Grid>
       <Navigation type={'submenu'} />
       <Grid className={classes.mainGrid}>
+        <Typography className={classes.largeTitle}>
+            {t("FOOTERPRICING")}
+        </Typography>
         <Typography className={classes.title}>
             {t("PRICINGTITLE1")}
         </Typography>

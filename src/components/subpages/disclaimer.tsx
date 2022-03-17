@@ -14,6 +14,9 @@ export default function Disclaimer() {
     <Grid>
       <Navigation type={'submenu'} />
       <Grid className={classes.mainGrid}>
+        <Typography className={classes.largeTitle}>
+            {t("FOOTERDISCLAIMER")}
+        </Typography>
         <Typography className={classes.title}>
           {t("DISCLAIMERTITLE1")}
         </Typography>

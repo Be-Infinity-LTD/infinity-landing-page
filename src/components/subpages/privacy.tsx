@@ -14,6 +14,9 @@ export default function Privacy() {
     <Grid>
       <Navigation type={'submenu'} />
       <Grid className={classes.mainGrid}>
+        <Typography className={classes.largeTitle}>
+            {t("FOOTERPRIVACY")}
+        </Typography>
         <Typography className={classes.title}>
             {t("PRIVACYTITLE1")}
         </Typography>

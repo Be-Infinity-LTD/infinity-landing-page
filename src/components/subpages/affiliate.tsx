@@ -14,6 +14,9 @@ export default function Affiliate() {
     <Grid>
       <Navigation type={'submenu'} />
       <Grid className={classes.mainGrid}>
+        <Typography className={classes.largeTitle}>
+            {t("FOOTERAGREE")}
+        </Typography>
         <Typography className={classes.title}>
           {t("AFFILIATETITLE")}
         </Typography>
@@ -164,11 +167,6 @@ export default function Affiliate() {
           {t("AFFILIATESUBTITLE5")}
         </Typography>
 
-
-
-
-
-        
         <Grid className={classes.subitem}>
           <Typography className={classes.subItemNumber}>
             1.
