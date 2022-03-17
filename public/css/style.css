@@ -813,6 +813,10 @@ label {
   background: transparent !important;
 }
 
+.pathAvatar {
+  color: rgb(139, 199, 247);
+}
+
 @media (max-width: 1120px) {
   .c-header-container {
     margin: 0px 20px 0px 20px;

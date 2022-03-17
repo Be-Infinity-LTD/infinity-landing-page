@@ -30,14 +30,14 @@ export const useStyles = makeStyles((theme: Theme) =>
     },
     hostName: {
       padding: '5% 0px 2% 6%',
-      color: '#79c3f4',
+      color: 'rgb(139, 200, 247)',
       fontSize: '20px',
       fontFamily: "'Spartan', Sans-serif",
       fontWeight: 700,
       textTransform: 'uppercase',
     },
     hostContent: {
-      color: '#6604d3',
+      color: '#608dfd',
       fontSize: '18px',
       fontFamily: "'Spartan', Sans-serif",
       fontWeight: 700,
@@ -97,7 +97,7 @@ export const useStyles = makeStyles((theme: Theme) =>
       display: 'flex',
     },
     teamMate: {
-      backgroundColor: '#ffdd00',
+      backgroundColor: 'rgb(139, 200, 247)',
       marginTop: '10%',
       position: 'relative',
     },
