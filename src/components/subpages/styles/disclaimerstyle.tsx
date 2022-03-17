@@ -6,6 +6,11 @@ export const useStyles = makeStyles((theme: Theme) => createStyles({
         margin: '100px auto 200px',
         width: '1000px'
     },
+    largeTitle: {
+        fontSize: '50px',
+        color: '#020202',
+        margin: "0 0 15px"
+    },
     title: {
         fontSize: '30px',
         fontWeight: 'bold',
@@ -13,7 +18,7 @@ export const useStyles = makeStyles((theme: Theme) => createStyles({
     },
     contents: {
         fontSize: '16px',
-        margin: "50px 0",
+        margin: "15px 0",
         color: '#4A4848',
         letterSpacing: '1px',
         lineHeight: '2'
@@ -23,12 +28,11 @@ export const useStyles = makeStyles((theme: Theme) => createStyles({
             margin: '30px 15px 130px',
             width: 'auto'
         },
+        largeTitle: {
+            fontSize: '40px'
+        },
         title: {
             fontSize: '25px',
-        },
-        contents: {
-            fontSize: '14px',
-            margin: "30px 0"
-        },
+        }
     }
 }))
