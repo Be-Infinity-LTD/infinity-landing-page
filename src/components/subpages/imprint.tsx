@@ -14,6 +14,9 @@ export default function Imprint() {
     <Grid>
       <Navigation type={'submenu'} />
       <Grid className={classes.mainGrid}>
+        <Typography className={classes.largeTitle}>
+            {t("FOOTERIMPRINT")}
+        </Typography>
         <Typography className={classes.title}>
             {t("IMPRINTTITLE")}
         </Typography>
