@@ -6,8 +6,6 @@ import { useTranslation } from 'react-i18next'
 export default function Paths() {
   const classes = useStyles()
   const { t } = useTranslation()
-  let pathTitles = ['PATHITEMTITLE1', 'PATHITEMTITLE2']
-  let pathContents = ['PATHITEMCONTENT1', 'PATHITEMCONTENT2']
 
   return (
     <div id="path">

@@ -1,5 +1,3 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-
 import Navigation from './components/navigation'
 import Header from './components/header'
 import Charity from './components/charity'

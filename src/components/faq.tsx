@@ -5,7 +5,11 @@ import AccordionDetails from '@material-ui/core/AccordionDetails'
 import AccordionSummary from '@material-ui/core/AccordionSummary'
 import Typography from '@material-ui/core/Typography'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
+import Button from '@material-ui/core/Button'
 import { useTranslation } from 'react-i18next'
+import Modal from '@material-ui/core/Modal'
+import Backdrop from '@material-ui/core/Backdrop'
+import Fade from '@material-ui/core/Fade'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -36,6 +40,38 @@ const useStyles = makeStyles((theme: Theme) =>
       fontSize: '18px',
       fontWeight: 400,
     },
+    linkDiv: {
+      textAlign: 'center',
+      padding: '5%',
+    },
+    becomeMember: {
+      fontSize: '25px',
+      borderRadius: '30px',
+      padding: '15px 25px',
+      textTransform: 'uppercase',
+    },
+    modal: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    paper: {
+      backgroundColor: 'transparent',
+      backgroundImage: 'linear-gradient(260deg, #FFFFFF 50%, #eef1f6 50%)',
+      boxShadow: theme.shadows[5],
+      padding: '4% 3%',
+      borderRadius: '15px',
+      margin: '0px 20%',
+      '&:focus-visible': {
+        outline: 'none',
+      },
+    },
+    paperContent: {
+      fontSize: '20px',
+      fontFamily: "'ZCOOL XiaoWei', Sans-serif",
+      fontWeight: 600,
+      color: 'black',
+    },
     [theme.breakpoints.down('sm')]: {
       root: {
         padding: '50px 30px 150px 30px',
@@ -50,6 +86,20 @@ const useStyles = makeStyles((theme: Theme) =>
         fontSize: '14px',
       },
     },
+    [theme.breakpoints.down(550)]: {
+      linkDiv: {
+        padding: '10%',
+      },
+      becomeMember: {
+        fontSize: '15px',
+      },
+      paper: {
+        margin: '0px 10%',
+      },
+      paperContent: {
+        fontSize: '15px',
+      },
+    },
   }),
 )
 
@@ -57,6 +107,7 @@ export default function FAQ() {
   const classes = useStyles()
   const { t } = useTranslation()
   const [expanded, setExpanded] = React.useState<string | false>(false)
+  const [openGetStart, setOpenGetStart] = React.useState(false)
 
   const faqItemTitles = [
     'FAQFIRTITLE',
@@ -83,6 +134,12 @@ export default function FAQ() {
   const handleChange = (panel: string) => (event: React.ChangeEvent<{}>, isExpanded: boolean) => {
     setExpanded(isExpanded ? panel : false)
   }
+  const handleGetStartOpen = () => {
+    setOpenGetStart(true)
+  }
+  const handleGetStartClose = () => {
+    setOpenGetStart(false)
+  }
 
   return (
     <div id="faq" className={classes.root}>
@@ -97,6 +154,41 @@ export default function FAQ() {
           </AccordionDetails>
         </Accordion>
       ))}
+      <div className={classes.linkDiv}>
+        <Button
+          className={classes.becomeMember}
+          variant="contained"
+          color="primary"
+          component="span"
+          onClick={handleGetStartOpen}
+        >
+          {t('BECOMEMEMBER')}&nbsp;
+          <i className="fas fa-angle-double-right"></i>
+        </Button>
+      </div>
+
+      <Modal
+        aria-labelledby="transition-modal-title"
+        aria-describedby="transition-modal-description"
+        className={classes.modal}
+        open={openGetStart}
+        onClose={handleGetStartClose}
+        closeAfterTransition
+        BackdropComponent={Backdrop}
+        BackdropProps={{
+          timeout: 500,
+        }}
+      >
+        <Fade in={openGetStart}>
+          <div className={classes.paper}>
+            <p className={classes.paperContent}>{t('GETSTARTEDTEXT1')}</p>
+            <p className={classes.paperContent}>{t('GETSTARTEDTEXT2')}</p>
+            <p className={classes.paperContent}>{t('GETSTARTEDTEXT3')}</p>
+            <p className={classes.paperContent}>{t('GETSTARTEDTEXT4')}</p>
+            <p className={classes.paperContent}>{t('GETSTARTEDTEXT5')}</p>
+          </div>
+        </Fade>
+      </Modal>
     </div>
   )
 }

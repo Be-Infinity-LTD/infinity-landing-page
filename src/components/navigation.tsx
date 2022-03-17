@@ -120,23 +120,6 @@ const useStyles = makeStyles((theme: Theme) =>
       textTransform: 'capitalize',
       cursor: 'pointer',
     },
-    modalGetStartLink: {
-      color: 'blue',
-      fontSize: '15px',
-      fontWeight: 600,
-      padding: '15px 0px',
-      borderRadius: '0',
-      marginLeft: '10px',
-      marginRight: '10px',
-      textTransform: 'capitalize',
-      cursor: 'pointer',
-    },
-    navGetStartLinkDiv: {
-      display: 'flex !important',
-      justifyContent: 'center',
-      alignItems: 'center',
-      cursor: 'pointer',
-    },
     navGetStartLink: {
       color: 'blue !important',
       fontSize: '15px !important',
@@ -146,12 +129,15 @@ const useStyles = makeStyles((theme: Theme) =>
       marginLeft: '10px !important',
       marginRight: '10px !important',
     },
-    [theme.breakpoints.down(800)]: {
+    [theme.breakpoints.down(600)]: {
       paperTitle: {
-        fontSize: '25px',
+        fontSize: '20px',
       },
       paperContent: {
         fontSize: '15px',
+      },
+      paper: {
+        margin: '0px 10%',
       },
     },
   }),
@@ -356,8 +342,8 @@ export default function Navigation({ type }: NavigationProps) {
                   <li className={classes.modalLink} onClick={() => scrollTo('faq')}>
                     <a>{t('FAQ')}</a>
                   </li>
-                  <li className={classes.navGetStartLinkDiv} onClick={handleGetStartOpen}>
-                    <a className={classes.navGetStartLink}>{t('GETSTARTED')}</a>
+                  <li className={classes.modalLink} onClick={handleGetStartOpen}>
+                    <a>{t('GETSTARTED')}</a>
                   </li>
                   <li className={classes.modalLink}>
                     <a href="https://infinity-backoffice.com/backoffice/">{t('LOGIN')}</a>
@@ -386,7 +372,7 @@ export default function Navigation({ type }: NavigationProps) {
                   <li className={classes.modalLink} onClick={() => scrollTo('faq')}>
                     {t('FAQ')}
                   </li>
-                  <li className={classes.modalGetStartLink} onClick={handleGetStartOpen}>
+                  <li className={classes.modalLink} onClick={handleGetStartOpen}>
                     {t('GETSTARTED')}
                   </li>
                   <li>
