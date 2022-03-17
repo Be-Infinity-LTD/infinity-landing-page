@@ -1,13 +1,13 @@
 import Grid from '@material-ui/core/Grid'
 import { Typography } from '@material-ui/core'
 import { useTranslation } from 'react-i18next'
+
 import { useStyles } from './styles/footerStyle'
+import { legalLetters, salesLetters } from '../common/constant'
 
 export default function Aboutus() {
   const { t } = useTranslation()
   const classes = useStyles()
-  let companyLetters = ['/docs/LegalLetter/EN.pdf', '/docs/LegalLetter/DE.pdf']
-  let salesLetters = ['/docs/SalesLetter/EN.pdf', '/docs/SalesLetter/DE.pdf']
 
   return (
     <div id="footer">
@@ -29,7 +29,10 @@ export default function Aboutus() {
       <Grid className={classes.footerSeperator}>
         <Grid className={classes.footerSepContent}>
           <Grid item xs={3} className={classes.footerInfo}>
-            <img width="150" height="68" src="img/logo.png" alt="logo" />
+            <Grid className={classes.footerLogo}>
+              <img width="150" height="68" src="img/logo.png" alt="logo" />
+            </Grid>
+
             <Typography className={classes.avatarContent}>{t('FOOTERLOGOCONTENT1')}</Typography>
             <Typography className={classes.avatarContent}>{t('FOOTERLOGOCONTENT2')}</Typography>
             <Typography className={classes.footerSepItemTitle}>
@@ -63,10 +66,7 @@ export default function Aboutus() {
             <a href="/disclaimer">
               <Typography className={classes.footerItemLink}>{t('FOOTERDISCLAIMER')}</Typography>
             </a>
-            <a
-              href={localStorage.getItem('Language') == 'en' ? companyLetters[0] : companyLetters[1]}
-              download="Legal.pdf"
-            >
+            <a href={localStorage.getItem('Language') == 'en' ? legalLetters[0] : salesLetters[1]} download="Legal.pdf">
               <Typography className={classes.footerItemLink}>{t('FOOTERLEGALLETTER')}</Typography>
             </a>
             <a href={localStorage.getItem('Language') == 'en' ? salesLetters[0] : salesLetters[1]} download="Sales.pdf">

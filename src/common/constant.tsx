@@ -38,3 +38,8 @@ export const teamSubMainImgs = [
   './img/landing/teams/artur.png',
   './img/landing/teams/henrik.png',
 ]
+
+export const legalLetters = ['/docs/LegalLetter/EN.pdf', '/docs/LegalLetter/DE.pdf']
+export const salesLetters = ['/docs/SalesLetter/EN.pdf', '/docs/SalesLetter/DE.pdf']
+
+export const forestDocURL = 'docs/charity/forest.pdf'

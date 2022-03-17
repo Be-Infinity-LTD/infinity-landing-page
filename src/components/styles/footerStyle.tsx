@@ -116,10 +116,11 @@ export const useStyles = makeStyles((theme: Theme) =>
       fontFamily: "'Montserrat', sans-serif",
       fontSize: '14px',
       fontWeight: 500,
+      textAlign: 'left',
     },
     footerSepItemTitle: {
       color: '#333',
-      marginBottom: '5px',
+      margin: '5px 0',
       position: 'relative',
       fontSize: '20px',
       fontWeight: 600,
@@ -145,37 +146,13 @@ export const useStyles = makeStyles((theme: Theme) =>
       fontFamily: "'Montserrat', sans-serif",
       marginBottom: '5px',
     },
-    // footerTitles: {
-    //   padding: '0px 50px 20px 50px',
-    //   display: 'flex',
-    // },
-    // footerItemCaption: {
-    //   fontSize: '15px',
-    //   fontWeight: 500,
-    //   fontFamily: "'Montserrat', sans-serif",
-    //   color: '#333',
-    //   borderRight: '1px solid #333',
-    //   paddingRight: '10px',
-    //   width: '150px',
-    //   textAlign: 'right',
-    // },
-    // footerItemText: {
-    //   color: '#333',
-    //   fontSize: '15px',
-    //   fontFamily: "'Montserrat', sans-serif",
-    //   fontWeight: 500,
-    //   marginLeft: '10px',
-    //   marginRight: '15px',
-    //   marginBottom: '5px',
-    // },
+    footerLogo: {
+      textAlign: 'left',
+    },
     footerImg: {
       width: '-webkit-fill-available',
       maxWidth: '300px',
     },
-    // footerAsstes: {
-    //   display: 'flex',
-    //   flexWrap: 'wrap',
-    // },
     [theme.breakpoints.down('sm')]: {
       disclaimerDesc: {
         maxWidth: '100%',
@@ -206,18 +183,33 @@ export const useStyles = makeStyles((theme: Theme) =>
         marginRight: '50px',
       },
     },
-    [theme.breakpoints.down(400)]: {
+    [theme.breakpoints.down(600)]: {
+      footerSepContent: {
+        display: 'block',
+        margin: '0px 30px',
+        padding: '40px 0px 30px',
+      },
       footerInfo: {
         maxWidth: '100%',
         flexBasis: '100%',
-        marginBottom: '20px',
       },
-      footerSepContent: {
-        marginLeft: '50px',
-        marginRight: '50px',
+      footerLogo: {
+        textAlign: 'center',
       },
-      footerTitles: {
-        padding: '0px 10px 20px 20px',
+      avatarContent: {
+        textAlign: 'center',
+      },
+      footerSepItemTitle: {
+        margin: '20px 10%',
+      },
+      footerSepItemContent: {
+        margin: '0px 10%',
+      },
+      footerinstagram: {
+        margin: '0px 10%',
+      },
+      footerItemLink: {
+        margin: '0px 10%',
       },
     },
   }),

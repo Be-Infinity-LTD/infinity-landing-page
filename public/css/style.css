@@ -729,6 +729,12 @@ label {
   #cssmenu ul ul li a {
     padding: 13px 30px 13px;
   }
+  .alice-carousel__prev-btn {
+    display: none;
+  }
+  .alice-carousel__next-btn {
+    display: none;
+  }
 }
 
 @keyframes fade {
@@ -794,6 +800,19 @@ label {
   cursor: pointer;
 }
 
+.alice-carousel__prev-btn,
+.alice-carousel__next-btn {
+  display: none !important;
+}
+
+.react-video-wrap {
+  height: calc(100% - 60px) !important;
+}
+
+.react-video-wrap video {
+  background: transparent !important;
+}
+
 @media (max-width: 1120px) {
   .c-header-container {
     margin: 0px 20px 0px 20px;
@@ -815,5 +834,12 @@ label {
 @media (min-width: 769px) {
   .c-header-mobile-container {
     display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .alice-carousel__stage-item {
+    display: inline-flex !important;
+    align-items: center;
   }
 }

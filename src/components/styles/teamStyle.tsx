@@ -169,7 +169,15 @@ export const useStyles = makeStyles((theme: Theme) =>
         padding: '30px 0px',
       },
     },
+    [theme.breakpoints.down(800)]: {
+      mainTeamName: {
+        fontSize: '15px',
+      },
+    },
     [theme.breakpoints.down(700)]: {
+      mainTeamName: {
+        fontSize: '18px',
+      },
       mainTeamMate: {
         display: 'block',
       },

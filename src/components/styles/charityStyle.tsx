@@ -39,13 +39,39 @@ export const useStyles = makeStyles((theme: Theme) =>
     rightContent: {
       backgroundColor: '#FFFFFF1F',
       borderRadius: '20px',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
+      textAlign: 'center',
     },
-    videoPlayer: {
-      width: '100%',
+    fountainDesc: {
+      color: '#FFFFFF',
+      fontFamily: "'Montserrat', Sans-serif",
+      fontSize: '18px',
+      fontWeight: 600,
+      textAlign: 'center',
+      margin: '10px auto',
+      width: '80%',
+    },
+    forest: {
+      position: 'relative',
+      height: 'inherit',
+    },
+    forestImg: {
+      borderTopRightRadius: '20px',
+      borderTopLeftRadius: '20px',
+      width: 'auto',
       height: '100%',
+    },
+    forestDownload: {
+      background: 'rgba(89,89, 91, 0.5)',
+      bottom: '0',
+      width: 'inherit',
+      cursor: 'pointer',
+      position: 'absolute',
+      right: '0px',
+      left: '0',
+    },
+    downloadIcon: {
+      color: 'white',
+      fontSize: '50px',
     },
     charityContent1: {
       color: '#FFFFFF',
@@ -62,9 +88,44 @@ export const useStyles = makeStyles((theme: Theme) =>
       fontWeight: 300,
       textAlign: 'center',
     },
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down(1300)]: {
+      title: {
+        fontSize: '65px',
+      },
+      fountainDesc: {
+        fontSize: '16px',
+      },
+    },
+    [theme.breakpoints.down(960)]: {
       charityContent: {
-        display: 'none',
+        display: 'block',
+      },
+      leftContent: {
+        margin: '0px auto',
+      },
+      rightContent: {
+        margin: '0px auto',
+        height: '85%',
+      },
+    },
+    [theme.breakpoints.down(750)]: {
+      title: {
+        fontSize: '40px',
+      },
+      charityContent: {
+        padding: '30px',
+      },
+    },
+    [theme.breakpoints.down(450)]: {
+      forestImg: {
+        width: '100%',
+        height: 'auto',
+      },
+      title: {
+        fontSize: '30px',
+      },
+      fountainDesc: {
+        fontSize: '13px',
       },
     },
   }),

@@ -38,8 +38,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     [theme.breakpoints.down('sm')]: {
       root: {
-        padding: '0px 50px',
-        paddingBottom: '150px',
+        padding: '50px 30px 150px 30px',
       },
       faqTitle: {
         fontSize: '35px',

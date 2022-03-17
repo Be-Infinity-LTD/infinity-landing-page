@@ -113,7 +113,7 @@ const useStyles = makeStyles((theme: Theme) =>
       color: '#555',
       fontSize: '15px',
       fontWeight: 600,
-      padding: '8px 2px',
+      padding: '15px 0px',
       borderRadius: '0',
       marginLeft: '10px',
       marginRight: '10px',
@@ -313,28 +313,28 @@ export default function Navigation({ type }: NavigationProps) {
               <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul className="nav navbar-nav navbar-right">
                   <li className={classes.modalLink} onClick={() => scrollTo('academy')}>
-                    {t('ACADEMY')}
+                    <a>{t('ACADEMY')}</a>
                   </li>
                   <li className={classes.modalLink} onClick={() => scrollTo('tools')}>
-                    {t('TOOLS')}
+                    <a>{t('TOOLS')}</a>
                   </li>
                   <li className={classes.modalLink} onClick={() => scrollTo('path')}>
-                    {t('PATHS')}
+                    <a>{t('PATHS')}</a>
                   </li>
                   <li className={classes.modalLink} onClick={() => scrollTo('team')}>
-                    {t('TEAM')}
+                    <a>{t('TEAM')}</a>
                   </li>
                   <li className={classes.modalLink} onClick={() => scrollTo('charity')}>
-                    {t('CHARITY')}
+                    <a>{t('CHARITY')}</a>
                   </li>
                   <li className={classes.modalLink} onClick={() => scrollTo('faq')}>
-                    {t('FAQ')}
+                    <a>{t('FAQ')}</a>
                   </li>
-                  <li>
+                  <li className={classes.modalLink}>
                     <a href="https://infinity-backoffice.com/backoffice/">{t('LOGIN')}</a>
                   </li>
                   <li className={classes.modalLink} onClick={handleGetStartOpen}>
-                    {t('GETSTARTED')}
+                    <a>{t('GETSTARTED')}</a>
                   </li>
                 </ul>
               </div>
