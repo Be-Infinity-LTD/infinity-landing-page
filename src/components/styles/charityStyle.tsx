@@ -50,6 +50,15 @@ export const useStyles = makeStyles((theme: Theme) =>
       margin: '10px auto',
       width: '80%',
     },
+    forestDesc: {
+      color: '#FFFFFF',
+      fontFamily: "'Montserrat', Sans-serif",
+      fontSize: '18px',
+      fontWeight: 600,
+      textAlign: 'center',
+      margin: '10px auto',
+      width: '50%',
+    },
     forest: {
       position: 'relative',
       height: 'inherit',
@@ -96,6 +105,14 @@ export const useStyles = makeStyles((theme: Theme) =>
         fontSize: '16px',
       },
     },
+    [theme.breakpoints.down(1100)]: {
+      forestDesc: {
+        fontSize: '16px',
+      },
+      downloadIcon: {
+        fontSize: '45px',
+      },
+    },
     [theme.breakpoints.down(960)]: {
       charityContent: {
         display: 'block',
@@ -115,17 +132,28 @@ export const useStyles = makeStyles((theme: Theme) =>
       charityContent: {
         padding: '30px',
       },
+      downloadIcon: {
+        fontSize: '40px',
+      },
     },
-    [theme.breakpoints.down(450)]: {
+    [theme.breakpoints.down(520)]: {
       forestImg: {
         width: '100%',
         height: 'auto',
       },
+    },
+    [theme.breakpoints.down(450)]: {
       title: {
         fontSize: '30px',
       },
       fountainDesc: {
         fontSize: '13px',
+      },
+      forestDesc: {
+        fontSize: '12px',
+      },
+      downloadIcon: {
+        fontSize: '30px',
       },
     },
   }),

@@ -33,7 +33,7 @@ export default function Charity() {
   useEffect(() => {
     setPlaying(isPlaying)
     setLoop(loop)
-    let items_: any = [
+    let itemsTemp: any = [
       <div className="item" data-value="1" onDragStart={handleDrag}>
         <div>
           <ReactPlayer
@@ -52,6 +52,7 @@ export default function Charity() {
         <div className={classes.forest}>
           <img src="img/landing/forest.jpg" className={classes.forestImg} alt="forest" />
           <div className={classes.forestDownload}>
+            <Typography className={classes.forestDesc}>{t('CHARITYCONTENT2')}</Typography>
             <div className={classes.downloadIcon}>
               <a href={forestDocURL} download="madagascar_trees_certificate.pdf">
                 <i className="fas fa-download"></i>
@@ -61,8 +62,8 @@ export default function Charity() {
         </div>
       </div>,
     ]
-    setItems(items_)
-  }, [isPlaying])
+    setItems(itemsTemp)
+  }, [isPlaying, localStorage.getItem('Language')])
   return (
     <Grid id="charity" className={classes.charityContent}>
       <Grid item xs={12} sm={12} md={6} className={classes.leftContent}>
