@@ -18,12 +18,12 @@ export default function Charity() {
   const [isPlaying, setPlaying] = useState(true)
   const [loop, setLoop] = useState(true)
 
-  const handleVideo = (e: any) => {
-    setPlaying(!isPlaying)
-    setLoop(!loop)
+  // const handleVideo = (e: any) => {
+  //   setPlaying(!isPlaying)
+  //   setLoop(!loop)
 
-    e.preventDefault()
-  }
+  //   e.preventDefault()
+  // }
   const handleDrag = (e: any) => {
     e.preventDefault()
   }
@@ -50,7 +50,7 @@ export default function Charity() {
       </div>,
       <div className="item" data-value="2" onDragStart={handleDrag}>
         <div className={classes.forest}>
-          <img src="img/landing/forest.jpg" className={classes.forestImg} />
+          <img src="img/landing/forest.jpg" className={classes.forestImg} alt="forest" />
           <div className={classes.forestDownload}>
             <div className={classes.downloadIcon}>
               <a href={forestDocURL} download="madagascar_trees_certificate.pdf">

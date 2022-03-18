@@ -66,10 +66,16 @@ export default function Aboutus() {
             <a href="/disclaimer">
               <Typography className={classes.footerItemLink}>{t('FOOTERDISCLAIMER')}</Typography>
             </a>
-            <a href={localStorage.getItem('Language') == 'en' ? legalLetters[0] : salesLetters[1]} download="Legal.pdf">
+            <a
+              href={localStorage.getItem('Language') === 'en' ? legalLetters[0] : legalLetters[1]}
+              download="Legal.pdf"
+            >
               <Typography className={classes.footerItemLink}>{t('FOOTERLEGALLETTER')}</Typography>
             </a>
-            <a href={localStorage.getItem('Language') == 'en' ? salesLetters[0] : salesLetters[1]} download="Sales.pdf">
+            <a
+              href={localStorage.getItem('Language') === 'en' ? salesLetters[0] : salesLetters[1]}
+              download="Sales.pdf"
+            >
               <Typography className={classes.footerItemLink}>{t('FOOTERSALESLETTER')}</Typography>
             </a>
             <a href="/agree">

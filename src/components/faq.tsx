@@ -49,6 +49,11 @@ const useStyles = makeStyles((theme: Theme) =>
       borderRadius: '30px',
       padding: '15px 25px',
       textTransform: 'uppercase',
+      color: 'white',
+      backgroundColor: 'rgb(139, 200, 247)',
+      '&:hover': {
+        backgroundColor: 'rgb(200, 200, 247)',
+      },
     },
     modal: {
       display: 'flex',
@@ -154,11 +159,12 @@ export default function FAQ() {
           </AccordionDetails>
         </Accordion>
       ))}
+      {/* rgb(139, 200, 247) */}
       <div className={classes.linkDiv}>
         <Button
           className={classes.becomeMember}
           variant="contained"
-          color="primary"
+          // color="primary"
           component="span"
           onClick={handleGetStartOpen}
         >
