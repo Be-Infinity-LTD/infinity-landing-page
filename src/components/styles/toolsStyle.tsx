@@ -6,9 +6,10 @@ export const useStyles = makeStyles((theme: Theme) =>
       backgroundColor: '#151515',
       paddingTop: '80px',
       paddingBottom: '30px',
+      whiteSpace: 'pre-line',
     },
     toolsContent: {
-      padding: '10px 10px 30px 10px',
+      padding: '0px 10px 30px 10px',
     },
     toolsTextTitle: {
       marginBottom: '10px',
@@ -69,7 +70,10 @@ export const useStyles = makeStyles((theme: Theme) =>
       textAlign: 'center',
     },
     toolsContentLiveTitle: {
-      margin: '15px 0px',
+      height: '65px',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
       textAlign: 'center',
     },
     toolsLiveItemTitle: {
@@ -79,14 +83,6 @@ export const useStyles = makeStyles((theme: Theme) =>
       fontWeight: 600,
       textTransform: 'uppercase',
       wordBreak: 'break-all',
-    },
-    [theme.breakpoints.down(1130)]: {
-      toolsContentLiveTitle: {
-        height: '60px',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-      },
     },
     [theme.breakpoints.down('sm')]: {
       toolsItems: {

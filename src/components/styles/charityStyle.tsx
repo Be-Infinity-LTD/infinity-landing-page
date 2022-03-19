@@ -53,7 +53,7 @@ export const useStyles = makeStyles((theme: Theme) =>
     forestDesc: {
       color: '#FFFFFF',
       fontFamily: "'Montserrat', Sans-serif",
-      fontSize: '18px',
+      fontSize: '17px',
       fontWeight: 600,
       textAlign: 'center',
       margin: '10px auto',
