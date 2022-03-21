@@ -261,7 +261,7 @@ export default function Navigation({ type }: NavigationProps) {
                 <a href="/" className={classes.modalLink}>
                   <img width="150" height="68" src="img/logo.png" alt="logo" />
                 </a>
-                <div className="navbar-lang">
+                {/* <div className="navbar-lang">
                   <div>
                     <Button
                       ref={anchorRef}
@@ -298,18 +298,18 @@ export default function Navigation({ type }: NavigationProps) {
                                   <Avatar className={classes.avatar} alt="Remy Sharp" src="./img/flags/english.svg" />
                                   English
                                 </MenuItem>
-                                {/* <MenuItem className={classes.langItem} onClick={handleFrench}>
+                                <MenuItem className={classes.langItem} onClick={handleFrench}>
                                   <Avatar className={classes.avatar} alt="Remy Sharp" src="./img/flags/france.svg" />
                                   Française
-                                </MenuItem> */}
+                                </MenuItem>
                                 <MenuItem className={classes.langItem} onClick={handleGerman}>
                                   <Avatar className={classes.avatar} alt="Remy Sharp" src="./img/flags/germany.svg" />
                                   Deutsch
                                 </MenuItem>
-                                {/* <MenuItem className={classes.langItem} onClick={handleTurkish}>
+                                <MenuItem className={classes.langItem} onClick={handleTurkish}>
                                   <Avatar className={classes.avatar} alt="Remy Sharp" src="./img/flags/turkey.svg" />
                                   Türkiye
-                                </MenuItem> */}
+                                </MenuItem>
                               </MenuList>
                             </ClickAwayListener>
                           </Paper>
@@ -317,7 +317,7 @@ export default function Navigation({ type }: NavigationProps) {
                       )}
                     </Popper>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 

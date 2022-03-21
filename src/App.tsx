@@ -23,11 +23,11 @@ const App = () => {
       <Route exact path="/disclaimer" component={Disclaimer}></Route>
       <Route exact path="/companyletter" component={CompanyLetter}></Route>
       <Route exact path="/salesletter" component={SalesLetter}></Route>
-      <Route exact path="/agree" component={Affiliate}></Route>
-      <Route exact path="/terms" component={Terms}></Route>
-      <Route exact path="/privacy" component={Privacy}></Route>
-      <Route exact path="/pricing" component={Pricing}></Route>
-      <Route exact path="/refund" component={Refund}></Route>
+      <Route exact path="/affilaite_agreement" component={Affiliate}></Route>
+      <Route exact path="/terms_conditions" component={Terms}></Route>
+      <Route exact path="/privacy_policy" component={Privacy}></Route>
+      <Route exact path="/pricing_policy" component={Pricing}></Route>
+      <Route exact path="/refund_policy" component={Refund}></Route>
       <Route exact path="/imprint" component={Imprint}></Route>
     </Router>
   )

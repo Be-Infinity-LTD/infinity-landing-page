@@ -78,7 +78,7 @@ export default function Aboutus() {
             >
               <Typography className={classes.footerItemLink}>{t('FOOTERSALESLETTER')}</Typography>
             </a>
-            <a href="/agree">
+            <a href="/affilaite_agreement">
               <Typography className={classes.footerItemLink}>{t('FOOTERAGREE')}</Typography>
             </a>
           </Grid>
@@ -86,16 +86,16 @@ export default function Aboutus() {
             <Typography className={classes.footerSepItemTitle}>
               <i className="fab fa-sourcetree"></i>&nbsp;{t('FOOTERRESOURCES')}
             </Typography>
-            <a href="/terms">
+            <a href="/terms_conditions">
               <Typography className={classes.footerItemLink}>{t('FOOTERTERMS')}</Typography>
             </a>
-            <a href="/privacy">
+            <a href="/privacy_policy">
               <Typography className={classes.footerItemLink}>{t('FOOTERPRIVACY')}</Typography>
             </a>
-            <a href="/pricing">
+            <a href="/pricing_policy">
               <Typography className={classes.footerItemLink}>{t('FOOTERPRICING')}</Typography>
             </a>
-            <a href="/refund">
+            <a href="/refund_policy">
               <Typography className={classes.footerItemLink}>{t('FOOTERREFUND')}</Typography>
             </a>
           </Grid>

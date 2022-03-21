@@ -118,7 +118,7 @@ export default function Philosophy() {
         </div>
       </Grid>
 
-      <Grid className={classes.philosophyOptionsType1}>
+      {/* <Grid className={classes.philosophyOptionsType1}>
         <Grid container className={classes.philosophyOptionsBtn}>
           <Grid
             item
@@ -255,8 +255,8 @@ export default function Philosophy() {
             <></>
           )}
         </Grid>
-      </Grid>
-      <Grid className={classes.philosophyOptionsType2}>
+      </Grid> */}
+      {/* <Grid className={classes.philosophyOptionsType2}>
         {philOptTitles.map((item, i) => (
           <Accordion expanded={expanded === item} onChange={handleChange(item)} key={i}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
@@ -267,7 +267,7 @@ export default function Philosophy() {
             </AccordionDetails>
           </Accordion>
         ))}
-      </Grid>
+      </Grid> */}
     </div>
   )
 }
