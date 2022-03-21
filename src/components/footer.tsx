@@ -98,6 +98,13 @@ export default function Aboutus() {
             <a href="/refund_policy">
               <Typography className={classes.footerItemLink}>{t('FOOTERREFUND')}</Typography>
             </a>
+            <a
+              href="https://docs.google.com/document/d/171zeEdhDT0wp8IMg1eMHZaxJB7_oJET-0dlKPbhxaK0/edit#"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Typography className={classes.footerItemLink}>{t('FOOTERCOMPLAN')}</Typography>
+            </a>
           </Grid>
         </Grid>
       </Grid>
