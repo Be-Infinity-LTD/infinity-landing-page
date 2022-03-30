@@ -30,7 +30,7 @@ const App = () => {
       <Route exact path="/refund_policy" component={Refund}></Route>
       <Route exact path="/imprint" component={Imprint}></Route>
 
-      <!-- Redirect to external pages -->
+      /* Redirect to external pages */
       <Route path='/shoutout' component={() => { 
        window.location.href = 'https://forms.gle/8rDk1uGN69661oJ17'; 
        return null;
