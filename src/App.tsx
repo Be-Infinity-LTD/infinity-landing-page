@@ -45,7 +45,7 @@ const App = () => {
        window.location.href = 'https://vimeo.com/640779875'; 
        return null;
       }}/>
-      <Route exact path='/de/geschaeftspräsentation' component={() => { 
+      <Route exact path='/de/geschaeftspraesentation' component={() => { 
        window.location.href = 'https://vimeo.com/640779875'; 
        return null;
       }}/>
