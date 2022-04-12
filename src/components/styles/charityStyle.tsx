@@ -59,6 +59,14 @@ export const useStyles = makeStyles((theme: Theme) =>
       margin: '10px auto',
       width: '50%',
     },
+    ChildrenDesc: {
+      color: '#FFFFFF',
+      fontFamily: "'Montserrat', Sans-serif",
+      fontSize: '17px',
+      fontWeight: 600,
+      textAlign: 'center',
+      margin: '10px auto',
+    },
     forest: {
       position: 'relative',
       height: 'inherit',
