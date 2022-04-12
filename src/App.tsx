@@ -30,41 +30,69 @@ const App = () => {
       <Route exact path="/refund_policy" component={Refund}></Route>
       <Route exact path="/imprint" component={Imprint}></Route>
 
-      /* Redirect to external pages */
-      <Route exact path='/shoutout' component={() => { 
-       window.location.href = 'https://forms.gle/8rDk1uGN69661oJ17'; 
-       return null;
-      }}/>
+      <Route
+        exact
+        path="/shoutout"
+        component={() => {
+          window.location.href = 'https://forms.gle/8rDk1uGN69661oJ17'
+          return null
+        }}
+      />
 
-      <Route exact path='/disclaimer-download' component={() => { 
-       window.location.href = 'https://drive.google.com/uc?export=download&id=1ZfHQhi3FioElQ7XWfNkr169OW4pEvIf7'; 
-       return null;
-      }}/>
+      <Route
+        exact
+        path="/disclaimer-download"
+        component={() => {
+          window.location.href = 'https://drive.google.com/uc?export=download&id=1ZfHQhi3FioElQ7XWfNkr169OW4pEvIf7'
+          return null
+        }}
+      />
 
-      <Route exact path='/de/geschäftspräsentation' component={() => { 
-       window.location.href = 'https://vimeo.com/640779875'; 
-       return null;
-      }}/>
-      <Route exact path='/de/geschaeftspraesentation' component={() => { 
-       window.location.href = 'https://vimeo.com/640779875'; 
-       return null;
-      }}/>
+      <Route
+        exact
+        path="/de/geschäftspräsentation"
+        component={() => {
+          window.location.href = 'https://vimeo.com/640779875'
+          return null
+        }}
+      />
+      <Route
+        exact
+        path="/de/geschaeftspraesentation"
+        component={() => {
+          window.location.href = 'https://vimeo.com/640779875'
+          return null
+        }}
+      />
 
-      <Route exact path='/en/company-presentation' component={() => { 
-       window.location.href = 'https://vimeo.com/640979501'; 
-       return null;
-      }}/>
+      <Route
+        exact
+        path="/en/company-presentation"
+        component={() => {
+          window.location.href = 'https://vimeo.com/640979501'
+          return null
+        }}
+      />
 
-      <Route exact path='/en/compensation-plan-documentation' component={() => { 
-       window.location.href = 'https://docs.google.com/document/d/171zeEdhDT0wp8IMg1eMHZaxJB7_oJET-0dlKPbhxaK0/edit?usp=sharing'; 
-       return null;
-      }}/>
+      <Route
+        exact
+        path="/en/compensation-plan-documentation"
+        component={() => {
+          window.location.href =
+            'https://docs.google.com/document/d/171zeEdhDT0wp8IMg1eMHZaxJB7_oJET-0dlKPbhxaK0/edit?usp=sharing'
+          return null
+        }}
+      />
 
-      <Route exact path='/de/verguetungsplan-dokumentation' component={() => { 
-       window.location.href = 'https://docs.google.com/document/d/171zeEdhDT0wp8IMg1eMHZaxJB7_oJET-0dlKPbhxaK0/edit?usp=sharing'; 
-       return null;
-      }}/>
-
+      <Route
+        exact
+        path="/de/verguetungsplan-dokumentation"
+        component={() => {
+          window.location.href =
+            'https://docs.google.com/document/d/171zeEdhDT0wp8IMg1eMHZaxJB7_oJET-0dlKPbhxaK0/edit?usp=sharing'
+          return null
+        }}
+      />
     </Router>
   )
 }
