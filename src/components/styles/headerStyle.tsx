@@ -48,8 +48,8 @@ export const useStyles = makeStyles((theme: Theme) =>
       borderColor: '#FFFFFF',
       borderRadius: '15px',
       boxShadow: '-10px 8px 40px 0px rgb(0 0 0 / 30%)',
-      width: '-webkit-fill-available',
-      height: 'fit-content',
+      width: '100%',
+      height: 'auto',
     },
     [theme.breakpoints.down('sm')]: {
       charityContent: {
