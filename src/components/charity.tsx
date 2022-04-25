@@ -15,7 +15,7 @@ export default function Charity() {
     0: { items: 1 },
     568: { items: 1 },
   }
-  const [isPlaying, setPlaying] = useState(true)
+  const [isPlaying, setPlaying] = useState(false)
   const [loop, setLoop] = useState(true)
 
   const handleDrag = (e: any) => {
@@ -148,7 +148,9 @@ export default function Charity() {
       </div>,
     ]
     setItems(itemsTemp)
-  }, [isPlaying, localStorage.getItem('Language')])
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   return (
     <Grid id="charity" className={classes.charityContent}>
