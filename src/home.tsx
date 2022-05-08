@@ -7,13 +7,14 @@ import Tools from './components/tools'
 import Paths from './components/paths'
 import FAQ from './components/faq'
 import Footer from './components/footer'
+import Upgrade from './components/upgrade'
 import './App.css'
 import './i18n'
 
 const App = () => {
   return (
     <div>
-      <Navigation type={'main'} />
+      {/* <Navigation type={'main'} />
       <Header />
       <Academy />
       <Tools />
@@ -21,7 +22,8 @@ const App = () => {
       <Team />
       <Charity />
       <FAQ />
-      <Footer />
+      <Footer /> */}
+      <Upgrade />
     </div>
   )
 }
