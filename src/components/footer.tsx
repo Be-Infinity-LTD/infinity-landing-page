@@ -42,8 +42,12 @@ export default function Aboutus() {
               <i className="fas fa-envelope"></i>&nbsp;
               {t('FOOTERCONTACTEMAIL')}
             </Typography>
-            <a href="/" className={classes.footerinstagram}>
+            <a href="https://www.instagram.com/be_infinity_official/" className={classes.footerinstagram}>
               <i className="fab fa-instagram"></i>&nbsp;{t('FOOTERSOCIALINSTAGRAM')}
+            </a>
+            <br />
+            <a href="https://www.facebook.com/Infinity-101236431830495" className={classes.footerinstagram}>
+              <i className="fab fa-facebook"></i>&nbsp;{t('FOOTERSOCIALFACEBOOK')}
             </a>
           </Grid>
           <Grid item xs={3} className={classes.footerInfo}>
