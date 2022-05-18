@@ -36,6 +36,13 @@ export const useStyles = makeStyles((theme: Theme) =>
       letterSpacing: '1px',
       lineHeight: '2',
     },
+    subcontents: {
+      fontSize: '16px',
+      color: '#4A4848',
+      letterSpacing: '1px',
+      lineHeight: '2',
+      paddingLeft: '15px',
+    },
     [theme.breakpoints.down(600)]: {
       mainGrid: {
         margin: '30px 15px 130px',
