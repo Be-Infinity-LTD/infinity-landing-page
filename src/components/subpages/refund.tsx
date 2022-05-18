@@ -14,27 +14,16 @@ export default function Refund() {
     <Grid>
       <Navigation type={'submenu'} />
       <Grid className={classes.mainGrid}>
-        <Typography className={classes.largeTitle}>
-            {t("FOOTERREFUND")}
-        </Typography>
-        <Typography className={classes.title}>
-            {t("REFUNDTITLE1")}
-        </Typography>
-        <Typography className={classes.contents}>
-            {t("REFUNDCONTENT1")}
-        </Typography>
-        <Typography className={classes.title}>
-            {t("REFUNDTITLE2")}
-        </Typography>
-        <Typography className={classes.contents}>
-            {t("REFUNDCONTENT2")}
-        </Typography>
-        <Typography className={classes.title}>
-            {t("REFUNDTITLE3")}
-        </Typography>
-        <Typography className={classes.contents}>
-            {t("REFUNDCONTENT3")}
-        </Typography>
+        <Typography className={classes.largeTitle}>{t('FOOTERREFUND')}</Typography>
+        <Typography className={classes.title}>{t('REFUNDMAINTITLE')}</Typography>
+        <Typography className={classes.title}>{t('REFUNDTITLE1')}</Typography>
+        <Typography className={classes.contents}>{t('REFUNDCONTENT1')}</Typography>
+        <Typography className={classes.title}>{t('REFUNDTITLE2')}</Typography>
+        <Typography className={classes.contents}>{t('REFUNDCONTENT2')}</Typography>
+        <Typography className={classes.title}>{t('REFUNDTITLE3')}</Typography>
+        <Typography className={classes.contents}>{t('REFUNDCONTENT3')}</Typography>
+        <Typography className={classes.title}>{t('REFUNDTITLE4')}</Typography>
+        <Typography className={classes.contents}>{t('REFUNDCONTENT4')}</Typography>
       </Grid>
       <Footer />
     </Grid>
