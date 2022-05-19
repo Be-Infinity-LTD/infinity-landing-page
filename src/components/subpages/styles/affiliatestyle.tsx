@@ -27,6 +27,12 @@ export const useStyles = makeStyles((theme: Theme) =>
       color: '#020202',
       marginTop: '30px',
     },
+    subtitletyle1: {
+      fontSize: '22px',
+      fontWeight: 'bold',
+      color: '#020202',
+      marginTop: '10px',
+    },
     subtitleCenter: {
       fontSize: '22px',
       fontWeight: 'bold',
@@ -34,9 +40,24 @@ export const useStyles = makeStyles((theme: Theme) =>
       marginTop: '30px',
       textAlign: 'center',
     },
+    subcontents1: {
+      fontSize: '20px',
+      margin: '10px 0',
+      color: '#4A4848',
+      letterSpacing: '1px',
+      lineHeight: '2',
+      fontWeight: 700,
+    },
+    subcontents2: {
+      fontSize: '16px',
+      margin: '10px 0 10px 20px',
+      color: '#4A4848',
+      letterSpacing: '1px',
+      lineHeight: '2',
+    },
     contents: {
       fontSize: '16px',
-      margin: '50px 0',
+      margin: '10px 0',
       color: '#4A4848',
       letterSpacing: '1px',
       lineHeight: '2',
@@ -76,6 +97,9 @@ export const useStyles = makeStyles((theme: Theme) =>
       },
       subtitleCenter: {
         fontSize: '20px',
+      },
+      subcontents1: {
+        fontSize: '17px',
       },
       contents: {
         fontSize: '14px',

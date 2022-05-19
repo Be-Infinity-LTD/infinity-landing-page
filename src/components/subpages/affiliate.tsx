@@ -14,416 +14,78 @@ export default function Affiliate() {
     <Grid>
       <Navigation type={'submenu'} />
       <Grid className={classes.mainGrid}>
-        <Typography className={classes.largeTitle}>
-            {t("FOOTERAGREE")}
-        </Typography>
-        <Typography className={classes.title}>
-          {t("AFFILIATETITLE")}
-        </Typography>
-        <Typography className={classes.subtitle}>
-          {t("AFFILIATESUBTITLE")}
-        </Typography>
-        <Typography className={classes.contents} dangerouslySetInnerHTML= { {__html: t("AFFILIATECONTENT")} }>
-        </Typography>
+        <Typography className={classes.title}>{t('AFFILIATETITLE')}</Typography>
+        <Typography className={classes.subtitle}>{t('AFFILIATESUBTITLE')}</Typography>
+        <Typography className={classes.contents}>{t('AFFILIATECONTENT')}</Typography>
+        <Typography className={classes.subcontents1}>{t('AFFILIATECONTENT0')}</Typography>
+        <Typography className={classes.subcontents2}>{t('AFFILIATECONTENT1')}</Typography>
+        <Typography className={classes.subcontents1}>{t('AFFILIATECONTENT2')}</Typography>
+        <Typography className={classes.subcontents2}>{t('AFFILIATECONTENT3')}</Typography>
+        <Typography className={classes.subcontents1}>{t('AFFILIATECONTENT4')}</Typography>
+        <Typography className={classes.subcontents2}>{t('AFFILIATECONTENT5')}</Typography>
+        <Typography className={classes.contents}>{t('AFFILIATECONTENT6')}</Typography>
 
-        <Typography className={classes.subtitleCenter}>
-          {t("AFFILIATESUBTITLE0")}
-        </Typography>
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            1.
-          </Typography>
-          <Typography className={classes.subItemContent} dangerouslySetInnerHTML= { {__html: t("AFFILIATECONTENT0-1")} }>
-          </Typography>
-        </Grid>
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            2.
-          </Typography>
-          <Typography className={classes.subItemContent}>
-            {t("AFFILIATECONTENT0-2")}
-          </Typography>
-        </Grid>
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            3.
-          </Typography>
-          <Typography className={classes.subItemContent}>
-            {t("AFFILIATECONTENT0-3")}
-          </Typography>
-        </Grid>
-
-        <Typography className={classes.subtitleCenter}>
-          {t("AFFILIATESUBTITLE1")}
-        </Typography>
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            1.
-          </Typography>
-          <Typography className={classes.subItemContent}>
-            {t("AFFILIATECONTENT1-1")}
-          </Typography>
-        </Grid>
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            2.
-          </Typography>
-          <Typography className={classes.subItemContent}>
-            {t("AFFILIATECONTENT1-2")}
-          </Typography>
-        </Grid>
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            3.
-          </Typography>
-          <Typography className={classes.subItemContent}>
-            {t("AFFILIATECONTENT1-3")}
-          </Typography>
-        </Grid>
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            4.
-          </Typography>
-          <Typography className={classes.subItemContent}>
-            {t("AFFILIATECONTENT1-4")}
-          </Typography>
-        </Grid>
-        <Typography className={classes.subtitleCenter}>
-          {t("AFFILIATESUBTITLE2")}
-        </Typography>
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            1.
-          </Typography>
-          <Typography className={classes.subItemContent}>
-            {t("AFFILIATECONTENT2-1")}
-          </Typography>
-        </Grid>
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            2.
-          </Typography>
-          <Typography className={classes.subItemContent}>
-            {t("AFFILIATECONTENT2-2")}
-          </Typography>
-        </Grid>
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            3.
-          </Typography>
-          <Typography className={classes.subItemContent}>
-            {t("AFFILIATECONTENT2-3")}
-          </Typography>
-        </Grid>
-        <Typography className={classes.subtitleCenter}>
-          {t("AFFILIATESUBTITLE3")}
-        </Typography>
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            1.
-          </Typography>
-          <Typography className={classes.subItemContent}>
-            {t("AFFILIATECONTENT3-1")}
-          </Typography>
-        </Grid>
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            2.
-          </Typography>
-          <Typography className={classes.subItemContent}>
-            {t("AFFILIATECONTENT3-2")}
-          </Typography>
-        </Grid>
-        <Typography className={classes.subtitleCenter}>
-          {t("AFFILIATESUBTITLE4")}
-        </Typography>
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            1.
-          </Typography>
-          <Typography className={classes.subItemContent}>
-            {t("AFFILIATECONTENT4-1")}
-          </Typography>
-        </Grid>
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            2.
-          </Typography>
-          <Typography className={classes.subItemContent}>
-            {t("AFFILIATECONTENT4-2")}
-          </Typography>
-        </Grid>
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            3.
-          </Typography>
-          <Typography className={classes.subItemContent}>
-            {t("AFFILIATECONTENT4-3")}
-          </Typography>
-        </Grid>
-        <Typography className={classes.subtitleCenter}>
-          {t("AFFILIATESUBTITLE5")}
-        </Typography>
-
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            1.
-          </Typography>
-          <Grid className={classes.subItemContent}>
-            {t("AFFILIATECONTENT5-1")}
-            <Grid className={classes.subChildItem}>
-              <Typography className={classes.subItemNumber}>
-                b)
-              </Typography>
-              <Typography className={classes.subItemContent}>
-                {t("AFFILIATECONTENT5-1-1")}
-              </Typography>
-            </Grid>
-            <Grid className={classes.subChildItem}>
-              <Typography className={classes.subItemNumber}>
-                c)
-              </Typography>
-              <Typography className={classes.subItemContent}>
-                {t("AFFILIATECONTENT5-1-2")}
-              </Typography>
-            </Grid>
-            <Grid className={classes.subChildItem}>
-              <Typography className={classes.subItemNumber}>
-                d)
-              </Typography>
-              <Typography className={classes.subItemContent}>
-                {t("AFFILIATECONTENT5-1-3")}
-              </Typography>
-            </Grid>
-            <Grid className={classes.subChildItem}>
-              <Typography className={classes.subItemNumber}>
-                e)
-              </Typography>
-              <Typography className={classes.subItemContent}>
-                {t("AFFILIATECONTENT5-1-4")}
-              </Typography>
-            </Grid>
-            {
-              t("AFFILIATECONTENT5-1-5") ? (
-                <Grid className={classes.subChildItem}>
-                    <Typography className={classes.subItemNumber}>
-                      f)
-                    </Typography>
-                    <Typography className={classes.subItemContent}>
-                      {t("AFFILIATECONTENT5-1-5")}
-                    </Typography>
-                  </Grid>
-              )
-              : <></>
-             }
-            {
-              t("AFFILIATECONTENT5-1-6") ? (
-                <Grid className={classes.subChildItem}>
-                <Typography className={classes.subItemNumber}>
-                  g)
-                </Typography>
-                <Typography className={classes.subItemContent}>
-                  {t("AFFILIATECONTENT5-1-6")}
-                </Typography>
-              </Grid>
-              ) : <></>
-            }
-            <Grid className={classes.subChildItem}>
-              <Typography className={classes.subItemNumber}>
-                h)
-              </Typography>
-              <Typography className={classes.subItemContent}>
-                {t("AFFILIATECONTENT5-1-7")}
-              </Typography>
-            </Grid>
-            <Grid className={classes.subChildItem}>
-              <Typography className={classes.subItemNumber}>
-                i)
-              </Typography>
-              <Typography className={classes.subItemContent}>
-                {t("AFFILIATECONTENT5-1-8")}
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
-
-
-
-
-
-
-
-
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            2.
-          </Typography>
-          <Typography className={classes.subItemContent}>
-            {t("AFFILIATECONTENT5-2")}
-          </Typography>
-        </Grid>
-
-        <Typography className={classes.subtitleCenter}>
-          {t("AFFILIATESUBTITLE6")}
-        </Typography>
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            1.
-          </Typography>
-          <Typography className={classes.subItemContent}>
-            {t("AFFILIATECONTENT6-1")}
-          </Typography>
-        </Grid>
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            2.
-          </Typography>
-          <Typography className={classes.subItemContent}>
-            {t("AFFILIATECONTENT6-2")}
-          </Typography>
-        </Grid>
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            3.
-          </Typography>
-          <Typography className={classes.subItemContent}>
-            {t("AFFILIATECONTENT6-3")}
-          </Typography>
-        </Grid>
-
-        <Typography className={classes.subtitleCenter}>
-          {t("AFFILIATESUBTITLE7")}
-        </Typography>
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            1.
-          </Typography>
-          <Typography className={classes.subItemContent}>
-            {t("AFFILIATECONTENT7-1")}
-          </Typography>
-        </Grid>
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            2.
-          </Typography>
-          <Typography className={classes.subItemContent}>
-            {t("AFFILIATECONTENT7-2")}
-          </Typography>
-        </Grid>
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            3.
-          </Typography>
-          <Typography className={classes.subItemContent}>
-            {t("AFFILIATECONTENT7-3")}
-          </Typography>
-        </Grid>
-
-        <Typography className={classes.subtitleCenter}>
-          {t("AFFILIATESUBTITLE8")}
-        </Typography>
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            1.
-          </Typography>
-          <Typography className={classes.subItemContent} >
-            {t("AFFILIATECONTENT8-1")}
-          </Typography>
-        </Grid>
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            2.
-          </Typography>
-          <Typography className={classes.subItemContent}>
-            {t("AFFILIATECONTENT8-2")}
-          </Typography>
-        </Grid>
-
-        <Typography className={classes.subtitleCenter}>
-          {t("AFFILIATESUBTITLE9")}
-        </Typography>
-        <Typography className={classes.contents} dangerouslySetInnerHTML= { {__html: t("AFFILIATECONTENT9")} }>
-        </Typography>
-
-        <Typography className={classes.subtitleCenter}>
-          {t("AFFILIATESUBTITLE10")}
-        </Typography>
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            1.
-          </Typography>
-          <Typography className={classes.subItemContent}>
-            {t("AFFILIATECONTENT10-1")}
-          </Typography>
-        </Grid>
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            2.
-          </Typography>
-          <Typography className={classes.subItemContent}>
-            {t("AFFILIATECONTENT10-2")}
-          </Typography>
-        </Grid>
-
-        <Typography className={classes.subtitleCenter}>
-          {t("AFFILIATESUBTITLE11")}
-        </Typography>
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            1.
-          </Typography>
-          <Typography className={classes.subItemContent}>
-            {t("AFFILIATECONTENT11-1")}
-          </Typography>
-        </Grid>
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            2.
-          </Typography>
-          <Typography className={classes.subItemContent}>
-            {t("AFFILIATECONTENT11-2")}
-          </Typography>
-        </Grid>
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            3.
-          </Typography>
-          <Typography className={classes.subItemContent}>
-            {t("AFFILIATECONTENT11-3")}
-          </Typography>
-        </Grid>
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            4.
-          </Typography>
-          <Typography className={classes.subItemContent}>
-            {t("AFFILIATECONTENT11-4")}
-          </Typography>
-        </Grid>
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            5.
-          </Typography>
-          <Typography className={classes.subItemContent}>
-            {t("AFFILIATECONTENT11-5")}
-          </Typography>
-        </Grid>
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            6.
-          </Typography>
-          <Typography className={classes.subItemContent}>
-            {t("AFFILIATECONTENT11-6")}
-          </Typography>
-        </Grid>
-        <Grid className={classes.subitem}>
-          <Typography className={classes.subItemNumber}>
-            7.
-          </Typography>
-          <Typography className={classes.subItemContent}>
-            {t("AFFILIATECONTENT11-7")}
-          </Typography>
-        </Grid>
+        <Typography className={classes.subtitle}>{t('AFFILIATESUBTITLE0')}</Typography>
+        <Typography className={classes.subtitletyle1}>{t('AFFILIATESUBTITLE0-1')}</Typography>
+        <Typography className={classes.contents}>{t('AFFILIATECONTENT0-1')}</Typography>
+        <Typography className={classes.subtitletyle1}>{t('AFFILIATESUBTITLE0-2')}</Typography>
+        <Typography className={classes.contents}>{t('AFFILIATECONTENT0-2')}</Typography>
+        <Typography className={classes.subtitletyle1}>{t('AFFILIATESUBTITLE0-3')}</Typography>
+        <Typography className={classes.contents}>{t('AFFILIATECONTENT0-3')}</Typography>
+        <Typography className={classes.subtitletyle1}>{t('AFFILIATESUBTITLE0-4')}</Typography>
+        <Typography className={classes.contents}>{t('AFFILIATECONTENT0-4')}</Typography>
+        <Typography className={classes.subtitletyle1}>{t('AFFILIATESUBTITLE0-5')}</Typography>
+        <Typography className={classes.contents}>{t('AFFILIATECONTENT0-5')}</Typography>
+        <Typography className={classes.subtitletyle1}>{t('AFFILIATESUBTITLE0-5-1')}</Typography>
+        <Typography className={classes.contents}>{t('AFFILIATECONTENT0-5-1')}</Typography>
+        <Typography className={classes.subtitletyle1}>{t('AFFILIATESUBTITLE0-5-2')}</Typography>
+        <Typography className={classes.contents}>{t('AFFILIATECONTENT0-5-2')}</Typography>
+        <Typography className={classes.subtitletyle1}>{t('AFFILIATESUBTITLE0-5-3')}</Typography>
+        <Typography className={classes.contents}>{t('AFFILIATECONTENT0-5-3')}</Typography>
+        <Typography className={classes.subtitletyle1}>{t('AFFILIATESUBTITLE0-6')}</Typography>
+        <Typography className={classes.contents}>{t('AFFILIATECONTENT0-6')}</Typography>
+        <Typography className={classes.subtitletyle1}>{t('AFFILIATESUBTITLE0-7')}</Typography>
+        <Typography className={classes.contents}>{t('AFFILIATECONTENT0-7')}</Typography>
+        <Typography className={classes.subcontents2}>{t('AFFILIATECONTENT0-7-1')}</Typography>
+        <Typography className={classes.contents}>{t('AFFILIATECONTENT0-7-2')}</Typography>
+        <Typography className={classes.subtitletyle1}>{t('AFFILIATESUBTITLE0-8')}</Typography>
+        <Typography className={classes.contents}>{t('AFFILIATECONTENT0-8')}</Typography>
+        <Typography className={classes.subtitletyle1}>{t('AFFILIATESUBTITLE0-9')}</Typography>
+        <Typography className={classes.contents}>{t('AFFILIATECONTENT0-9')}</Typography>
+        <Typography className={classes.subtitletyle1}>{t('AFFILIATESUBTITLE0-10')}</Typography>
+        <Typography className={classes.contents}>{t('AFFILIATECONTENT0-10')}</Typography>
+        <Typography className={classes.subtitletyle1}>{t('AFFILIATESUBTITLE0-11')}</Typography>
+        <Typography className={classes.contents}>{t('AFFILIATECONTENT0-11')}</Typography>
+        <Typography className={classes.subtitletyle1}>{t('AFFILIATESUBTITLE0-12')}</Typography>
+        <Typography className={classes.contents}>{t('AFFILIATECONTENT0-12')}</Typography>
+        <Typography className={classes.subtitletyle1}>{t('AFFILIATESUBTITLE0-13')}</Typography>
+        <Typography className={classes.contents}>{t('AFFILIATECONTENT0-13')}</Typography>
+        <Typography className={classes.subtitletyle1}>{t('AFFILIATESUBTITLE0-14')}</Typography>
+        <Typography className={classes.contents}>{t('AFFILIATECONTENT0-14')}</Typography>
+        <Typography className={classes.subcontents2}>{t('AFFILIATECONTENT0-14-1')}</Typography>
+        <Typography className={classes.contents}>{t('AFFILIATECONTENT0-14-2')}</Typography>
+        <Typography className={classes.subtitletyle1}>{t('AFFILIATESUBTITLE0-15')}</Typography>
+        <Typography className={classes.contents}>{t('AFFILIATECONTENT0-15')}</Typography>
+        <Typography className={classes.subtitletyle1}>{t('AFFILIATESUBTITLE0-16')}</Typography>
+        <Typography className={classes.contents}>{t('AFFILIATECONTENT0-16')}</Typography>
+        <Typography className={classes.subtitletyle1}>{t('AFFILIATESUBTITLE0-17')}</Typography>
+        <Typography className={classes.contents}>{t('AFFILIATECONTENT0-17')}</Typography>
+        <Typography className={classes.subtitletyle1}>{t('AFFILIATESUBTITLE0-18')}</Typography>
+        <Typography className={classes.contents}>{t('AFFILIATECONTENT0-18')}</Typography>
+        <Typography className={classes.subtitletyle1}>{t('AFFILIATESUBTITLE0-19')}</Typography>
+        <Typography className={classes.contents}>{t('AFFILIATECONTENT0-19')}</Typography>
+        <Typography className={classes.subtitletyle1}>{t('AFFILIATESUBTITLE0-20')}</Typography>
+        <Typography className={classes.contents}>{t('AFFILIATECONTENT0-20')}</Typography>
+        <Typography className={classes.subtitletyle1}>{t('AFFILIATESUBTITLE0-21')}</Typography>
+        <Typography className={classes.contents}>{t('AFFILIATECONTENT0-21')}</Typography>
+        <Typography className={classes.subtitletyle1}>{t('AFFILIATESUBTITLE0-22')}</Typography>
+        <Typography className={classes.contents}>{t('AFFILIATECONTENT0-22')}</Typography>
+        <Typography className={classes.subtitletyle1}>{t('AFFILIATESUBTITLE0-23')}</Typography>
+        <Typography className={classes.contents}>{t('AFFILIATECONTENT0-23')}</Typography>
+        <Typography className={classes.subtitletyle1}>{t('AFFILIATESUBTITLE0-24')}</Typography>
+        <Typography className={classes.contents}>{t('AFFILIATECONTENT0-24')}</Typography>
+        <Typography className={classes.subtitletyle1}>{t('AFFILIATESUBTITLE0-25')}</Typography>
+        <Typography className={classes.contents}>{t('AFFILIATECONTENT0-25')}</Typography>
       </Grid>
       <Footer />
     </Grid>
