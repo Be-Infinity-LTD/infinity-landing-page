@@ -29,21 +29,21 @@ export default function Charity() {
     setLoop(loop)
 
     let itemsTemp: any = [
+      // <div className="item" data-value="1" onDragStart={handleDrag}>
+      //   <div>
+      //     <ReactPlayer
+      //       url="/video/fountain.mov"
+      //       style={{ margin: '0px auto' }}
+      //       playing={isPlaying}
+      //       loop={loop}
+      //       controls={true}
+      //       width="100%"
+      //       height="80%"
+      //     />
+      //     <Typography className={classes.fountainDesc}>{t('CHARITYCONTENT1')}</Typography>
+      //   </div>
+      // </div>,
       <div className="item" data-value="1" onDragStart={handleDrag}>
-        <div>
-          <ReactPlayer
-            url="/video/fountain.mov"
-            style={{ margin: '0px auto' }}
-            playing={isPlaying}
-            loop={loop}
-            controls={true}
-            width="100%"
-            height="80%"
-          />
-          <Typography className={classes.fountainDesc}>{t('CHARITYCONTENT1')}</Typography>
-        </div>
-      </div>,
-      <div className="item" data-value="2" onDragStart={handleDrag}>
         <div className={classes.forest}>
           <img src="img/landing/forest.jpg" className={classes.forestImg} alt="forest" />
           <div className={classes.forestDownload}>
@@ -56,7 +56,7 @@ export default function Charity() {
           </div>
         </div>
       </div>,
-      <div className="item" data-value="3" onDragStart={handleDrag}>
+      <div className="item" data-value="2" onDragStart={handleDrag}>
         <div className={classes.forest}>
           <img src="img/landing/child/child1.jpg" className={classes.forestImg} alt="child1" />
           <div className={classes.forestDownload}>
@@ -65,7 +65,7 @@ export default function Charity() {
           </div>
         </div>
       </div>,
-      <div className="item" data-value="4" onDragStart={handleDrag}>
+      <div className="item" data-value="3" onDragStart={handleDrag}>
         <div className={classes.forest}>
           <img src="img/landing/child/child2.jpg" className={classes.forestImg} alt="child2" />
           <div className={classes.forestDownload}>
@@ -74,7 +74,7 @@ export default function Charity() {
           </div>
         </div>
       </div>,
-      <div className="item" data-value="5" onDragStart={handleDrag}>
+      <div className="item" data-value="4" onDragStart={handleDrag}>
         <div className={classes.forest}>
           <img src="img/landing/child/child3.jpg" className={classes.forestImg} alt="child3" />
           <div className={classes.forestDownload}>
@@ -83,7 +83,7 @@ export default function Charity() {
           </div>
         </div>
       </div>,
-      <div className="item" data-value="6" onDragStart={handleDrag}>
+      <div className="item" data-value="5" onDragStart={handleDrag}>
         <div className={classes.forest}>
           <img src="img/landing/child/child4.jpg" className={classes.forestImg} alt="child4" />
           <div className={classes.forestDownload}>
@@ -92,7 +92,7 @@ export default function Charity() {
           </div>
         </div>
       </div>,
-      <div className="item" data-value="7" onDragStart={handleDrag}>
+      <div className="item" data-value="6" onDragStart={handleDrag}>
         <div className={classes.forest}>
           <img src="img/landing/child/child5.jpg" className={classes.forestImg} alt="child5" />
           <div className={classes.forestDownload}>
@@ -101,7 +101,7 @@ export default function Charity() {
           </div>
         </div>
       </div>,
-      <div className="item" data-value="8" onDragStart={handleDrag}>
+      <div className="item" data-value="7" onDragStart={handleDrag}>
         <div className={classes.forest}>
           <img src="img/landing/child/child6.jpg" className={classes.forestImg} alt="child6" />
           <div className={classes.forestDownload}>
@@ -110,7 +110,7 @@ export default function Charity() {
           </div>
         </div>
       </div>,
-      <div className="item" data-value="9" onDragStart={handleDrag}>
+      <div className="item" data-value="8" onDragStart={handleDrag}>
         <div className={classes.forest}>
           <img src="img/landing/child/child7.jpg" className={classes.forestImg} alt="child7" />
           <div className={classes.forestDownload}>
@@ -119,7 +119,7 @@ export default function Charity() {
           </div>
         </div>
       </div>,
-      <div className="item" data-value="10" onDragStart={handleDrag}>
+      <div className="item" data-value="9" onDragStart={handleDrag}>
         <div className={classes.forest}>
           <img src="img/landing/child/child8.jpg" className={classes.forestImg} alt="child8" />
           <div className={classes.forestDownload}>
@@ -128,7 +128,7 @@ export default function Charity() {
           </div>
         </div>
       </div>,
-      <div className="item" data-value="11" onDragStart={handleDrag}>
+      <div className="item" data-value="10" onDragStart={handleDrag}>
         <div className={classes.forest}>
           <img src="img/landing/child/child9.jpg" className={classes.forestImg} alt="child9" />
           <div className={classes.forestDownload}>
@@ -137,7 +137,7 @@ export default function Charity() {
           </div>
         </div>
       </div>,
-      <div className="item" data-value="12" onDragStart={handleDrag}>
+      <div className="item" data-value="11" onDragStart={handleDrag}>
         <div className={classes.forest}>
           <img src="img/landing/child/child10.jpg" className={classes.forestImg} alt="child10" />
           <div className={classes.forestDownload}>
