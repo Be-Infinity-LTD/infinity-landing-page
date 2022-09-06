@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Grid, Typography } from '@material-ui/core'
 import { useTranslation } from 'react-i18next'
-import ReactPlayer from 'react-player'
+// import ReactPlayer from 'react-player'
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
 

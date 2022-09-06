@@ -98,7 +98,7 @@ export const useStyles = makeStyles((theme: Theme) =>
     },
     teamMate: {
       backgroundColor: 'rgb(139, 200, 247)',
-      marginTop: '10%',
+      marginTop: '9%',
       position: 'relative',
     },
     avatarTeamMainDiv: {
@@ -154,9 +154,36 @@ export const useStyles = makeStyles((theme: Theme) =>
       width: '70%',
       height: '70',
     },
-    subMainTeam: {
+    subMainTeam1: {
       display: 'flex',
     },
+    subMainTeam2: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    teamMate21: {
+      width: '50%',
+      paddingLeft: '12%',
+      backgroundColor: 'rgb(139, 200, 247)',
+      marginTop: '9%',
+      position: 'relative',
+    },
+    teamMate22: {
+      width: '50%',
+      paddingRight: '12%',
+      backgroundColor: 'rgb(139, 200, 247)',
+      marginTop: '9%',
+      position: 'relative',
+    },
+    avatarTeamContent2: {
+      width: '77%',
+      background: '#f8f8f8',
+      position: 'absolute',
+      top: '50%',
+      height: '50%',
+    },
+
     [theme.breakpoints.up(1200)]: {
       avatarImg: {
         position: 'absolute',
@@ -169,6 +196,12 @@ export const useStyles = makeStyles((theme: Theme) =>
         padding: '30px 0px',
       },
     },
+    [theme.breakpoints.down(900)]: {
+      hostLead: {
+        width: '90px',
+        height: '90px',
+      },
+    },
     [theme.breakpoints.down(800)]: {
       mainTeamName: {
         fontSize: '15px',
@@ -178,24 +211,6 @@ export const useStyles = makeStyles((theme: Theme) =>
       mainTeamName: {
         fontSize: '18px',
       },
-      mainTeamMate: {
-        display: 'block',
-      },
-      teamMate: {
-        marginTop: '20%',
-      },
-      subMainTeam: {
-        display: 'block',
-        marginTop: '40%',
-      },
-    },
-    [theme.breakpoints.down(900)]: {
-      hostLead: {
-        width: '90px',
-        height: '90px',
-      },
-    },
-    [theme.breakpoints.down(700)]: {
       hostLead: {
         width: '70px',
         height: '70px',
@@ -206,8 +221,26 @@ export const useStyles = makeStyles((theme: Theme) =>
       teamMate: {
         marginTop: '25%',
       },
-      subMainTeam: {
+      subMainTeam1: {
         display: 'block',
+        marginTop: '40%',
+      },
+      subMainTeam2: {
+        display: 'block',
+        marginTop: '40%',
+      },
+      teamMate21: {
+        width: '100%',
+        marginTop: '25%',
+        paddingLeft: '0%',
+      },
+      teamMate22: {
+        width: '100%',
+        marginTop: '25%',
+        paddingRight: '0%',
+      },
+      avatarTeamContent2: {
+        width: '100%',
       },
     },
     [theme.breakpoints.down(500)]: {

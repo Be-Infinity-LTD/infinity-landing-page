@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles'
-import { Avatar, MenuItem } from '@material-ui/core'
-import Button from '@material-ui/core/Button'
-import Popper from '@material-ui/core/Popper'
-import Grow from '@material-ui/core/Grow'
-import ClickAwayListener from '@material-ui/core/ClickAwayListener'
-import Paper from '@material-ui/core/Paper'
-import MenuList from '@material-ui/core/MenuList'
+// import { Avatar, MenuItem } from '@material-ui/core'
+// import Button from '@material-ui/core/Button'
+// import Popper from '@material-ui/core/Popper'
+// import Grow from '@material-ui/core/Grow'
+// import ClickAwayListener from '@material-ui/core/ClickAwayListener'
+// import Paper from '@material-ui/core/Paper'
+// import MenuList from '@material-ui/core/MenuList'
 import Modal from '@material-ui/core/Modal'
 import Backdrop from '@material-ui/core/Backdrop'
 import Fade from '@material-ui/core/Fade'
@@ -166,48 +166,49 @@ export default function Navigation({ type }: NavigationProps) {
   })
 
   const classes = useStyles()
-  const { t, i18n } = useTranslation()
-  const [strCurLang, setCurStrLang] = useState('English')
-  const [strCurAvatar, setCurAvatar] = useState('./img/flags/english.svg')
+  const { t } = useTranslation()
+  // const { t, i18n } = useTranslation()
+  // const [strCurLang, setCurStrLang] = useState('English')
+  // const [strCurAvatar, setCurAvatar] = useState('./img/flags/english.svg')
   const [curStyleMenn, setCurStyleMenu] = useState('button')
   const [curTogMenu, setCurTogMenu] = useState('menu')
   const [openGetStart, setOpenGetStart] = React.useState(false)
 
-  const anchorRef = React.useRef<HTMLButtonElement>(null)
-  const [open, setOpen] = React.useState(false)
+  // const anchorRef = React.useRef<HTMLButtonElement>(null)
+  // const [open, setOpen] = React.useState(false)
 
-  const handleToggle = () => {
-    setOpen((prevOpen) => !prevOpen)
-  }
-  const handleClose = (event: React.MouseEvent<EventTarget>) => {
-    if (anchorRef.current && anchorRef.current.contains(event.target as HTMLElement)) {
-      return
-    }
-    setOpen(false)
-  }
-  function handleListKeyDown(event: React.KeyboardEvent) {
-    if (event.key === 'Tab') {
-      event.preventDefault()
-      setOpen(false)
-    }
-  }
+  // const handleToggle = () => {
+  //   setOpen((prevOpen) => !prevOpen)
+  // }
+  // const handleClose = (event: React.MouseEvent<EventTarget>) => {
+  //   if (anchorRef.current && anchorRef.current.contains(event.target as HTMLElement)) {
+  //     return
+  //   }
+  //   setOpen(false)
+  // }
+  // function handleListKeyDown(event: React.KeyboardEvent) {
+  //   if (event.key === 'Tab') {
+  //     event.preventDefault()
+  //     setOpen(false)
+  //   }
+  // }
 
-  const handleEnglish = () => {
-    i18n.changeLanguage('en')
-    setCurStrLang('English')
-    setCurAvatar('./img/flags/english.svg')
+  // const handleEnglish = () => {
+  //   i18n.changeLanguage('en')
+  //   setCurStrLang('English')
+  //   setCurAvatar('./img/flags/english.svg')
 
-    setOpen(false)
-    localStorage.setItem('Language', 'en')
-  }
-  const handleGerman = () => {
-    i18n.changeLanguage('ge')
-    setCurStrLang('Deutsch')
-    setCurAvatar('./img/flags/germany.svg')
+  //   setOpen(false)
+  //   localStorage.setItem('Language', 'en')
+  // }
+  // const handleGerman = () => {
+  //   i18n.changeLanguage('ge')
+  //   setCurStrLang('Deutsch')
+  //   setCurAvatar('./img/flags/germany.svg')
 
-    setOpen(false)
-    localStorage.setItem('Language', 'ge')
-  }
+  //   setOpen(false)
+  //   localStorage.setItem('Language', 'ge')
+  // }
 
   // const handleFrench = () => {
   //   i18n.changeLanguage('fr')
