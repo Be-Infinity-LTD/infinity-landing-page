@@ -191,11 +191,6 @@ export const useStyles = makeStyles((theme: Theme) =>
         right: '5%',
       },
     },
-    [theme.breakpoints.down(1000)]: {
-      main: {
-        padding: '30px 0px',
-      },
-    },
     [theme.breakpoints.down(900)]: {
       hostLead: {
         width: '90px',
