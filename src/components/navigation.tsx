@@ -347,7 +347,7 @@ export default function Navigation({ type }: NavigationProps) {
                     <a>{t('GETSTARTED')}</a>
                   </li>
                   <li className={classes.modalLink}>
-                    <a href="https://infinity-backoffice.com/backoffice/">{t('LOGIN')}</a>
+                    <a href="https://infinity-backoffice.com/auth/login">{t('LOGIN')}</a>
                   </li>
                 </ul>
               </div>
@@ -377,7 +377,7 @@ export default function Navigation({ type }: NavigationProps) {
                     {t('GETSTARTED')}
                   </li>
                   <li>
-                    <a href="https://infinity-backoffice.com/backoffice/" className="page-scroll">
+                    <a href="https://infinity-backoffice.com/auth/login/" className="page-scroll">
                       {t('LOGIN')}
                     </a>
                   </li>
