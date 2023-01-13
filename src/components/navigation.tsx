@@ -387,6 +387,7 @@ export default function Navigation({ type }: NavigationProps) {
           </div>
         </nav>
       </div>
+      {/* @ts-ignore */}
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"

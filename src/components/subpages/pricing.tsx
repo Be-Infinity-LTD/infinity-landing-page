@@ -15,13 +15,13 @@ export default function Pricing() {
       <Navigation type={'submenu'} />
       <Grid className={classes.mainGrid}>
         <Typography className={classes.largeTitle}>
-            {t("FOOTERPRICING")}
+          {t("FOOTERPRICING")}
         </Typography>
         <Typography className={classes.title}>
-            {t("PRICINGTITLE1")}
+          {t("PRICINGTITLE1")}
         </Typography>
         <Typography className={classes.subtitle}>
-            {t("PRICINGTITLE1-1")}
+          {t("PRICINGTITLE1-1")}
         </Typography>
 
         <Grid className={classes.item}>
@@ -90,7 +90,7 @@ export default function Pricing() {
         </Grid>
 
         <Typography className={classes.subtitle}>
-            {t("PRICINGTITLE1-2")}
+          {t("PRICINGTITLE1-2")}
         </Typography>
 
         <Grid className={classes.item}>
@@ -127,61 +127,61 @@ export default function Pricing() {
         </Grid>
 
         <Typography className={classes.title}>
-            {t("PRICINGTITLE2")}
+          {t("PRICINGTITLE2")}
         </Typography>
         <Typography className={classes.contents}>
-            {t("PRICINGCONTENT2")}
+          {t("PRICINGCONTENT2")}
         </Typography>
         <Typography className={classes.subtitle}>
-            {t("PRICINGTITLE2-1")}
+          {t("PRICINGTITLE2-1")}
         </Typography>
         <Typography className={classes.contents}>
-            {t("PRICINGCONTENT2-1")}
+          {t("PRICINGCONTENT2-1")}
         </Typography>
         <Typography className={classes.subtitle}>
-            {t("PRICINGTITLE2-2")}
+          {t("PRICINGTITLE2-2")}
         </Typography>
         <Typography className={classes.contents}>
-            {t("PRICINGCONTENT2-2")}
+          {t("PRICINGCONTENT2-2")}
         </Typography>
         <Typography className={classes.subtitle}>
-            {t("PRICINGTITLE2-3")}
+          {t("PRICINGTITLE2-3")}
         </Typography>
         <Typography className={classes.contents}>
-            {t("PRICINGCONTENT2-3")}
+          {t("PRICINGCONTENT2-3")}
         </Typography>
         <Typography className={classes.subtitle}>
-            {t("PRICINGTITLE2-4")}
+          {t("PRICINGTITLE2-4")}
         </Typography>
         <Typography className={classes.contents}>
-            {t("PRICINGCONTENT2-4")}
+          {t("PRICINGCONTENT2-4")}
         </Typography>
         <Typography className={classes.subtitle}>
-            {t("PRICINGTITLE2-5")}
+          {t("PRICINGTITLE2-5")}
         </Typography>
         <Typography className={classes.contents}>
-            {t("PRICINGCONTENT2-5")}
+          {t("PRICINGCONTENT2-5")}
         </Typography>
         <Typography className={classes.subtitle}>
-            {t("PRICINGTITLE2-6")}
+          {t("PRICINGTITLE2-6")}
         </Typography>
         <Typography className={classes.contents}>
-            {t("PRICINGCONTENT2-6")}
+          {t("PRICINGCONTENT2-6")}
         </Typography>
         <Typography className={classes.subtitle}>
-            {t("PRICINGTITLE2-7")}
+          {t("PRICINGTITLE2-7")}
         </Typography>
         <Typography className={classes.contents}>
-            {t("PRICINGCONTENT2-7")}
+          {t("PRICINGCONTENT2-7")}
         </Typography>
         <Typography className={classes.subtitle}>
-            {t("PRICINGTITLE2-8")}
+          {t("PRICINGTITLE2-8")}
         </Typography>
         <Typography className={classes.contents}>
-            {t("PRICINGCONTENT2-8")}
+          {t("PRICINGCONTENT2-8")}
         </Typography>
 
-        <Typography className={classes.title}>
+        {/* <Typography className={classes.title}>
             {t("PRICINGTITLE3")}
         </Typography>
         <Typography className={classes.contents}>
@@ -192,49 +192,63 @@ export default function Pricing() {
         </Typography>
         <Typography className={classes.contents}>
             {t("PRICINGCONTENT3-1")}
-        </Typography>
+        </Typography> */}
         <Typography className={classes.title}>
-            {t("PRICINGTITLE4")}
+          {t("PRICINGTITLE4")}
         </Typography>
         <Typography className={classes.contents}>
-            {t("PRICINGCONTENT4")}
+          {t("PRICINGCONTENT4")}
         </Typography>
 
         <Typography className={classes.title}>
-            {t("PRICINGTITLE5")}
+          {t("PRICINGTITLE5")}
         </Typography>
         <Typography className={classes.contents}>
-            {t("PRICINGCONTENT5")}
+          {t("PRICINGCONTENT5")}
         </Typography>
         <Typography className={classes.subtitle}>
-            {t("PRICINGTITLE5-1")}
+          {t("PRICINGTITLE5-1")}
         </Typography>
         <Typography className={classes.contents}>
-            {t("PRICINGCONTENT5-1")}
+          {t("PRICINGCONTENT5-1")}
         </Typography>
         <Typography className={classes.subtitle}>
-            {t("PRICINGTITLE5-2")}
+          {t("PRICINGTITLE5-2")}
         </Typography>
         <Typography className={classes.contents}>
-            {t("PRICINGCONTENT5-2")}
+          {t("PRICINGCONTENT5-2")}
         </Typography>
         <Typography className={classes.subtitle}>
-            {t("PRICINGTITLE5-3")}
+          {t("PRICINGTITLE5-3")}
         </Typography>
         <Typography className={classes.contents}>
-            {t("PRICINGCONTENT5-3")}
+          {t("PRICINGCONTENT5-3")}
         </Typography>
         <Typography className={classes.subtitle}>
-            {t("PRICINGTITLE5-4")}
+          {t("PRICINGTITLE5-4")}
         </Typography>
         <Typography className={classes.contents}>
-            {t("PRICINGCONTENT5-4")}
+          {t("PRICINGCONTENT5-4")}
         </Typography>
         <Typography className={classes.subtitle}>
-            {t("PRICINGTITLE5-5")}
+          {t("PRICINGTITLE5-5")}
         </Typography>
         <Typography className={classes.contents}>
-            {t("PRICINGCONTENT5-5")}
+          {t("PRICINGCONTENT5-5")}
+        </Typography>
+
+        <Typography className={classes.title}>
+          Custom Plans
+        </Typography>
+        {/* <Typography className={classes.contents}>
+           
+        </Typography> */}
+        <Typography className={classes.subtitle}>
+          Need More?
+        </Typography>
+        <Typography className={classes.contents}>
+          If you are looking for an enterprise experience, custom tailored to you and your business feel free to reach out to our support:
+          <a href='mailto:support@be-infinity.com'>support@be-infinity.com</a> and let us know what you have in mind.
         </Typography>
       </Grid>
       <Footer />

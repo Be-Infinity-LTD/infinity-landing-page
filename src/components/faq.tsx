@@ -172,7 +172,7 @@ export default function FAQ() {
           <i className="fas fa-angle-double-right"></i>
         </Button>
       </div>
-
+      {/* @ts-ignore */}
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
