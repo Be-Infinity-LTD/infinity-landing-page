@@ -2,6 +2,16 @@ import { makeStyles, Theme, createStyles } from '@material-ui/core/styles'
 
 export const useStyles = makeStyles((theme: Theme) =>
   createStyles({
+    paymentMethods: {
+      display: 'grid',
+      gridAutoFlow: 'column',
+      justifyContent: 'space-between',
+      width: '100%',
+      "& svg": {
+        height: '100px',
+        width: '100px'
+      },
+    },
     mainBottom: {
       backgroundColor: '#bdbdbd',
       borderTop: '1px solid #d0d0d0',
