@@ -5,11 +5,12 @@ export const useStyles = makeStyles((theme: Theme) =>
     paymentMethods: {
       display: 'grid',
       gridAutoFlow: 'column',
-      justifyContent: 'space-between',
+      justifyContent: 'left',
+      gap: '10px',
       width: '100%',
       "& svg": {
-        height: '100px',
-        width: '100px'
+        height: '50px',
+        width: '50px'
       },
     },
     mainBottom: {
