@@ -102,7 +102,7 @@ export default function Team() {
             </a>
           </Grid>
         </Grid>
-        <Grid className={classes.teamMate22}>
+        {/* <Grid className={classes.teamMate22}>
           <Grid className={classes.avatarTeamMainDiv}>
             <img src={teamSubMainImgs2[1]} alt={teamSubMainImgs2[1]} className={classes.avatarTeamMain} />
           </Grid>
@@ -116,7 +116,7 @@ export default function Team() {
               </Grid>
             </a>
           </Grid>
-        </Grid>
+        </Grid> */}
       </Grid>
     </div>
   )

@@ -163,8 +163,8 @@ export const useStyles = makeStyles((theme: Theme) =>
       justifyContent: 'center',
     },
     teamMate21: {
-      width: '50%',
-      paddingLeft: '12%',
+      width: '100%',
+      padding: '0px 33%',
       backgroundColor: 'rgb(139, 200, 247)',
       marginTop: '9%',
       position: 'relative',
@@ -177,7 +177,7 @@ export const useStyles = makeStyles((theme: Theme) =>
       position: 'relative',
     },
     avatarTeamContent2: {
-      width: '77%',
+      width: '33%',
       background: '#f8f8f8',
       position: 'absolute',
       top: '50%',
@@ -227,6 +227,7 @@ export const useStyles = makeStyles((theme: Theme) =>
       teamMate21: {
         width: '100%',
         marginTop: '25%',
+        paddingRight: '0%',
         paddingLeft: '0%',
       },
       teamMate22: {
