@@ -20,7 +20,7 @@ export const academyLiveLists = [
 ]
 
 export const toolsImgs = [
-  './img/landing/tools_advisor.jpg',
+  // './img/landing/tools_advisor.jpg',
   './img/landing/tools_trade.jpg',
   './img/landing/tools_indicator.jpg',
   './img/landing/tools_coinanalyzer.jpg',

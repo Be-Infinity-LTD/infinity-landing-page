@@ -6,8 +6,18 @@ import { toolsImgs } from '../common/constant'
 export default function Tools() {
   const { t } = useTranslation()
   const classes = useStyles()
-  const toolsTitles = ['TOOLSEXPERTTITLE', 'TOOLSTRADETITLE', 'TOOLSINDICATORTITLE', 'TOOLSCOINTITLE']
-  const toolsContents = ['TOOLSEXPERTCONTENT', 'TOOLSTRADECONTENT', 'TOOLSINDICATORCONTENT', 'TOOLSCOINCONTENT']
+  const toolsTitles = [
+    // 'TOOLSEXPERTTITLE',
+    'TOOLSTRADETITLE',
+    'TOOLSINDICATORTITLE',
+    'TOOLSCOINTITLE',
+  ]
+  const toolsContents = [
+    // 'TOOLSEXPERTCONTENT',
+    'TOOLSTRADECONTENT',
+    'TOOLSINDICATORCONTENT',
+    'TOOLSCOINCONTENT',
+  ]
 
   return (
     <div id="tools" className={classes.mainContent}>
