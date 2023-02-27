@@ -35,6 +35,7 @@ export const useStyles = makeStyles((theme: Theme) =>
       display: 'flex',
       marginRight: 'auto',
       marginLeft: 'auto',
+      justifyContent: 'center',
     },
     toolsItem: {
       width: 'calc(25% - 120px/4)',
