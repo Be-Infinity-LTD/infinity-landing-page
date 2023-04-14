@@ -6,11 +6,11 @@ export const useStyles = makeStyles((theme: Theme) =>
       display: 'grid',
       gridAutoFlow: 'column',
       justifyContent: 'left',
-      gap: '10px',
-      width: '100%',
-      "& svg": {
+      columnGap: '10px',
+      width: 'min-content',
+      '& svg': {
         height: '50px',
-        width: '50px'
+        width: '50px',
       },
     },
     mainBottom: {
@@ -192,6 +192,10 @@ export const useStyles = makeStyles((theme: Theme) =>
       footerSepContent: {
         marginLeft: '50px',
         marginRight: '50px',
+      },
+      paymentMethods: {
+        gridTemplateColumns: 'repeat(5, 1fr)',
+        gridAutoFlow: 'unset',
       },
     },
     [theme.breakpoints.down(600)]: {
