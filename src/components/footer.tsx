@@ -119,7 +119,7 @@ export default function Aboutus() {
             <UnionPaySVG />
             <AMEXSVG />
             <GooglePaySVG />
-            {/* <ApplePaySVG /> */}
+            <ApplePaySVG />
           </Grid>
         </Grid>
       </Grid>
