@@ -73,10 +73,13 @@ export default function Terms() {
         <Typography className={classes.contents}>{t('TERMSCONTENT12')}</Typography>
 
         <Typography className={classes.title}>{t('TERMSTITLE13')}</Typography>
-        <Typography className={classes.contents} dangerouslySetInnerHTML={{ __html: t('TERMSCONTENT13-1') }} />
+        <Typography className={classes.contents}>{t('TERMSCONTENT13')}</Typography>
 
         <Typography className={classes.title}>{t('TERMSTITLE14')}</Typography>
-        <Typography className={classes.contents}>{t('TERMSCONTENT14')}</Typography>
+        <Typography className={classes.contents} dangerouslySetInnerHTML={{ __html: t('TERMSCONTENT14-1') }} />
+
+        <Typography className={classes.title}>{t('TERMSTITLE15')}</Typography>
+        <Typography className={classes.contents}>{t('TERMSCONTENT15')}</Typography>
       </Grid>
       <Footer />
     </Grid>
