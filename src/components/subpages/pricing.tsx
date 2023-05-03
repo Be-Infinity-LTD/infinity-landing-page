@@ -118,30 +118,82 @@ export default function Pricing() {
         <Typography
           className={classes.contents}
           dangerouslySetInnerHTML={{
-            __html: `Ennea Scholars Academy where the individual learns how to use the method of profiling
-          - access to live calls per week to establish the method of profiling
-          - 72 Live Coaching Calls usable within max 6 month
+            __html: `<b>Enneagramm Classification</b>
+            Price for first purchase: $299.99
+            Price continuous price: -
+            Subscription-Period: one time
+            Package content:
+            - personality analysis
+            - PDF with content concerning the personality type of the individual
+            - access to the related video in order to guarantee that the individual is able to use the product conveniently
 
-          <b>Enneagramm Master</b> ( On Request Only )
-          Price for first purchase: $8999.99
-          Price continuous price: $8999.99
-          Subscription-Period: 72 Live Coaching Calls + 1 weekly Masterclass call with 3-6 people max for 6 month, usable within max 6 month
-          Package content:
-          - personality analysis
-          - PDF with content concerning the personality type of the individual
-          - access to the related video in order to guarantee that the individual is able to use the product conveniently
-          - access to the Ennea Scholars Academy where the individual learns how to use the method of profiling
-          - access to live calls per week to establish the method of profiling
-          - 72 Live Coaching Calls usable within max 6 month
-          - 1 weekly Masterclass call with 3-6 people max for 6 month, usable within max 6 month
+            <b>Enneagramm Starter</b>
+            Price for first purchase: $999.99
+            Price continuous price: $999.99
+            Subscription-Period: 12 Live Coaching Calls, usable within max 3 month
+            Package content:
+            - personality analysis
+            - PDF with content concerning the personality type of the individual
+            - access to the related video in order to guarantee that the individual is able to use the product conveniently
+            - access to the Ennea Scholars Academy where the individual learns how to use the method of profiling
+            - access to live calls per week to establish the method of profiling
+            - 12 Live Coaching Calls usable within max 6 month
 
-          <b>Enneagramm Profiling</b> (There is an undefined maximum per week. Once this limit is reached, the product can only be booked again after approval.)
-          Price for first purchase: $9.99
-          Price continuous price: $9.99
-          Subscription-Period: onetime
-          Package content:
-          - personality analysis of the uploaded pictures (only one person per purchase)
-          `,
+            <b>Enneagramm Explorer</b>
+            Price for first purchase: $1899.99
+            Price continuous price: $1899.99
+            Subscription-Period: 24 Live Coaching Calls, usable within max 6 month
+            Package content:
+            - personality analysis
+            - PDF with content concerning the personality type of the individual
+            - access to the related video in order to guarantee that the individual is able to use the product conveniently
+            - access to the Ennea Scholars Academy where the individual learns how to use the method of profiling
+            - access to live calls per week to establish the method of profiling
+            - 24 Live Coaching Calls usable within max 6 month
+
+            <b>Enneagramm Visonary</b>
+            Price for first purchase: $2599.99
+            Price continuous price: $2599.99
+            Subscription-Period: 36 Live Coaching Calls, usable within max 6 month
+            Package content:
+            - personality analysis
+            - PDF with content concerning the personality type of the individual
+            - access to the related video in order to guarantee that the individual is able to use the product conveniently
+            - access to the Ennea Scholars Academy where the individual learns how to use the method of profiling
+            - access to live calls per week to establish the method of profiling
+            -36 Live Coaching Calls usable within max 6 month
+
+            <b>Enneagramm Pioneer</b>
+            Price for first purchase: $4999.99
+            Price continuous price: $4999.99
+            Subscription-Period: 72 Live Coaching Calls, usable within max 6 month
+            Package content:
+            - personality analysis
+            - PDF with content concerning the personality type of the individual
+            - access to the related video in order to guarantee that the individual is able to use the product conveniently
+            - access to the Ennea Scholars Academy where the individual learns how to use the method of profiling
+            - access to live calls per week to establish the method of profiling
+            - 72 Live Coaching Calls usable within max 6 month
+
+            <b>Enneagramm Master</b> ( On Request Only )
+            Price for first purchase: $8999.99
+            Price continuous price: $8999.99
+            Subscription-Period: 72 Live Coaching Calls + 1 weekly Masterclass call with 3-6 people max for 6 month, usable within max 6 month
+            Package content:
+            - personality analysis
+            - PDF with content concerning the personality type of the individual
+            - access to the related video in order to guarantee that the individual is able to use the product conveniently
+            - access to the Ennea Scholars Academy where the individual learns how to use the method of profiling
+            - access to live calls per week to establish the method of profiling
+            - 72 Live Coaching Calls usable within max 6 month
+            - 1 weekly Masterclass call with 3-6 people max for 6 month, usable within max 6 month
+
+            <b>Enneagramm Profiling</b> (There is an undefined maximum per week. Once this limit is reached, the product can only be booked again after approval.)
+            Price for first purchase: $9.99
+            Price continuous price: $9.99
+            Subscription-Period: onetime
+            Package content:
+            - personality analysis of the uploaded pictures (only one person per purchase)`,
           }}
         />
         <Typography className={classes.title}>{t('PRICINGTITLE4')}</Typography>
