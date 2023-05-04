@@ -48,7 +48,7 @@ export default function Team() {
       <Grid>
         <Typography className={classes.teamMateTitle}>{t('TEAMMATETITLE')}</Typography>
         <Grid className={classes.mainTeamMate}>
-          {teamMainNames.map((item, i) => (
+          {/* {teamMainNames.map((item, i) => (
             <Grid item sm={12} md={4} className={classes.teamMate} key={i}>
               <Grid className={classes.avatarTeamMainDiv}>
                 <img src={teamMainImgs[i]} alt={teamMainImgs[i]} className={classes.avatarTeamMain}></img>
@@ -64,7 +64,7 @@ export default function Team() {
                 </a>
               </Grid>
             </Grid>
-          ))}
+          ))} */}
         </Grid>
       </Grid>
       <Grid className={classes.subMainTeam1}>
