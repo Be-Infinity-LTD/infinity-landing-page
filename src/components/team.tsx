@@ -10,7 +10,9 @@ import { teamMainImgs, teamSubMainImgs1, teamSubMainImgs2 } from '../common/cons
 export default function Team() {
   const { t } = useTranslation()
   const classes = useStyles()
-  let teamMainNames = ['PATRIK', 'DANIEL', 'ANDREAS']
+  let teamMainNames = 
+  ['PATRIK', 'DANIEL']
+  // let teamMainNames = ['PATRIK', 'DANIEL', 'ANDREAS']
   let teamSubMainNames1 = ['JOSEPH', 'FURKAN', 'ARTUR']
   let teamSubMainNames2 = ['HENRIK', 'AMAR']
   let teamMainPos = ['PATRIKPOS', 'DANIELPOS', 'ANDREASPOS']
@@ -48,8 +50,10 @@ export default function Team() {
       <Grid>
         <Typography className={classes.teamMateTitle}>{t('TEAMMATETITLE')}</Typography>
         <Grid className={classes.mainTeamMate}>
-          {/* {teamMainNames.map((item, i) => (
-            <Grid item sm={12} md={4} className={classes.teamMate} key={i}>
+          {teamMainNames.map((item, i) => (
+            <Grid item sm={12}
+            //  md={4} 
+             className={classes.teamMate} key={i}>
               <Grid className={classes.avatarTeamMainDiv}>
                 <img src={teamMainImgs[i]} alt={teamMainImgs[i]} className={classes.avatarTeamMain}></img>
               </Grid>
@@ -64,7 +68,7 @@ export default function Team() {
                 </a>
               </Grid>
             </Grid>
-          ))} */}
+          ))}
         </Grid>
       </Grid>
       <Grid className={classes.subMainTeam1}>

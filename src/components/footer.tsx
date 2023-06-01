@@ -10,6 +10,9 @@ export default function Aboutus() {
   const { t } = useTranslation()
   const classes = useStyles()
 
+  const currentYear = new Date().getFullYear();
+  const copyright = `© 2020-${currentYear} Be Infinity®`;
+
   return (
     <div id="footer">
       <Grid className={classes.disclaimer}>
@@ -127,7 +130,7 @@ export default function Aboutus() {
         </Grid>
       </Grid>
       <Grid className={classes.footerDesc}>
-        <Typography className={classes.footerDescText}>{t('FOOTERDESC')}</Typography>
+        <Typography className={classes.footerDescText}>{copyright}</Typography>
       </Grid>
     </div>
   )

@@ -95,6 +95,8 @@ export const useStyles = makeStyles((theme: Theme) =>
     },
     mainTeamMate: {
       display: 'flex',
+      justifyContent: 'center',
+      // backgroundColor: 'rgb(139, 200, 247)',
     },
     teamMate: {
       backgroundColor: 'rgb(139, 200, 247)',

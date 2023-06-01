@@ -11,6 +11,7 @@ export const academyImgLists = [
   './img/landing/academy/taxes.jpg',
   './img/landing/academy/shares.jpg',
   './img/landing/academy/property.jpg',
+  './img/landing/academy/social_media.jpg',
 ]
 
 export const academyLiveLists = [

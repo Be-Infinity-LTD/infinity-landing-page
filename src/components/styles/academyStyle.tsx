@@ -34,9 +34,13 @@ export const useStyles = makeStyles((theme: Theme) =>
     },
     mainContent: {
       display: 'flex',
+      flexWrap: 'wrap',
       justifyContent: 'center',
+      maxWidth: '1400px',
+      margin: '0px auto',
     },
     academyContentGrid: {
+      flex: '0 0 calc(33.33% - 10px)',
       width: '20%',
       padding: '0px 15px',
       display: 'flex',
@@ -88,7 +92,7 @@ export const useStyles = makeStyles((theme: Theme) =>
       backgroundColor: '#151515',
     },
     academyLiveMain: {
-      display: 'flex',
+      // display: 'flex',
       padding: '60px 0px 60px 0px',
       maxWidth: '1400px',
       width: 'auto',
@@ -96,11 +100,12 @@ export const useStyles = makeStyles((theme: Theme) =>
       marginRight: 'auto',
     },
     academyLiveText: {
-      marginLeft: '40px',
-      marginRight: '40px',
+      marginLeft: 'auto',
+      marginRight: 'auto',
       textAlign: 'center',
       marginTop: 'auto',
       marginBottom: 'auto',
+      maxWidth: '70%',
     },
     academyLiveTitle: {
       color: '#FFFFFF',
@@ -109,7 +114,7 @@ export const useStyles = makeStyles((theme: Theme) =>
       textTransform: 'uppercase',
       textShadow: '0px 0px 10px rgb(255 221 160 / 50%)',
       fontWeight: 600,
-      marginBottom: '20px',
+      marginBottom: '10px',
       textAlign: 'center',
     },
     academyLiveContent: {
@@ -118,6 +123,7 @@ export const useStyles = makeStyles((theme: Theme) =>
       fontFamily: "'ZCOOL XiaoWei', Sans-serif",
       fontSize: '20px',
       fontWeight: 400,
+      marginBottom: '40px',
     },
     academyLiveItem: {
       backgroundColor: 'transparent',
@@ -166,6 +172,7 @@ export const useStyles = makeStyles((theme: Theme) =>
     },
     academyLiveItems: {
       display: 'flex',
+      maxWidth: '80%', 
       justifyContent: 'center',
       margin: '0px auto',
       padding: '0px 3%',

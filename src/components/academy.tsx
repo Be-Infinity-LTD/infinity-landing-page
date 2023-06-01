@@ -6,7 +6,7 @@ import { useStyles } from './styles/academyStyle'
 export default function Academy() {
   const classes = useStyles()
   const { t } = useTranslation()
-  let academyTitles = ['INFINITYMONEY', 'INFINITYFOREX', 'INFINITYTAXES', 'INFINITYSHARES', 'INFINITYCRYPTO']
+  let academyTitles = ['INFINITYMONEY', 'INFINITYFOREX', 'INFINITYTAXES', 'INFINITYSHARES', 'INFINITYCRYPTO', 'INFINITYSOCIAL']
   let academySepcTitles = ['INFINITYLIVEOPTIONTITLE1', 'INFINITYLIVEOPTIONTITLE2', 'INFINITYLIVEOPTIONTITLE3']
   let academyContents = [
     'INFINITYMONEYDESC',
@@ -14,6 +14,7 @@ export default function Academy() {
     'INFINITYTAXESDESC',
     'INFINITYSHARESDESC',
     'INFINITYCRYPTODESC',
+    'INFINITYSOCIALDESC',
   ]
   let academySpecContents = ['INFINITYLIVEOPTIONCONTENT1', 'INFINITYLIVEOPTIONCONTENT2', 'INFINITYLIVEOPTIONCONTENT3']
 
@@ -51,6 +52,10 @@ export default function Academy() {
       </Grid>
       <div className={classes.academyLiveMainDiv}>
         <Grid className={classes.academyLiveMain}>
+          <Grid item xs={4} className={classes.academyLiveText}>
+            <Typography className={classes.academyLiveTitle}>{t('INFINITYLIVETITLE')}</Typography>
+            <Typography className={classes.academyLiveContent}>{t('INFINITYLIVECONTENT')}</Typography>
+          </Grid>
           <Grid item xs={8} className={classes.academyLiveItems}>
             {academySepcTitles.map((item, i) => (
               <Grid item xs={4} className={classes.academyLiveItem} key={i}>
@@ -67,10 +72,6 @@ export default function Academy() {
                 </div>
               </Grid>
             ))}
-          </Grid>
-          <Grid item xs={4} className={classes.academyLiveText}>
-            <Typography className={classes.academyLiveTitle}>{t('INFINITYLIVETITLE')}</Typography>
-            <Typography className={classes.academyLiveContent}>{t('INFINITYLIVECONTENT')}</Typography>
           </Grid>
         </Grid>
       </div>
