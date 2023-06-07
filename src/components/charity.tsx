@@ -50,7 +50,7 @@ export default function Charity() {
             <Typography className={classes.forestDesc}>{t('CHARITYCONTENT2')}</Typography>
             <div className={classes.downloadIcon}>
               <a href={forestDocURL} download="madagascar_trees_certificate.pdf">
-                <i className="fas fa-download"></i>
+                {/* <i className="fas fa-download"></i> */}
               </a>
             </div>
           </div>
@@ -154,17 +154,25 @@ export default function Charity() {
 
   return (
     <Grid id="charity" className={classes.charityContent}>
-      <Grid item xs={12} sm={12} md={6} className={classes.leftContent}>
+      <Grid item xs={12} sm={12} className={classes.leftContent}>
         <Typography className={classes.title}>{t('CHARITY')}</Typography>
       </Grid>
-      <Grid item xs={12} sm={12} md={6} className={classes.rightContent}>
-        <AliceCarousel
+      <Grid item xs={12} sm={12}  
+      // className={classes.rightContent}
+      className={classes.charityContentGrid}
+      >
+        <img src="img/landing/child/arrow-white.svg" style={{transform: 'scaleX(-1)', left: '30px'}} className={classes.arrow} alt="child2" />
+        <img src="img/landing/child/arrow-white.svg" style={{right: '33px'}} className={classes.arrow} alt="child2" />
+        {items.map((item: any, i: any) => {
+          return <div  key={i} className='itemContainer'>{item}</div>
+        })}
+        {/* <AliceCarousel
           mouseTracking
           disableDotsControls
           items={items}
           responsive={responsive}
           controlsStrategy="alternate"
-        />
+        /> */}
       </Grid>
     </Grid>
   )

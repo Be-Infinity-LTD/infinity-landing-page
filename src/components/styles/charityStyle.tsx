@@ -8,16 +8,43 @@ export const useStyles = makeStyles((theme: Theme) =>
       height: '85%',
     },
     charityContent: {
-      backgroundPosition: 'center center',
-      backgroundRepeat: 'no-repeat',
-      backgroundSize: 'cover',
-      backgroundImage:
-        'linear-gradient( rgba(81, 81, 81, 0.3), rgba(255, 255, 255, 0.3) ), url(img/landing/charity.jpg)',
-      display: 'flex',
-      justifyContent: 'center',
+      position: 'relative',
+
+      // backgroundPosition: 'center center',
+      // backgroundRepeat: 'no-repeat',
+      // backgroundSize: 'cover',
+      // backgroundImage:'linear-gradient( rgba(81, 81, 81, 0.3), rgba(255, 255, 255, 0.3) ), url(img/landing/charity.jpg)',
+      background: '#2D3036',
+      // display: 'flex',
+      // justifyContent: 'center',
       padding: '100px',
+      paddingTop: '0',
       width: '100%',
-      height: '600px',
+      // height: '100%',
+    },
+    charityContentGrid: {
+      display: 'flex',
+      // flewWrap: 'wrap',
+      // justifyContent: 'center',
+      // alignItems: 'center',
+      gap: '20px',
+      // width: '100%',
+      height: '350px',
+      // flexWrap: 'wrap',
+      // overflow: 'hidden',
+      overflowX: 'scroll',
+      // padding: '1rem -100px'
+      borderRadius: '20px',
+    },
+    arrow: {
+      position: 'absolute',
+      top: '50%',
+      // transform: 'translateY(-50%)',
+      width: '50px',
+      height: '50px',
+      borderRadius: '50%',
+      zIndex: 2,
+      opacity: '0.75',
     },
     leftContent: {
       display: 'flex',
@@ -35,6 +62,7 @@ export const useStyles = makeStyles((theme: Theme) =>
       textShadow: '0px 0px 10px rgb(255 221 160 / 50%)',
       wordBreak: 'break-all',
       textAlign: 'center',
+      padding: '20px',
     },
     rightContent: {
       backgroundColor: '#FFFFFF1F',
@@ -72,12 +100,15 @@ export const useStyles = makeStyles((theme: Theme) =>
       height: 'inherit',
     },
     forestImg: {
-      borderTopRightRadius: '20px',
-      borderTopLeftRadius: '20px',
+      // borderTopRightRadius: '20px',
+      // borderTopLeftRadius: '20px',
+      borderRadius: '20px',
       width: 'auto',
       height: '100%',
     },
     forestDownload: {
+      borderBottomRightRadius: '20px',
+      borderBottomLeftRadius: '20px',
       background: 'rgba(89,89, 91, 0.5)',
       bottom: '0',
       width: 'inherit',
@@ -139,16 +170,33 @@ export const useStyles = makeStyles((theme: Theme) =>
       },
       charityContent: {
         padding: '30px',
+        paddingTop: '0',
       },
       downloadIcon: {
         fontSize: '40px',
       },
+      charityContentGrid: {
+        flexWrap: 'wrap',
+        flexDirection: 'column',
+      },
+      forest: {
+        width: '155px',
+        height: '155px'
+      },
+      forestDesc: {
+        width: '100%',
+        fontSize: '12px',
+
+      },
+      ChildrenDesc: {
+        fontSize: '12px',
+      },
     },
     [theme.breakpoints.down(520)]: {
-      forestImg: {
-        width: '100%',
-        height: 'auto',
-      },
+      // forestImg: {
+      //   width: '100%',
+      //   height: 'auto',
+      // },
     },
     [theme.breakpoints.down(450)]: {
       title: {
@@ -157,9 +205,7 @@ export const useStyles = makeStyles((theme: Theme) =>
       fountainDesc: {
         fontSize: '13px',
       },
-      forestDesc: {
-        fontSize: '12px',
-      },
+
       downloadIcon: {
         fontSize: '30px',
       },

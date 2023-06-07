@@ -12,12 +12,17 @@ export const academyImgLists = [
   './img/landing/academy/shares.jpg',
   './img/landing/academy/property.jpg',
   './img/landing/academy/social_media.jpg',
+  './img/landing/academy/health.jpg',
+  './img/landing/academy/mindset.jpg',
+  './img/landing/academy/enneagram.jpg',
 ]
 
 export const academyLiveLists = [
   './img/landing/academy/learn_crypto.jpg',
   './img/landing/academy/learn_forex.jpg',
   './img/landing/academy/learn_stocks.jpg',
+  './img/landing/academy/learn_mindset.jpg',
+  // './img/landing/academy/learn_ennea.jpg',
 ]
 
 export const toolsImgs = [

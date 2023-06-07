@@ -6,8 +6,23 @@ import { useStyles } from './styles/academyStyle'
 export default function Academy() {
   const classes = useStyles()
   const { t } = useTranslation()
-  let academyTitles = ['INFINITYMONEY', 'INFINITYFOREX', 'INFINITYTAXES', 'INFINITYSHARES', 'INFINITYCRYPTO', 'INFINITYSOCIAL']
-  let academySepcTitles = ['INFINITYLIVEOPTIONTITLE1', 'INFINITYLIVEOPTIONTITLE2', 'INFINITYLIVEOPTIONTITLE3']
+  let academyTitles = [
+    'INFINITYMONEY', 
+    'INFINITYFOREX', 
+    'INFINITYTAXES', 
+    'INFINITYSHARES', 
+    'INFINITYCRYPTO', 
+    'INFINITYSOCIAL', 
+    'INFINITYHEALTH', 
+    'INFINITYMINDSET', 
+    'INFINITYENNEAGRAM' ]
+  // let academySepcTitles = [
+  //   'INFINITYLIVEOPTIONTITLE1', 
+  //   'INFINITYLIVEOPTIONTITLE2', 
+  //   'INFINITYLIVEOPTIONTITLE3',
+  //  'INFINITYLIVEOPTIONTITLE4', 
+  // // 'INFINITYLIVEOPTIONTITLE5'
+  //   ]
   let academyContents = [
     'INFINITYMONEYDESC',
     'INFINITYFOREXDESC',
@@ -15,8 +30,17 @@ export default function Academy() {
     'INFINITYSHARESDESC',
     'INFINITYCRYPTODESC',
     'INFINITYSOCIALDESC',
+    'INFINITYHEALTHDESC',
+    'INFINITYMINDSETDESC',
+    'INFINITYENNEAGRAMDESC',
   ]
-  let academySpecContents = ['INFINITYLIVEOPTIONCONTENT1', 'INFINITYLIVEOPTIONCONTENT2', 'INFINITYLIVEOPTIONCONTENT3']
+//   let academySpecContents = [
+//     'INFINITYLIVEOPTIONCONTENT1', 
+//     'INFINITYLIVEOPTIONCONTENT2', 
+//     'INFINITYLIVEOPTIONCONTENT3', 
+//     'INFINITYLIVEOPTIONCONTENT4', 
+//   // 'INFINITYLIVEOPTIONCONTENT5'
+// ]
 
   return (
     <div id="academy">
@@ -50,7 +74,7 @@ export default function Academy() {
           </div>
         </Grid>
       </Grid>
-      <div className={classes.academyLiveMainDiv}>
+      {/* <div className={classes.academyLiveMainDiv}>
         <Grid className={classes.academyLiveMain}>
           <Grid item xs={4} className={classes.academyLiveText}>
             <Typography className={classes.academyLiveTitle}>{t('INFINITYLIVETITLE')}</Typography>
@@ -74,7 +98,7 @@ export default function Academy() {
             ))}
           </Grid>
         </Grid>
-      </div>
+      </div> */}
     </div>
   )
 }

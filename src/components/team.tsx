@@ -45,7 +45,8 @@ export default function Team() {
             <Typography className={classes.hostLeadText}>{t('CHRISTIANFAIRNESS')}</Typography>
           </div>
         </Grid>
-        <img src="./img/landing/teams/christian.png" alt="christiamImg" className={classes.avatarImg}></img>
+        <img src="./img/landing/teams/chrizandmara.png" alt="christiamImg" className={classes.avatarImg}></img>
+        {/* <img src="./img/landing/teams/christian.png" alt="christiamImg" className={classes.avatarImg}></img> */}
       </Grid>
       <Grid>
         <Typography className={classes.teamMateTitle}>{t('TEAMMATETITLE')}</Typography>

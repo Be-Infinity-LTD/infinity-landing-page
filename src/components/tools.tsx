@@ -9,13 +9,13 @@ export default function Tools() {
   const toolsTitles = [
     // 'TOOLSEXPERTTITLE',
     'TOOLSTRADETITLE',
-    'TOOLSINDICATORTITLE',
+    // 'TOOLSINDICATORTITLE',
     'TOOLSCOINTITLE',
   ]
   const toolsContents = [
     // 'TOOLSEXPERTCONTENT',
     'TOOLSTRADECONTENT',
-    'TOOLSINDICATORCONTENT',
+    // 'TOOLSINDICATORCONTENT',
     'TOOLSCOINCONTENT',
   ]
 
