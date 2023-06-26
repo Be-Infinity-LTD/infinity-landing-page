@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import { Grid, Typography } from '@material-ui/core'
 import { useTranslation } from 'react-i18next'
 // import ReactPlayer from 'react-player'
@@ -22,7 +22,44 @@ export default function Charity() {
     e.preventDefault()
   }
 
+  const containerRef = useRef<HTMLDivElement | null>(null);
   const [items, setItems] = useState<any>([])
+
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState<number | null>(null);
+  const [scrollLeft, setScrollLeft] = useState(0);
+
+  const handleMouseDown = (event: React.MouseEvent<HTMLDivElement>) => {
+    setIsDragging(true);
+    setStartX(event.pageX - containerRef.current!.offsetLeft);
+    setScrollLeft(containerRef.current!.scrollLeft);
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
+    if (!isDragging) return;
+    const x = event.pageX - containerRef.current!.offsetLeft;
+    const scroll = x - startX!;
+    containerRef.current!.scrollLeft = scrollLeft - scroll;
+  };
+
+
+  const scrollLeftArrow = () => {
+    containerRef.current!.scrollBy({
+      left: -350,
+      behavior: 'smooth',
+    });
+  };
+
+  const scrollRightArrow = () => {
+    containerRef.current!.scrollBy({
+      left: 350,
+      behavior: 'smooth',
+    });
+  };
 
   useEffect(() => {
     setPlaying(isPlaying)
@@ -157,14 +194,23 @@ export default function Charity() {
       <Grid item xs={12} sm={12} className={classes.leftContent}>
         <Typography className={classes.title}>{t('CHARITY')}</Typography>
       </Grid>
-      <Grid item xs={12} sm={12}  
-      // className={classes.rightContent}
-      className={classes.charityContentGrid}
+      <Grid item xs={12} sm={12}
+        // className={classes.rightContent}
+        className={classes.charityContentGrid}
+        ref={containerRef}
+        onMouseDown={handleMouseDown}
+        onMouseUp={handleMouseUp}
+        onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseUp}
       >
-        <img src="img/landing/child/arrow-white.svg" style={{transform: 'scaleX(-1)', left: '30px'}} className={classes.arrow} alt="child2" />
-        <img src="img/landing/child/arrow-white.svg" style={{right: '33px'}} className={classes.arrow} alt="child2" />
+        <img src="img/landing/child/arrow-white.svg" style={{ transform: 'scaleX(-1)', left: '30px' }} className={classes.arrow} alt="child2"
+          onClick={() => scrollLeftArrow()}
+        />
+        <img src="img/landing/child/arrow-white.svg" style={{ right: '33px' }} className={classes.arrow} alt="child2"
+          onClick={() => scrollRightArrow()}
+        />
         {items.map((item: any, i: any) => {
-          return <div  key={i} className='itemContainer'>{item}</div>
+          return <div key={i} className='itemContainer'>{item}</div>
         })}
         {/* <AliceCarousel
           mouseTracking

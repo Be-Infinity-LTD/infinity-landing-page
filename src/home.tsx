@@ -5,7 +5,7 @@ import Team from './components/team'
 import Academy from './components/academy'
 import Tools from './components/tools'
 import Paths from './components/paths'
-// import Community from './components/community'
+import Community from './components/community'
 import FAQ from './components/faq'
 import Footer from './components/footer'
 import './App.css'
@@ -19,7 +19,7 @@ const App = () => {
       <Academy />
       <Tools />
       <Paths />
-      {/* <Community/> */}
+      <Community/>
       <Team />
       <Charity />
       <FAQ />

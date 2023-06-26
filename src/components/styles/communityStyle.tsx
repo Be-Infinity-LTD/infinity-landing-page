@@ -2,17 +2,29 @@ import { makeStyles, Theme, createStyles } from '@material-ui/core/styles'
 
 export const useStyles = makeStyles((theme: Theme) =>
   createStyles({
+    container: {
+      background: '#2a2c30',
+      padding: '50px',
+    },
     pathTitleGrid: {
       marginBottom: '50px',
     },
     pathTitle: {
-      marginTop: '20px',
-      color: 'black',
-      fontFamily: "'Spartan', Sans-serif",
-      fontSize: '60px',
-      textTransform: 'uppercase',
-      textShadow: '5px 5px 0px rgb(0 0 0 / 5%)',
+      // marginTop: '20px',
+      // color: 'black',
+      // fontFamily: "'Spartan', Sans-serif",
+      // fontSize: '60px',
+      // textTransform: 'uppercase',
+      // textShadow: '5px 5px 0px rgb(0 0 0 / 5%)',
+      // textAlign: 'center',
+      // fontWeight: 600,
+      marginBottom: '20px',
       textAlign: 'center',
+      color: '#FFFFFF',
+      fontFamily: "'Spartan', Sans-serif",
+      fontSize: '48px',
+      textTransform: 'uppercase',
+      textShadow: '0px 0px 10px rgb(255 221 160 / 50%)',
       fontWeight: 600,
     },
     mainContent: {
@@ -64,12 +76,21 @@ export const useStyles = makeStyles((theme: Theme) =>
       margin: '15px 0px 15px 0px',
     },
     ContentItemTitle: {
-      color: '#000000',
+      color: '#fff',
+      // color: '#000000',
       fontFamily: "'Spartan', Sans-serif",
       fontSize: '22px',
       fontWeight: 600,
       textTransform: 'uppercase',
       textAlign: 'center',
+    },
+    ContentItemSubTitle: {
+      textAlign: 'center',
+      color: '#A7A7A7',
+      fontFamily: "'ZCOOL XiaoWei', Sans-serif",
+      fontSize: '20px',
+      fontWeight: 400,
+      marginBottom: '20px',
     },
     pathContent: {
       padding: '0px 15px 0px 15px',

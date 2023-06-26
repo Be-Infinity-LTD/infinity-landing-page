@@ -1,4 +1,6 @@
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles'
+import { hover } from '@testing-library/user-event/dist/hover'
+import { title } from 'process'
 
 export const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -35,6 +37,8 @@ export const useStyles = makeStyles((theme: Theme) =>
       overflowX: 'scroll',
       // padding: '1rem -100px'
       borderRadius: '20px',
+      cursor: 'grab',
+
     },
     arrow: {
       position: 'absolute',
@@ -45,6 +49,10 @@ export const useStyles = makeStyles((theme: Theme) =>
       borderRadius: '50%',
       zIndex: 2,
       opacity: '0.75',
+      cursor: 'pointer',
+      '&:hover': {
+        opacity: '1',
+      },
     },
     leftContent: {
       display: 'flex',
@@ -98,6 +106,7 @@ export const useStyles = makeStyles((theme: Theme) =>
     forest: {
       position: 'relative',
       height: 'inherit',
+      // animation: '$slide 10s infinite', 
     },
     forestImg: {
       // borderTopRightRadius: '20px',
@@ -135,6 +144,14 @@ export const useStyles = makeStyles((theme: Theme) =>
       fontSize: '20px',
       fontWeight: 300,
       textAlign: 'center',
+    },
+    '@keyframes slide': {
+      '0%': {
+        transform: 'translateX(0)',
+      },
+      '100%': {
+        transform: 'translateX(-300%)',
+      },
     },
     [theme.breakpoints.down(1300)]: {
       title: {
