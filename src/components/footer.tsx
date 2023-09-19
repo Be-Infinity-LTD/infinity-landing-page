@@ -10,8 +10,8 @@ export default function Aboutus() {
   const { t } = useTranslation()
   const classes = useStyles()
 
-  const currentYear = new Date().getFullYear();
-  const copyright = `© 2020-${currentYear} Be Infinity®`;
+  const currentYear = new Date().getFullYear()
+  const copyright = `© 2020-${currentYear} Be Infinity®`
 
   return (
     <div id="footer">
@@ -117,8 +117,8 @@ export default function Aboutus() {
             </a>
           </Grid>
           <Grid className={classes.paymentMethods}>
+            <img src="img/onlnuebwsng.png" alt="onlineueberweisung" height={40} />
             <VorkasseSVG />
-            <SofortSVG />
             <VisaSVG />
             <MasterCardSVG />
             <UnionPaySVG />

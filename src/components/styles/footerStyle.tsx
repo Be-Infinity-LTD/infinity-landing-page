@@ -12,6 +12,7 @@ export const useStyles = makeStyles((theme: Theme) =>
         height: '50px',
         width: '50px',
       },
+      alignItems: 'center',
     },
     mainBottom: {
       backgroundColor: '#bdbdbd',
