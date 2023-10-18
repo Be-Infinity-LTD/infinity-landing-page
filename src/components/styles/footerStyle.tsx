@@ -3,11 +3,11 @@ import { makeStyles, Theme, createStyles } from '@material-ui/core/styles'
 export const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     paymentMethods: {
-      display: 'grid',
-      gridAutoFlow: 'column',
+      display: 'flex',
+      flexWrap: 'wrap',
       justifyContent: 'left',
       columnGap: '10px',
-      width: 'min-content',
+      width: '100%',
       '& svg': {
         height: '50px',
         width: '50px',

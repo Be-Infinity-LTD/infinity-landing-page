@@ -117,12 +117,12 @@ export default function Aboutus() {
             </a>
           </Grid>
           <Grid className={classes.paymentMethods}>
-            <img src="img/onlnuebwsng.png" alt="onlineueberweisung" height={40} />
+            <UnionPaySVG />
             <VorkasseSVG />
             <VisaSVG />
             <MasterCardSVG />
-            <UnionPaySVG />
             <AMEXSVG />
+            <img src="img/onlnuebwsng.png" alt="onlineueberweisung" height={40} />
             <GooglePaySVG />
             <ApplePaySVG />
             <JBCSVG />

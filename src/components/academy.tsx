@@ -7,20 +7,21 @@ export default function Academy() {
   const classes = useStyles()
   const { t } = useTranslation()
   let academyTitles = [
-    'INFINITYMONEY', 
-    'INFINITYFOREX', 
-    'INFINITYTAXES', 
-    'INFINITYSHARES', 
-    'INFINITYCRYPTO', 
-    'INFINITYSOCIAL', 
-    'INFINITYHEALTH', 
-    'INFINITYMINDSET', 
-    'INFINITYENNEAGRAM' ]
+    'INFINITYMONEY',
+    'INFINITYFOREX',
+    'INFINITYTAXES',
+    'INFINITYSHARES',
+    'INFINITYCRYPTO',
+    'INFINITYSOCIAL',
+    'INFINITYHEALTH',
+    'INFINITYMINDSET',
+    'INFINITYENNEAGRAM',
+  ]
   // let academySepcTitles = [
-  //   'INFINITYLIVEOPTIONTITLE1', 
-  //   'INFINITYLIVEOPTIONTITLE2', 
+  //   'INFINITYLIVEOPTIONTITLE1',
+  //   'INFINITYLIVEOPTIONTITLE2',
   //   'INFINITYLIVEOPTIONTITLE3',
-  //  'INFINITYLIVEOPTIONTITLE4', 
+  //  'INFINITYLIVEOPTIONTITLE4',
   // // 'INFINITYLIVEOPTIONTITLE5'
   //   ]
   let academyContents = [
@@ -34,13 +35,13 @@ export default function Academy() {
     'INFINITYMINDSETDESC',
     'INFINITYENNEAGRAMDESC',
   ]
-//   let academySpecContents = [
-//     'INFINITYLIVEOPTIONCONTENT1', 
-//     'INFINITYLIVEOPTIONCONTENT2', 
-//     'INFINITYLIVEOPTIONCONTENT3', 
-//     'INFINITYLIVEOPTIONCONTENT4', 
-//   // 'INFINITYLIVEOPTIONCONTENT5'
-// ]
+  //   let academySpecContents = [
+  //     'INFINITYLIVEOPTIONCONTENT1',
+  //     'INFINITYLIVEOPTIONCONTENT2',
+  //     'INFINITYLIVEOPTIONCONTENT3',
+  //     'INFINITYLIVEOPTIONCONTENT4',
+  //   // 'INFINITYLIVEOPTIONCONTENT5'
+  // ]
 
   return (
     <div id="academy">
@@ -58,9 +59,7 @@ export default function Academy() {
               <Grid className={classes.academyContentGrid} key={i}>
                 <div className={classes.academyContentItem}>
                   <div className={classes.contentItemImg}>
-                    <a href="/">
-                      <img src={academyImgLists[i]} alt="academyContentIMg" className={classes.contentImg}></img>
-                    </a>
+                    <img src={academyImgLists[i]} alt="academyContentIMg" className={classes.contentImg}></img>
                   </div>
                   <div className={classes.academyContentTitle}>
                     <Typography className={classes.ContentItemTitle}>{t(academyTitles[i])}</Typography>

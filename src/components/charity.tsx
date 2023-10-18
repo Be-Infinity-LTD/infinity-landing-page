@@ -102,7 +102,7 @@ export default function Charity() {
       },
       {
         id: 9,
-        img: 'child6.jpg',
+        img: 'child8.jpg',
         name: t('CHARITYCHILDNAME8'),
       },
       {
