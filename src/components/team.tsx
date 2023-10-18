@@ -10,15 +10,14 @@ import { teamMainImgs, teamSubMainImgs1, teamSubMainImgs2 } from '../common/cons
 export default function Team() {
   const { t } = useTranslation()
   const classes = useStyles()
-  let teamMainNames = 
-  ['PATRIK', 'DANIEL']
+  let teamMainNames = ['', 'PATRIK', '']
   // let teamMainNames = ['PATRIK', 'DANIEL', 'ANDREAS']
   let teamSubMainNames1 = ['JOSEPH', 'FURKAN', 'ARTUR']
   let teamSubMainNames2 = ['HENRIK', 'AMAR']
-  let teamMainPos = ['PATRIKPOS', 'DANIELPOS', 'ANDREASPOS']
+  let teamMainPos = ['DANIELPOS', 'PATRIKPOS', 'ANDREASPOS']
   let teamSubMainPos1 = ['JOSEPHPOS', 'FURKANPOS', 'ARTURPOS']
   let teamSubMainPos2 = ['HENRIKPOS', 'AMARPOS']
-  let teamMainInstagrams = ['PATRIKINSTAGRAM', 'DANIELINSTAGRAM', 'ANDREASINSTAGRAM']
+  let teamMainInstagrams = ['DANIELINSTAGRAM', 'PATRIKINSTAGRAM', 'ANDREASINSTAGRAM']
   let teamSubMainInstagrams1 = ['JOSEPHINSTAGRAM', 'FURKANINSTAGRAM', 'ARTURINSTAGRAM']
   let teamSubMainInstagrams2 = ['HENRIKINSTAGRAM', 'AMARINSTAGRAM']
 
@@ -51,25 +50,56 @@ export default function Team() {
       <Grid>
         <Typography className={classes.teamMateTitle}>{t('TEAMMATETITLE')}</Typography>
         <Grid className={classes.mainTeamMate}>
-          {teamMainNames.map((item, i) => (
-            <Grid item sm={12}
-            //  md={4} 
-             className={classes.teamMate} key={i}>
-              <Grid className={classes.avatarTeamMainDiv}>
-                <img src={teamMainImgs[i]} alt={teamMainImgs[i]} className={classes.avatarTeamMain}></img>
+          {teamMainNames.map((item, i) => {
+            if (!teamMainNames[i]) {
+              return (
+                <Grid
+                  item
+                  sm={12}
+                  //  md={4}
+                  className={classes.teamMate}
+                  key={i}
+                >
+                  {/* <Grid className={classes.avatarTeamMainDiv}>
+                  <img src={teamMainImgs[i]} alt={teamMainImgs[i]} className={classes.avatarTeamMain}></img>
+                </Grid>
+                <Grid className={classes.avatarTeamContent}>
+                  <Typography className={classes.mainTeamName}>{t(teamMainNames[i])}</Typography>
+                  <Typography className={classes.mainTeamPos}>{t(teamMainPos[i])}</Typography>
+                  <div className={classes.teamUnderLine}></div>
+                  <a href={t(teamMainInstagrams[i])}>
+                    <Grid className={classes.teamContactInfo}>
+                      <InstagramIcon className={classes.teamInstagram} />
+                    </Grid>
+                  </a>
+                </Grid> */}
+                </Grid>
+              )
+            }
+            return (
+              <Grid
+                item
+                sm={12}
+                //  md={4}
+                className={classes.teamMate}
+                key={i}
+              >
+                <Grid className={classes.avatarTeamMainDiv}>
+                  <img src={teamMainImgs[i]} alt={teamMainImgs[i]} className={classes.avatarTeamMain}></img>
+                </Grid>
+                <Grid className={classes.avatarTeamContent}>
+                  <Typography className={classes.mainTeamName}>{t(teamMainNames[i])}</Typography>
+                  <Typography className={classes.mainTeamPos}>{t(teamMainPos[i])}</Typography>
+                  <div className={classes.teamUnderLine}></div>
+                  <a href={t(teamMainInstagrams[i])}>
+                    <Grid className={classes.teamContactInfo}>
+                      <InstagramIcon className={classes.teamInstagram} />
+                    </Grid>
+                  </a>
+                </Grid>
               </Grid>
-              <Grid className={classes.avatarTeamContent}>
-                <Typography className={classes.mainTeamName}>{t(teamMainNames[i])}</Typography>
-                <Typography className={classes.mainTeamPos}>{t(teamMainPos[i])}</Typography>
-                <div className={classes.teamUnderLine}></div>
-                <a href={t(teamMainInstagrams[i])}>
-                  <Grid className={classes.teamContactInfo}>
-                    <InstagramIcon className={classes.teamInstagram} />
-                  </Grid>
-                </a>
-              </Grid>
-            </Grid>
-          ))}
+            )
+          })}
         </Grid>
       </Grid>
       <Grid className={classes.subMainTeam1}>

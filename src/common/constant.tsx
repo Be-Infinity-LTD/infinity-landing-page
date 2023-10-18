@@ -33,8 +33,8 @@ export const toolsImgs = [
 ]
 
 export const teamMainImgs = [
-  './img/landing/teams/patrik.png',
   './img/landing/teams/daniel.png',
+  './img/landing/teams/patrik.png',
   './img/landing/teams/andreas.png',
 ]
 
