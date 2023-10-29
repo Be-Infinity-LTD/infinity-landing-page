@@ -101,6 +101,154 @@ export default function Pricing() {
         <Typography className={classes.contents}>{t('PRICINGCONTENT3-1')}</Typography> */}
         <Typography className={classes.title}>Basic Addons</Typography>
         <Typography className={classes.contents}>Addons can be purchased additionaly to the “Basic” Plans.</Typography>
+        <Typography className={classes.subtitle}>VIP Addons by Furkan</Typography>
+        <Typography
+          className={classes.contents}
+          dangerouslySetInnerHTML={{
+            __html: `<b>Furkan - VIP Education</b>
+            Price for one time purchase: $999.99
+            Subscription-Period: one time purchase
+            Package content:
+            - 6 Live Coaching webinars useable within 6 Months
+            - access to the VIP Volume Academy where the individual learns everything about:
+            --- Brokerage, Assets, Futures
+            --- Auctioning, Delta, Footprint, VWAP, Orderflow
+            --- Psychology & Emotional Intelligence
+            --- Statistics and its key role in decision making
+            --- Proprietary Trading - how to get funded and most importantly, how to stay funded and cash out`,
+          }}
+        />
+        <Typography
+          className={classes.contents}
+          dangerouslySetInnerHTML={{
+            __html: `<b>Furkan - 12 VIP Webinars Package</b>
+            Price: $499.99
+            Subscription-Period: 2 Months
+            Serves as addon and requires the purchase of: “Furkan - VIP Education” to be available.
+            Package content:
+            - 12 Live Coaching calls useable within 2 Months
+            - Webinar agenda is extending the contents of: “Furkan - VIP Education”`,
+          }}
+        />
+        <Typography
+          className={classes.contents}
+          dangerouslySetInnerHTML={{
+            __html: `<b>Furkan - 24 VIP Webinars Package</b>
+            Price: $949.99
+            Subscription-Period: 4 Months
+            Serves as addon and requires the purchase of: “Furkan - VIP Education” to be available.
+            Package content:
+            - 24 Live Coaching calls useable within 4 Months
+            - Webinar agenda is extending the contents of: “Furkan - VIP Education”`,
+          }}
+        />
+        <Typography
+          className={classes.contents}
+          dangerouslySetInnerHTML={{
+            __html: `<b>Furkan - 36 VIP Webinars Package</b>
+            Price: $1299.99
+            Subscription-Period: 6 Months
+            Serves as addon and requires the purchase of: “Furkan - VIP Education” to be available.
+            Package content:
+            - 36 Live Coaching calls useable within 6 Months
+            - Webinar agenda is extending the contents of: “Furkan - VIP Education”`,
+          }}
+        />
+        <Typography
+          className={classes.contents}
+          dangerouslySetInnerHTML={{
+            __html: `<b>Furkan - 72 VIP Webinars Package</b>
+            Price: $2499.99
+            Subscription-Period: 12 Months
+            Serves as addon and requires the purchase of: “Furkan - VIP Education” to be available.
+            Package content:
+            - 72 Live Coaching calls useable within 12 Months
+            - Webinar agenda is extending the contents of: “Furkan - VIP Education”`,
+          }}
+        />
+        <Typography className={classes.subtitle}>VIP Addons by Artur</Typography>
+        <Typography
+          className={classes.contents}
+          dangerouslySetInnerHTML={{
+            __html: `<b>Artur - VIP Education</b>
+            Price for one time purchase: $999.99
+            Subscription-Period: one time purchase
+            Package content:
+            - 6 Live Coaching webinars useable within 6 Months
+            - access to the VIP Funded Account Academy where the individual learns everything about:
+            --- Preparation for a Funded Account Challenge, from a beginner to a trader with a 6 figure account.
+            --- Out of the job, into the trading world. How to register a business, what to look out for, etc.
+            --- Expansion of the already existing Artur Basic Academy using the tool TradingView.`,
+          }}
+        />
+        <Typography
+          className={classes.contents}
+          dangerouslySetInnerHTML={{
+            __html: `<b>Artur - 12 VIP Webinars Package</b>
+            Price: $499.99
+            Subscription-Period: 2 Months
+            Serves as addon and requires the purchase of: “Artur - VIP Education” to be available.
+            Package content:
+            - 12 Live Coaching calls useable within 2 Months
+            - Webinar agenda is extending the contents of: “Artur - VIP Education”`,
+          }}
+        />
+        <Typography
+          className={classes.contents}
+          dangerouslySetInnerHTML={{
+            __html: `<b>Artur - 24 VIP Webinars Package</b>
+            Price: $949.99
+            Subscription-Period: 4 Months
+            Serves as addon and requires the purchase of: “Artur - VIP Education” to be available.
+            Package content:
+            - 24 Live Coaching calls useable within 4 Months
+            - Webinar agenda is extending the contents of: “Artur - VIP Education”`,
+          }}
+        />
+        <Typography
+          className={classes.contents}
+          dangerouslySetInnerHTML={{
+            __html: `<b>Artur - 36 VIP Webinars Package</b>
+            Price: $1299.99
+            Subscription-Period: 6 Months
+            Serves as addon and requires the purchase of: “Artur - VIP Education” to be available.
+            Package content:
+            - 36 Live Coaching calls useable within 6 Months
+            - Webinar agenda is extending the contents of: “Artur - VIP Education”`,
+          }}
+        />
+        <Typography
+          className={classes.contents}
+          dangerouslySetInnerHTML={{
+            __html: `<b>Artur - 72 VIP Webinars Package</b>
+            Price: $2499.99
+            Subscription-Period: 12 Months
+            Serves as addon and requires the purchase of: “Artur - VIP Education” to be available.
+            Package content:
+            - 72 Live Coaching calls useable within 12 Months
+            - Webinar agenda is extending the contents of: “Artur - VIP Education”`,
+          }}
+        />
+        <Typography className={classes.subtitle}>VIP Addons by Henrik</Typography>
+        <Typography
+          className={classes.contents}
+          dangerouslySetInnerHTML={{
+            __html: `<b>Henrik - Coinmastery</b>
+        Price for one time purchase: $999.99
+        Subscription-Period: one time purchase
+        Package content:
+        - access to the Coinmastery Academy for crypto fundamental analysis where the individual learns how to evauluate
+        --- Research Tools
+        --- Use Cases
+        --- Team and Technology
+        --- Tokenomics
+        --- Updates and News
+        --- Regulatory Compliance
+        --- Community and Partnership
+        --- Red Flags
+        --- Targets`,
+          }}
+        />
         <Typography className={classes.subtitle}>Social Media Advanced</Typography>
         <Typography className={classes.contents}>
           {`Price for first purchase: $4399,99 
