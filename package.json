@@ -58,11 +58,5 @@
     "@types/react-router-dom": "^5.3.3",
     "@types/smooth-scroll": "^16.1.1",
     "@types/styled-components": "^5.1.24"
-  },
-  "reactSnap": {
-    "puppeteerArgs": [
-      "--no-sandbox",
-      "--disable-setuid-sandbox"
-    ]
   }
 }
