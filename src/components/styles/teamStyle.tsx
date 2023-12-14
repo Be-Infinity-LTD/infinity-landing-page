@@ -166,7 +166,6 @@ export const useStyles = makeStyles((theme: Theme) =>
     },
     subMainTeam2: {
       display: 'flex',
-      alignItems: 'center',
       justifyContent: 'center',
     },
     teamMate21: {

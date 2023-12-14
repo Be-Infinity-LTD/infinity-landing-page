@@ -43,7 +43,12 @@ export const teamSubMainImgs1 = [
   './img/landing/teams/furkan.png',
   './img/landing/teams/artur.png',
 ]
-export const teamSubMainImgs2 = ['./img/landing/teams/henrik.png', './img/landing/teams/amar.png']
+
+export const teamSubMainImgs2 = [
+  './img/landing/teams/fabian.png',
+  './img/landing/teams/henrik.png',
+  './img/landing/teams/amar.png',
+]
 
 export const legalLetters = ['/docs/LegalLetter/EN.pdf', '/docs/LegalLetter/DE.pdf']
 export const salesLetters = ['/docs/SalesLetter/EN.pdf', '/docs/SalesLetter/DE.pdf']
