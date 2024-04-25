@@ -5,16 +5,25 @@ import Navigation from '../../components/navigation'
 import Footer from '../../components/footer'
 import { useStyles } from './styles/termsstyles'
 import { Typography } from '@material-ui/core'
+import { useLocation } from 'react-router-dom'
 
 export default function Terms() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const classes = useStyles()
+  const location = useLocation()
+  const query_string_params = new URLSearchParams(location.search)
+  const language = query_string_params.get('l')
+
+  if (language === 'de') {
+    i18n.changeLanguage('ge')
+  }
 
   return (
     <Grid>
       <Navigation type={'submenu'} />
       <Grid className={classes.mainGrid}>
         <Typography className={classes.largeTitle}>{t('FOOTERTERMS')}</Typography>
+        <Typography className={classes.contents}>{t('FOOTERTERMS-CONTENTS')}</Typography>
         <Typography className={classes.title}>{t('TERMSTITLE0')}</Typography>
         <Typography
           className={classes.contents}
@@ -43,8 +52,6 @@ export default function Terms() {
 
         <Typography className={classes.title}>{t('TERMSTITLE7')}</Typography>
         <Typography className={classes.contents}>{t('TERMSCONTENT7-1')}</Typography>
-        <Typography className={classes.subcontents}>{t('TERMSCONTENT7-2')}</Typography>
-        <Typography className={classes.contents}>{t('TERMSCONTENT7-3')}</Typography>
 
         <Typography className={classes.title}>{t('TERMSTITLE8')}</Typography>
         <Typography className={classes.contents}>{t('TERMSCONTENT8-1')}</Typography>
@@ -57,17 +64,6 @@ export default function Terms() {
 
         <Typography className={classes.title}>{t('TERMSTITLE11')}</Typography>
         <Typography className={classes.contents}>{t('TERMSCONTENT11-1')}</Typography>
-        <Typography className={classes.contents}>{t('TERMSCONTENT11-2')}</Typography>
-        <Typography className={classes.contents}>{t('TERMSCONTENT11-3')}</Typography>
-        <Typography className={classes.contents}>{t('TERMSCONTENT11-4')}</Typography>
-        <Typography className={classes.subcontents}>{t('TERMSSUBCONTENT11-4-1')}</Typography>
-        <Typography className={classes.subcontents}>{t('TERMSSUBCONTENT11-4-2')}</Typography>
-        <Typography className={classes.subcontents}>{t('TERMSSUBCONTENT11-4-3')}</Typography>
-        <Typography className={classes.subcontents}>{t('TERMSSUBCONTENT11-4-4')}</Typography>
-        <Typography className={classes.subcontents}>{t('TERMSSUBCONTENT11-4-5')}</Typography>
-        <Typography className={classes.subcontents}>{t('TERMSSUBCONTENT11-4-6')}</Typography>
-        <Typography className={classes.subcontents}>{t('TERMSSUBCONTENT11-4-7')}</Typography>
-        <Typography className={classes.contents}>{t('TERMSCONTENT11-5')}</Typography>
 
         <Typography className={classes.title}>{t('TERMSTITLE12')}</Typography>
         <Typography className={classes.contents}>{t('TERMSCONTENT12')}</Typography>
@@ -76,10 +72,16 @@ export default function Terms() {
         <Typography className={classes.contents}>{t('TERMSCONTENT13')}</Typography>
 
         <Typography className={classes.title}>{t('TERMSTITLE14')}</Typography>
-        <Typography className={classes.contents} dangerouslySetInnerHTML={{ __html: t('TERMSCONTENT14-1') }} />
+        <Typography className={classes.contents}>{t('TERMSCONTENT14-1')}</Typography>
 
         <Typography className={classes.title}>{t('TERMSTITLE15')}</Typography>
         <Typography className={classes.contents}>{t('TERMSCONTENT15')}</Typography>
+
+        <Typography className={classes.title}>{t('PRIVACYTITLE1')}</Typography>
+        <Typography className={classes.contents}>{t('PRIVACYCONTENT1')}</Typography>
+
+        <Typography className={classes.title}>{t('PRIVACYTITLE2')}</Typography>
+        <Typography className={classes.contents}>{t('PRIVACYCONTENT2')}</Typography>
       </Grid>
       <Footer />
     </Grid>
