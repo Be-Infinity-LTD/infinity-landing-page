@@ -99,14 +99,23 @@ export default function Aboutus() {
             <a href="/terms_conditions">
               <Typography className={classes.footerItemLink}>{t('FOOTERTERMS')}</Typography>
             </a>
+            <a href="/terms_conditions?l=de">
+              <Typography className={classes.footerItemLink}>{t('FOOTERTERMS')} - DE</Typography>
+            </a>
             <a href="/privacy_policy">
               <Typography className={classes.footerItemLink}>{t('FOOTERPRIVACY')}</Typography>
+            </a>
+            <a href="/privacy_policy?l=de">
+              <Typography className={classes.footerItemLink}>{t('FOOTERPRIVACY')} - DE</Typography>
             </a>
             <a href="/pricing_policy">
               <Typography className={classes.footerItemLink}>{t('FOOTERPRICING')}</Typography>
             </a>
             <a href="/refund_policy">
-              <Typography className={classes.footerItemLink}>{t('FOOTERREFUND')}</Typography>
+              <Typography className={classes.footerItemLink}>{t('FOOTERREFUND')} </Typography>
+            </a>
+            <a href="/refund_policy?l=de">
+              <Typography className={classes.footerItemLink}>{t('FOOTERREFUND')} - DE</Typography>
             </a>
             <a
               href="https://docs.google.com/document/d/171zeEdhDT0wp8IMg1eMHZaxJB7_oJET-0dlKPbhxaK0/edit#"
