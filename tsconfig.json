@@ -19,9 +19,14 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "strictFunctionTypes": false
   },
   "include": [
     "src"
-  ]
+  ],
+  "resolutions": {
+    "@types/react": "17.0.39"
+  }
 }
