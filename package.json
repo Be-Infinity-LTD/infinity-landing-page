@@ -52,11 +52,16 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@types/radium": "^0.24.4",
     "@types/react-animations": "^1.0.0",
     "@types/react-imgix": "^9.4.0",
     "@types/react-router-dom": "^5.3.3",
     "@types/smooth-scroll": "^16.1.1",
     "@types/styled-components": "^5.1.24"
+  },
+  "resolutions": {
+    "@types/react": "17.0.39",
+    "@types/react-dom": "17.0.13"
   }
 }

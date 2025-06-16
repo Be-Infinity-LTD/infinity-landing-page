@@ -18,7 +18,7 @@ const App = () => {
   }, [])
 
   return (
-    <BrowserRouter {...({} as any)}>
+    <BrowserRouter>
       <Route exact path="/" component={Home}></Route>
       <Route exact path="/disclaimer" component={Disclaimer}></Route>
       <Route exact path="/companyletter" component={CompanyLetter}></Route>
