@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter, Route } from 'react-router-dom'
 import { useEffect } from 'react'
 
 import Home from './home'
@@ -18,7 +18,7 @@ const App = () => {
   }, [])
 
   return (
-    <Router>
+    <BrowserRouter>
       <Route exact path="/" component={Home}></Route>
       <Route exact path="/disclaimer" component={Disclaimer}></Route>
       <Route exact path="/companyletter" component={CompanyLetter}></Route>
@@ -93,7 +93,7 @@ const App = () => {
           return null
         }}
       />
-    </Router>
+    </BrowserRouter>
   )
 }
 
