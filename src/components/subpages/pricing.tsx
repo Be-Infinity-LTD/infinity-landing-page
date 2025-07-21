@@ -249,7 +249,25 @@ export default function Pricing() {
         --- Targets`,
           }}
         />
-        <Typography className={classes.subtitle}>Social Media Advanced</Typography>
+
+        <Typography className={classes.subtitle}>VIP Addons by Fabian</Typography>
+        <Typography
+          className={classes.contents}
+          dangerouslySetInnerHTML={{
+            __html: `<b>Fabian - VIP Education</b>
+        Price for one time purchase: $999.99
+        Subscription-Period: one time purchase
+        Package content:
+        - access to the Defi Mastery Academy for defi fundamental analysis where the individual learns how to
+        --- setup wallets
+        --- understand staking
+        --- understand farming
+        --- use liquidity mining
+        --- Decentralized Exchanges`,
+          }}
+        />
+
+        {/* <Typography className={classes.subtitle}>Social Media Advanced</Typography>
         <Typography className={classes.contents}>
           {`Price for first purchase: $4399,99 
           Subscription-Period: one time purchase without expiration.
@@ -261,12 +279,37 @@ export default function Pricing() {
           – Tiktok Academy 
           – Youtube Academy 
           - Pinterest Academy`}
-        </Typography>
+        </Typography> */}
+        
         <Typography className={classes.subtitle}>Ennea Schoolars Academy</Typography>
         <Typography
           className={classes.contents}
           dangerouslySetInnerHTML={{
-            __html: `<b>Enneagramm Classification</b>
+            __html: `<b>Ennea Scholars - Advanced</b>
+            Price for first purchase: $499.99
+            Price continuous price: $499.99
+            Subscription-Period: one time
+            Package content:
+            - Learn more advanced techniques about eneagram types and how to analyze them
+
+            <b>Ennea Scholars - Mastery</b>
+            Price for first purchase: $1699.99
+            Price continuous price: $1699.99
+            Subscription-Period: one time
+            Package content:
+            - Ennea Scholars - Advanced
+            - Deepdive into each Enneagram type and their behavior
+            - Apply Enneagram to sales
+            - Apply Enneagram to relationships
+
+            <b>Rathmersche Tabelle</b>
+            Price for first purchase: $29.99
+            Price continuous price: -
+            Subscription-Period: one time
+            Package content:
+            - Get Access to a table that summarizes all Enneagram info for all 9 major types and their 3 subtypes in one place.
+
+            <b>Enneagramm Classification</b>
             Price for first purchase: $299.99
             Price continuous price: -
             Subscription-Period: one time
@@ -274,67 +317,6 @@ export default function Pricing() {
             - personality analysis
             - PDF with content concerning the personality type of the individual
             - access to the related video in order to guarantee that the individual is able to use the product conveniently
-
-            <b>Enneagramm Starter</b>
-            Price for first purchase: $999.99
-            Price continuous price: $999.99
-            Subscription-Period: 12 Live Coaching Calls, usable within max 3 month
-            Package content:
-            - personality analysis
-            - PDF with content concerning the personality type of the individual
-            - access to the related video in order to guarantee that the individual is able to use the product conveniently
-            - access to the Ennea Scholars Academy where the individual learns how to use the method of profiling
-            - access to live calls per week to establish the method of profiling
-            - 12 Live Coaching Calls usable within max 6 month
-
-            <b>Enneagramm Explorer</b>
-            Price for first purchase: $1899.99
-            Price continuous price: $1899.99
-            Subscription-Period: 24 Live Coaching Calls, usable within max 6 month
-            Package content:
-            - personality analysis
-            - PDF with content concerning the personality type of the individual
-            - access to the related video in order to guarantee that the individual is able to use the product conveniently
-            - access to the Ennea Scholars Academy where the individual learns how to use the method of profiling
-            - access to live calls per week to establish the method of profiling
-            - 24 Live Coaching Calls usable within max 6 month
-
-            <b>Enneagramm Visonary</b>
-            Price for first purchase: $2599.99
-            Price continuous price: $2599.99
-            Subscription-Period: 36 Live Coaching Calls, usable within max 6 month
-            Package content:
-            - personality analysis
-            - PDF with content concerning the personality type of the individual
-            - access to the related video in order to guarantee that the individual is able to use the product conveniently
-            - access to the Ennea Scholars Academy where the individual learns how to use the method of profiling
-            - access to live calls per week to establish the method of profiling
-            -36 Live Coaching Calls usable within max 6 month
-
-            <b>Enneagramm Pioneer</b>
-            Price for first purchase: $4999.99
-            Price continuous price: $4999.99
-            Subscription-Period: 72 Live Coaching Calls, usable within max 6 month
-            Package content:
-            - personality analysis
-            - PDF with content concerning the personality type of the individual
-            - access to the related video in order to guarantee that the individual is able to use the product conveniently
-            - access to the Ennea Scholars Academy where the individual learns how to use the method of profiling
-            - access to live calls per week to establish the method of profiling
-            - 72 Live Coaching Calls usable within max 6 month
-
-            <b>Enneagramm Master</b> ( On Request Only )
-            Price for first purchase: $8999.99
-            Price continuous price: $8999.99
-            Subscription-Period: 72 Live Coaching Calls + 1 weekly Masterclass call with 3-6 people max for 6 month, usable within max 6 month
-            Package content:
-            - personality analysis
-            - PDF with content concerning the personality type of the individual
-            - access to the related video in order to guarantee that the individual is able to use the product conveniently
-            - access to the Ennea Scholars Academy where the individual learns how to use the method of profiling
-            - access to live calls per week to establish the method of profiling
-            - 72 Live Coaching Calls usable within max 6 month
-            - 1 weekly Masterclass call with 3-6 people max for 6 month, usable within max 6 month
 
             <b>Enneagramm Profiling</b> (There is an undefined maximum per week. Once this limit is reached, the product can only be booked again after approval.)
             Price for first purchase: $9.99
@@ -359,6 +341,21 @@ export default function Pricing() {
         <Typography className={classes.contents}>{t('PRICINGCONTENT5-4')}</Typography>
         <Typography className={classes.subtitle}>{t('PRICINGTITLE5-5')}</Typography>
         <Typography className={classes.contents}>{t('PRICINGCONTENT5-5')}</Typography>
+
+
+        <Typography className={classes.title}>{t('PRICINGTITLE6')}</Typography>
+        <Typography className={classes.contents}>{t('PRICINGCONTENT6')}</Typography>
+
+        <Typography className={classes.subtitle}>{t('PRICINGTITLE6-1')}</Typography>
+        <Typography className={classes.contents}>{t('PRICINGCONTENT6-1')}</Typography>
+        <Typography className={classes.subtitle}>{t('PRICINGTITLE6-2')}</Typography>
+        <Typography className={classes.contents}>{t('PRICINGCONTENT6-2')}</Typography>
+        <Typography className={classes.subtitle}>{t('PRICINGTITLE6-3')}</Typography>
+        <Typography className={classes.contents}>{t('PRICINGCONTENT6-3')}</Typography>
+        <Typography className={classes.subtitle}>{t('PRICINGTITLE6-4')}</Typography>
+        <Typography className={classes.contents}>{t('PRICINGCONTENT6-4')}</Typography>
+        <Typography className={classes.subtitle}>{t('PRICINGTITLE6-5')}</Typography>
+        <Typography className={classes.contents}>{t('PRICINGCONTENT6-5')}</Typography>
 
         <Typography className={classes.title}>Custom Plans</Typography>
         {/* <Typography className={classes.contents}>
