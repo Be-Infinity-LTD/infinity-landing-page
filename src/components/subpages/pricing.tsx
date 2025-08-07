@@ -229,57 +229,7 @@ export default function Pricing() {
             - Webinar agenda is extending the contents of: “Artur - VIP Education”`,
           }}
         />
-        <Typography className={classes.subtitle}>VIP Addons by Henrik</Typography>
-        <Typography
-          className={classes.contents}
-          dangerouslySetInnerHTML={{
-            __html: `<b>Henrik - Coinmastery</b>
-        Price for one time purchase: $999.99
-        Subscription-Period: one time purchase
-        Package content:
-        - access to the Coinmastery Academy for crypto fundamental analysis where the individual learns how to evauluate
-        --- Research Tools
-        --- Use Cases
-        --- Team and Technology
-        --- Tokenomics
-        --- Updates and News
-        --- Regulatory Compliance
-        --- Community and Partnership
-        --- Red Flags
-        --- Targets`,
-          }}
-        />
 
-        <Typography className={classes.subtitle}>VIP Addons by Fabian</Typography>
-        <Typography
-          className={classes.contents}
-          dangerouslySetInnerHTML={{
-            __html: `<b>Fabian - VIP Education</b>
-        Price for one time purchase: $999.99
-        Subscription-Period: one time purchase
-        Package content:
-        - access to the Defi Mastery Academy for defi fundamental analysis where the individual learns how to
-        --- setup wallets
-        --- understand staking
-        --- understand farming
-        --- use liquidity mining
-        --- Decentralized Exchanges`,
-          }}
-        />
-
-        {/* <Typography className={classes.subtitle}>Social Media Advanced</Typography>
-        <Typography className={classes.contents}>
-          {`Price for first purchase: $4399,99 
-          Subscription-Period: one time purchase without expiration.
-          Package content:
-          
-          – over 150 Videos 
-          - In depth social media platform knowledge 
-          – Instagram Academy 
-          – Tiktok Academy 
-          – Youtube Academy 
-          - Pinterest Academy`}
-        </Typography> */}
         
         <Typography className={classes.subtitle}>Ennea Schoolars Academy</Typography>
         <Typography
@@ -350,8 +300,6 @@ export default function Pricing() {
         <Typography className={classes.contents}>{t('PRICINGCONTENT6-1')}</Typography>
         <Typography className={classes.subtitle}>{t('PRICINGTITLE6-2')}</Typography>
         <Typography className={classes.contents}>{t('PRICINGCONTENT6-2')}</Typography>
-        <Typography className={classes.subtitle}>{t('PRICINGTITLE6-3')}</Typography>
-        <Typography className={classes.contents}>{t('PRICINGCONTENT6-3')}</Typography>
         <Typography className={classes.subtitle}>{t('PRICINGTITLE6-4')}</Typography>
         <Typography className={classes.contents}>{t('PRICINGCONTENT6-4')}</Typography>
         <Typography className={classes.subtitle}>{t('PRICINGTITLE6-5')}</Typography>
